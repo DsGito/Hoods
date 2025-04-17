@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ClipboardCheck, MessageSquare, Check, Shield, Wrench, ArrowRight } from 'lucide-react';
+import { ClipboardCheck, MessageSquare, Check, Shield, Wrench } from 'lucide-react';
 
 const steps = [
     {

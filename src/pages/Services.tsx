@@ -1,4 +1,4 @@
-import { Wrench, ArrowRight, ShieldCheck } from 'lucide-react'
+import { Wrench, ShieldCheck } from 'lucide-react'
 import { PencilRuler, Settings } from "lucide-react";
 import { Button } from '../components/ui/button'
 import { motion } from 'framer-motion';

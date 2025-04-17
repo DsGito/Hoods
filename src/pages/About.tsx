@@ -1,4 +1,4 @@
-import { Building, Users, Award, Palette, ArrowRight } from 'lucide-react'
+import { Building, Users, Award, Palette } from 'lucide-react'
 import { motion } from 'framer-motion';
 
 const About = () => {

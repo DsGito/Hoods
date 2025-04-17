@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Tag, ArrowRight } from "lucide-react";
+import { Tag } from "lucide-react";
 
 export default function Products() {
   const categories = [

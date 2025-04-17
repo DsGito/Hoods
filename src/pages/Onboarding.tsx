@@ -221,61 +221,6 @@ const InputField = ({
   </div>
 );
 
-const SelectField = ({
-  label,
-  value,
-  onChange,
-  options,
-}: {
-  label: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  options: { value: string; label: string; }[];
-}) => (
-  <div>
-    <label className="block text-sm font-medium text-gray-700 mb-1">
-      {label}
-    </label>
-    <select
-      value={value}
-      onChange={onChange}
-      className="w-full p-3 border-2 rounded-lg transition-colors duration-200
-        border-gray-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-200
-        bg-white"
-    >
-      {options.map((option) => (
-        <option key={option.value} value={option.value}>
-          {option.label}
-        </option>
-      ))}
-    </select>
-  </div>
-);
-
-const ActionButton = ({
-  onClick,
-  disabled,
-  children,
-}: {
-  onClick: () => void;
-  disabled?: boolean;
-  children: React.ReactNode;
-}) => (
-  <button
-    onClick={onClick}
-    disabled={disabled}
-    className={`
-      px-6 py-3 rounded-lg font-medium transition-all duration-200
-      ${disabled 
-        ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-        : 'bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-md hover:shadow-lg hover:from-blue-700 hover:to-blue-600 transform hover:scale-[1.02]'
-      }
-    `}
-  >
-    {children}
-  </button>
-);
-
 const Onboarding = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Filter, ArrowRight } from 'lucide-react'
+import { Filter } from 'lucide-react'
 import { Button } from '../components/ui/button'
 
 
