@@ -1,18 +1,18 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X, Phone, Fan } from 'lucide-react'
+import { Menu, X, Phone, Fan, HomeIcon, Info, Package2, MessageCircle, Settings, Mail, MapPin, Clock } from 'lucide-react'
 import { Button } from '../ui/button'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: 'דף הבית', path: '/Home' },
-    { name: 'אודות', path: '/about' },
-    { name: 'מוצרים', path: '/products' },
-    { name: 'שירותים', path: '/services' },
-    { name: 'גלריית פרויקטים', path: '/gallery' },
-    /*{ name: 'בלוג מקצועי', path: '/blog' },*/
+    { name: 'דף הבית', path: '/Home', icon: <HomeIcon className="w-5 h-5" /> },
+    { name: 'אודות', path: '/About', icon: <Info className="w-5 h-5" /> },
+    { name: 'מוצרים', path: '/Products', icon: <Package2 className="w-5 h-5" /> },
+    { name: 'שירותים', path: '/services', icon: <Settings className="w-5 h-5" /> },
+    { name: 'גלריית פרויקטים', path: '/gallery', icon: <MapPin className="w-5 h-5" /> },
+    /*{ name: 'בלוג מקצועי', path: '/blog' , icon: <MessageCircle className="w-5 h-5" />},*/
   ]
 
   return (
@@ -49,7 +49,6 @@ const Navbar = () => {
               </Link>
             </div>
 
-
           </div>
 
           {/* Mobile menu button */}
@@ -63,6 +62,22 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Quick Links Bar */}
+      <div className="hidden md:block bg-[#111827]/50 backdrop-blur-sm border-t border-gray-700">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center space-x-8 space-x-reverse py-2 text-sm">
+            <a href="#" className="text-gray-300 hover:text-white transition-colors">מטבחים תעשייתיים</a>
+            <span className="text-gray-600">|</span>
+            <a href="#" className="text-gray-300 hover:text-white transition-colors">מנדפים מקצועיים</a>
+            <span className="text-gray-600">|</span>
+            <a href="#" className="text-gray-300 hover:text-white transition-colors">ציוד נירוסטה</a>
+            <span className="text-gray-600">|</span>
+            <a href="#" className="text-gray-300 hover:text-white transition-colors">פתרונות מותאמים אישית</a>
+          </div>
+        </div>
+      </div>
+
 
       {/* Mobile Menu */}
       {isOpen && (

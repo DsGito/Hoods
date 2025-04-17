@@ -31,10 +31,10 @@ const Home = () => {
       <BenefitsSection />
 
       {/* CTA Section */}
-      <ImonialsSection />
-    
+      { /*<ImonialsSection /> */}
+
       {/* CTA Section */}
-      <CTASection />
+      {/* <CTASection /> */}
 
     </div>
   )

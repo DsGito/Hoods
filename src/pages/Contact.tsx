@@ -44,7 +44,6 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl font-bold mb-6"
           >
-            <h1 >צור קשר</h1>
             <h1 className="text-4xl font-bold text-gray-100 mb-4">
               רוצים אוויר נקי במטבח? צרו קשר!
             </h1>
@@ -69,38 +68,37 @@ const Contact = () => {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1  gap-8">
 
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
           >
             {/* Contact Information */}
-            <div>
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">פרטי התקשרות</h2>
-
-                <div className="space-y-12">
-                  {contactInfo.map((info, index) => (
-                    <div key={index} className="flex">
-                      <info.icon className="h-6 w-6 text-primary ml-4 mt-1" />
-                      <div>
-                        <h3 className="font-semibold mb-2">{info.title}</h3>
-                        {info.details.map((detail, i) => (
-                          <p key={i} className="text-gray-600">{detail}</p>
-                        ))}
-                        <p className="text-sm text-gray-500 mt-1">{info.description}</p>
-                      </div>
-                    </div>
+            <div className="bg-white rounded-lg shadow-lg p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">פרטי התקשרות</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {contactInfo.map((info, index) => (
+              <div key={index} className="flex items-start p-4 border rounded-lg shadow-sm">
+                <info.icon className="h-6 w-6 text-primary ml-4 mt-1" />
+                <div>
+                  <h3 className="font-semibold mb-1">{info.title}</h3>
+                  {info.details.map((detail, i) => (
+                    <p key={i} className="text-gray-600">{detail}</p>
                   ))}
+                  {info.description && (
+                    <p className="text-sm text-gray-500 mt-1">{info.description}</p>
+                  )}
                 </div>
               </div>
-
-            </div>
+            ))}
+          </div>
+        </div>
 
           </motion.div>
 
           {/* Contact Form */}
+          {/* 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -172,11 +170,12 @@ const Contact = () => {
               </div>
             </div>
           </motion.div>
-
+          */}
         </div>
 
 
         {/* Google Map */}
+        {/*
         <div className="mt-12 rounded-xl overflow-hidden shadow-sm">
           <div className="aspect-video w-full">
             <iframe
@@ -191,7 +190,7 @@ const Contact = () => {
           </div>
         </div>
 
-
+  */}
       </div>
     </div>
   )

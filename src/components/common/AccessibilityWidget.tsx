@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Button } from '../ui/button'
-import Draggable from 'react-draggable'
 import { 
   Accessibility, 
   Sun, 
@@ -23,10 +22,6 @@ const AccessibilityWidget = () => {
   const [linkHighlight, setLinkHighlight] = useState(false)
   const [dyslexicFont, setDyslexicFont] = useState(false)
   const [lineSpacing, setLineSpacing] = useState(false)
-
-  // שמירת מיקום הכפתור
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [isDragging, setIsDragging] = useState(false)
 
   const increaseFontSize = () => {
     if (fontSize < 150) {
@@ -87,32 +82,12 @@ const AccessibilityWidget = () => {
     document.documentElement.classList.remove('increased-spacing')
   }
 
-  const handleDrag = (e, data) => {
-    setPosition({ x: data.x, y: data.y })
-    setIsDragging(true)
-  }
-
-  const handleDragStop = () => {
-    // מונע פתיחת התפריט בסיום גרירה
-    setTimeout(() => {
-      setIsDragging(false)
-    }, 0)
-  }
-
   const handleClick = () => {
-    if (!isDragging) {
       setIsOpen(!isOpen)
-    }
   }
 
   return (
-    <Draggable
-      position={position}
-      onDrag={handleDrag}
-      onStop={handleDragStop}
-      bounds="parent"
-      handle=".drag-handle"
-    >
+
       <div className="fixed bottom-4 right-4 z-50">
         <div className="relative">
           {/* תפריט נגישות */}
@@ -235,7 +210,7 @@ const AccessibilityWidget = () => {
           </Button>
         </div>
       </div>
-    </Draggable>
+
   )
 }
 

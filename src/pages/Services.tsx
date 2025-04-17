@@ -1,4 +1,4 @@
-import { Wrench, Check, ArrowLeft, ShieldCheck } from 'lucide-react'
+import { Wrench, ArrowRight, ShieldCheck } from 'lucide-react'
 import { PencilRuler, Settings } from "lucide-react";
 import { Button } from '../components/ui/button'
 import { motion } from 'framer-motion';
@@ -239,53 +239,24 @@ const Services = () => {
 
 
       {/* קריאה לפעולה */}
-      <section className="py-16 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">מעוניינים לשמוע עוד?</h2>
-          <p className="text-xl mb-8">
-            צוות המומחים שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
-          >
-            צרו קשר
-            <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
-          </Link>
-
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="mt-16">
-        <div className="bg-gradient-to-r from-blue-700 to-blue-900 rounded-xl p-8 text-white text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            יש לכם שאלות לגבי השירותים שלנו?
-          </h2>
-          <p className="text-lg mb-6 max-w-3xl mx-auto">
-            צוות השירות שלנו זמין לענות על כל שאלה ולעזור לכם למצוא את הפתרון המתאים ביותר לצרכים שלכם.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to={"/Contact"}>
-              <Button
-                size="lg"
-                className="bg-white text-blue-700 hover:bg-gray-100"
-              >
-                צרו קשר עכשיו
-              </Button>
-            </Link>
-            <a href="tel:08-XXXXXXX">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white/10"
-              >
-                08-XXXXXXX
-              </Button>
-            </a>
-          </div>
-        </div>
-      </section>
+      <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          מעוניינים לשמוע עוד?
+        </h2>
+        <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
+          הצוות המקצועי שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם.
+          אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
+        </p>
+        {/*
+        <a
+          href="/contact"
+          className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
+        >
+          צרו קשר
+          <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
+        </a>
+        */}
+      </div>
 
     </div>
   )

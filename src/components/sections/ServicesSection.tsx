@@ -112,7 +112,7 @@ const ServicesSection = () => {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow border border-gray-100"
                             >
-                                <div className="relative h-48">
+                                <div className="relative h-48 ">
                                     <img
                                         src={service.image}
                                         alt={service.title}
@@ -125,7 +125,7 @@ const ServicesSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="p-6">
+                                <div className="p-6 ">
                                     <h3 className="text-xl font-bold mb-2 text-gray-900">{service.title}</h3>
                                     <p className="text-gray-600 mb-4">{service.description}</p>
                                     <ul className="space-y-2">

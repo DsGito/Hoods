@@ -29,7 +29,7 @@ import SrvDesign from './subpages/SrvDesign';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-background font-sans">
+      <div className="flex flex-col min-h-screen bg-background font-sans rtl">
         <Layout>
           <main className="flex-grow pt-16">
             <Routes>

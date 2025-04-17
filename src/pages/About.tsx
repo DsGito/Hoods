@@ -192,22 +192,22 @@ const About = () => {
       {/* Team Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="mt-16 text-center"
-              >
-          <div className="text-center mb-5">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">הצוות שלנו</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              מאחורי כל מנדף איכותי עומד צוות מקצועי ומסור של מומחים בתחומם.
-            </p>
-            <p className="text-xl text-gray-600">
-              צוות המומחים שלנו כאן בשבילכם
-            </p>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mt-16 text-center"
+          >
+            <div className="text-center mb-5">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">הצוות שלנו</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                מאחורי כל מנדף איכותי עומד צוות מקצועי ומסור של מומחים בתחומם.
+              </p>
+              <p className="text-xl text-gray-600">
+                צוות המומחים שלנו כאן בשבילכם
+              </p>
+            </div>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
@@ -236,21 +236,24 @@ const About = () => {
       </section>
 
       {/* קריאה לפעולה */}
-      <section className="py-16 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">מוכנים להתחיל?</h2>
-          <p className="text-xl mb-8">
-            צרו איתנו קשר עוד היום ונשמח לייעץ לכם בבחירת הפתרון המתאים ביותר עבורכם
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
-          >
-            צרו קשר
-            <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
-          </a>
-        </div>
-      </section>
+      <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          מעוניינים לשמוע עוד?
+        </h2>
+        <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
+          הצוות המקצועי שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם.
+          אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
+        </p>
+        {/*
+        <a
+          href="/contact"
+          className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
+        >
+          צרו קשר
+          <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
+        </a>
+        */}
+      </div>
     </div>
   )
 }

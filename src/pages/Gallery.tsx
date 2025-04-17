@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Filter } from 'lucide-react'
+import { Filter, ArrowRight } from 'lucide-react'
 import { Button } from '../components/ui/button'
-import { Link } from 'react-router-dom';
+
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('הכל');
@@ -308,11 +308,15 @@ const Gallery = () => {
             צרו איתנו קשר לתיאום פגישת ייעוץ ללא התחייבות.
           </p>
           <div className="flex justify-center">
-            <Link to="/Contact">
-              <Button size="lg">
-                צרו קשר עכשיו
-              </Button>
-            </Link>
+        {/*
+        <a
+          href="/contact"
+          className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
+        >
+          צרו קשר
+          <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
+        </a>
+        */}
           </div>
         </div>
 

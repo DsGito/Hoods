@@ -11,7 +11,7 @@ const steps = [
     {
         icon: <ClipboardCheck className="h-10 w-10" />,
         title: 'מומחיות מקצועית',
-        description:  'צוות המומחים שלנו מביא איתו שנים של ניסיון בתכנון, ייצור והתקנה של מנדפים לכל סוגי העסקים',
+        description: 'צוות המומחים שלנו מביא איתו שנים של ניסיון בתכנון, ייצור והתקנה של מנדפים לכל סוגי העסקים',
         color: 'bg-blue-500',
     },
     {
@@ -60,7 +60,7 @@ const BenefitsSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="relative"
+                            className="relative mb-6 flex justify-center"
                         >
                             {/* Step Number */}
                             <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">
@@ -87,6 +87,7 @@ const BenefitsSection = () => {
                 </div>
 
                 {/* CTA Button */}
+                {/*
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -103,6 +104,7 @@ const BenefitsSection = () => {
 
                     </a>
                 </motion.div>
+                */}
             </div>
         </section>
     );

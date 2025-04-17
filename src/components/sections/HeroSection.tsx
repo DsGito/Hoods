@@ -41,13 +41,17 @@ const HeroSection = () => {
                         transition={{ duration: 0.6 }}
                         className="text-white"
                     >
+                        <div className="inline-block mb-4 px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+                            מקצוענים בתחום המטבחים והנירוסטה
+                        </div>
+                        {/* 
                         <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">מנדפי מטבח</span>
-
+                         */}
                         <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
-                            מטבחים מקצועיים, מנדפים איכותיים ועבודות נירוסטה
+                            פתרונות מטבח מקצועיים, מנדפים איכותיים ועבודות נירוסטה
                         </h1>
 
-                        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+                        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight ">
                             בהתאמה אישית
                         </h1>
 
@@ -101,16 +105,19 @@ const HeroSection = () => {
                     </motion.div>
                 </div>
 
-                <div >
+
+                <div className="container mx-auto px-4">
                     {/* Features Grid */}
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="grid grid-cols-2 gap-3"
+                        className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
                     >
                         {[
-                            { title: 'לקוחות מרוצים', value: '1,000+' },
+                            { title: 'לקוחות מרוצים', value: '+1000' },
+                            { title: 'פרויקטים', value: '+5000' },
+                            { title: 'שנות ניסיון', value: '20+' },
                             { title: 'חיסכון שנתי', value: '30%' },
                         ].map((stat, index) => (
                             <motion.div
@@ -118,14 +125,15 @@ const HeroSection = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
-                                className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-white text-center"
+                                className="bg-white/10 backdrop-blur-md  rounded-lg p-4 justify-center text-center"
                             >
-                                <div className="text-3xl font-bold mb-2">{stat.value}</div>
-                                <div className="text-sm text-gray-200">{stat.title}</div>
+                                <div className="text-2xl font-bold mb-2">{stat.value}</div>
+                                <div className="text-sm opacity-80">{stat.title}</div>
                             </motion.div>
                         ))}
                     </motion.div>
                 </div>
+
             </div>
         </div>
     );

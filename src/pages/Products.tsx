@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Tag } from "lucide-react";
+import { Tag, ArrowRight } from "lucide-react";
 
 export default function Products() {
   const categories = [
@@ -129,17 +129,21 @@ export default function Products() {
 
         <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            מתלבטים איזה פתרון מתאים לכם?
-          </h2>
-          <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
-            הצוות המקצועי שלנו ישמח לסייע לכם בבחירת המנדף המתאים ביותר לצרכים שלכם. 
-            אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
-          </p>
-          <Link to="/Contact">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              לייעוץ מקצועי חינם
-            </Button>
-          </Link>
+          מעוניינים לשמוע עוד?
+        </h2>
+        <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
+          הצוות המקצועי שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם.
+          אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
+        </p>
+        {/*
+        <a
+          href="/contact"
+          className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
+        >
+          צרו קשר
+          <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
+        </a>
+        */}
         </div>
       </div>
     </div>

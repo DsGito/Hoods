@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import {
   Building2,
   User,
-  Calendar,
   FileText,
   DollarSign,
   Users,
