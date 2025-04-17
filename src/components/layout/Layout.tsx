@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
             <main className="flex-grow w-full">{children}</main>           
             <Footer />
             {/* WhatsApp Button */}
-            <WhatsAppButton phoneNumber="972527044855" />
+            <WhatsAppButton phoneNumber="972520000000" />
             <AccessibilityWidget />
         </div>
     );
