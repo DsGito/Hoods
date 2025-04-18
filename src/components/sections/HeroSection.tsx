@@ -41,10 +41,11 @@ const HeroSection = () => {
                         transition={{ duration: 0.6 }}
                         className="text-white"
                     >
+                        {/* 
                         <div className="inline-block mb-4 px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
                             מקצוענים בתחום המטבחים והנירוסטה
                         </div>
-                        {/* 
+                       
                         <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">מנדפי מטבח</span>
                          */}
                         <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
@@ -55,9 +56,11 @@ const HeroSection = () => {
                             בהתאמה אישית
                         </h1>
 
-                        <h2 className="text-4xl text-white mb-6 leading-tight">
+                        <h2 className="text-4xl text-yellow-300 mb-6 leading-tight">
                             איכות, עוצמה ושקט נפשי במטבח שלכם
+                            {/* 
                             <span className="text-yellow-300"> בקליק אחד</span>
+                            */}
                         </h2>
 
                         {/* Benefits */}
@@ -106,8 +109,10 @@ const HeroSection = () => {
                 </div>
 
 
+                {/* Features Grid */}
+                
                 <div className="container mx-auto px-4">
-                    {/* Features Grid */}
+                    {/* 
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -132,6 +137,7 @@ const HeroSection = () => {
                             </motion.div>
                         ))}
                     </motion.div>
+                     */}
                 </div>
 
             </div>

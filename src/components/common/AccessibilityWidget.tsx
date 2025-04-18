@@ -206,7 +206,6 @@ const AccessibilityWidget = () => {
             onClick={handleClick}
           >
             <Accessibility className="h-5 w-5" />
-            <span className="mr-2">נגישות</span>
           </Button>
         </div>
       </div>
