@@ -29,12 +29,6 @@ const ProductsSection = () => {
             path: "HomeHoods",
         },
         {
-            title: "מטבחים מקצועיים",
-            description: "מטבחים מקצועיים לעסקים בכל גודל - ממסעדות קטנות ועד למטבחים מוסדיים גדולים.",
-            image: "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-            path: "ProfessionalKitchens",
-        },
-        {
             title: "עבודות נירוסטה",
             description: "עבודות נירוסטה מותאמות אישית - מדפים, ארונות, כיורים, משטחי עבודה ועוד.",
             image: "https://images.unsplash.com/photo-1588644525273-f37b60d78512?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
