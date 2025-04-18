@@ -93,12 +93,12 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-              <Link to="/contact" className="flex-shrink-0 flex items-center space-x-2">
-                <Button className="flex items-center">
-                  <Phone className="ml-2 h-4 w-4" />
-                  צרו קשר
-                </Button>
-              </Link>
+            <Link to="/contact" className="flex-shrink-0 flex items-center space-x-2">
+              <Button className="w-full mt-4">
+                <Phone className="ml-2 h-4 w-4" />
+                צרו קשר
+              </Button>
+            </Link>
           </div>
         </div>
       )}
