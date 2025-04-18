@@ -48,15 +48,15 @@ const HeroSection = () => {
                          */}
                         <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">פתרונות מקצועיים</span>
                        
-                        <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight break-words">
+                        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
                             מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                         </h1>
 
-                        <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight ">
+                        <h1 className="text-2xl md:text-5xl font-bold text-white leading-tight ">
                         
                         </h1>
 
-                        <h2 className="text-3xl text-yellow-300 mb-6 leading-tight">
+                        <h2 className="text-2xl md:text-3xl text-yellow-300 mb-6 leading-tight">
                             איכות, עוצמה ושקט נפשי במטבח שלכם
                             {/* 
                             <span className="text-yellow-300"> בקליק אחד</span>
