@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Check, Fan, ChefHat, Sun, Flame, ArrowRight } from 'lucide-react';
+import { Check, Sun, Flame, ArrowRight } from 'lucide-react';
 
 const services = [
     {
@@ -12,22 +12,7 @@ const services = [
         icon: <Check />,
         url: "/SrvDesign",
     },
-    {
-        title: 'מנדפים ומערכות יניקה',
-        description: 'התקנה ותחזוקה מקצועית של מערכות יניקה מתקדמות למטבחי פנים וחוץ מכל הסוגים. פתרונות המבטיחים אוויר נקי ועמידה בכל התקנים הנדרשים.',
-        features: ['פתרונות מתקדמים למטבחי פנים וחוץ, המבטיחים אוויר נקי ועמידה בתקנים', 'ייעוץ מקיף לבחירת המנדף המתאים ביותר לצרכים שלכם', 'התאמה לכל סוגי המטבחים', 'מערכות חכמות לחיסכון באנרגיה', 'עמידה בתקני בטיחות'],
-        image: '/images/gallery1.jpg',
-        icon: <Fan className="h-8 w-8" />,
-        url: "/",
-    },
-    {
-        title: 'מטבחים בהתאמה אישית',
-        description: 'תכנון וביצוע מטבחי פנים פונקציונליים ומעוצבים. שילוב מושלם בין אסתטיקה לפרקטיות.',
-        features: ['תכנון וביצוע מטבחים פונקציונליים ומעוצבים לפי דרישות הלקוח', 'עיצוב מותאם אישית', 'חומרים איכותיים', 'פתרונות אחסון חכמים'],
-        image: '/images/gallery3.jpg',
-        icon: <ChefHat className="h-8 w-8" />,
-        url: "/",
-    },
+
     {
         title: 'מטבחי חוץ יוקרתיים',
         description: 'עיצוב וביצוע מטבחי חוץ המשלבים עמידות לתנאי מזג האוויר עם אסתטיקה יוקרתית ופונקציונליות מלאה.',
@@ -45,24 +30,6 @@ const services = [
         url: "/",
     },
     {
-        title: "תכנון והתאמה אישית",
-        description:
-            "צוות המומחים שלנו יגיע למקום, יבצע מדידות, ייעץ לגבי הפתרון המתאים ביותר, ויתכנן מנדף המותאם במדויק לצרכים שלכם.",
-        features: ['ייעוץ מקצועי במקום', 'התאמה מדויקת לצרכים'],
-        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        icon: <Check />,
-        url: "/SrvPlanning",
-    },
-    {
-        title: "התקנה מקצועית",
-        description:
-            "צוות ההתקנות המיומן שלנו מבצע את ההתקנה ברמה הגבוהה ביותר, תוך הקפדה על כל פרט ופרט ושימוש בחומרים האיכותיים ביותר.",
-        features: ['התקנה ברמה גבוהה', 'שימוש בחומרים איכותיים'],
-        image: '/images/gallery5.jpg',
-        icon: <Check />,
-        url: "/SrvInstallation",
-    },
-    {
         title: "תחזוקה ושירות",
         description:
             "אנו מציעים שירותי תחזוקה שוטפים לשמירה על תקינות המנדף לאורך זמן. השירותים כוללים ניקוי מסננים, בדיקת מנועים ועוד.",
@@ -71,15 +38,7 @@ const services = [
         icon: <Check />,
         url: "/SrvMaintenance",
     },
-    {
-        title: "אישורי בטיחות ותקנים",
-        description:
-            "אנו מסייעים בקבלת כל האישורים הנדרשים מהרשויות, כולל אישורי כיבוי אש, אישורי תברואה ואישורים נוספים.",
-        features: ['אישורי כיבוי אש', 'אישורי תברואה'],
-        image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-        icon: <Check />,
-        url: "/SrvSafety",
-    },
+
 ];
 
 const ServicesSection = () => {
