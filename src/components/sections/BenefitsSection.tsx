@@ -40,7 +40,7 @@ const BenefitsSection = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <motion.h2
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -48,7 +48,7 @@ const BenefitsSection = () => {
                         className="text-3xl font-bold text-gray-900 mb-4"
                     >
                         <h2>למה לבחור בנו?</h2>
-                    </motion.h2>
+                    </motion.div>
 
                 </div>
 
