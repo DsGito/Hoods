@@ -1,4 +1,4 @@
-import ServicesSection from '../components/sections/ServicesSection';
+//import ServicesSection from '../components/sections/ServicesSection';
 import HeroSection from '../components/sections/HeroSection';
 import BenefitsSection from '../components/sections/BenefitsSection';
 import SummarySection from '../components/sections/SummarySection';
@@ -22,7 +22,7 @@ const Home = () => {
       <ProductsSection />
 
       {/* Services Section */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
 
       {/* Projects Gallery */}
       <GallerySection />
