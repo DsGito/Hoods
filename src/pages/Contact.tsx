@@ -6,18 +6,18 @@ const Contact = () => {
     {
       icon: PhoneCall,
       title: 'טלפון',
-      details: ['074-7123456'],
+      details: ['074-0000000'],
     },
     {
       icon: Mail,
       title: 'דואר אלקטרוני',
-      details: ['info@kitchen-hoods.co.il'],
+      details: ['info@kitchen-hoods-mail.co.il'],
       description: 'מענה תוך 24 שעות'
     },
     {
       icon: MapPin,
       title: 'משרד ראשי',
-      details: ['רחוב התעשייה 123', 'אזור התעשייה, תל אביב'],
+      details: ['רחוב התעשייה 000', 'אזור התעשייה, תל אביב'],
       description: 'אולם תצוגה פתוח לקהל'
     },
     {
