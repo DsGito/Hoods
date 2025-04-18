@@ -23,7 +23,7 @@ const ProductsSection = () => {
             path: "GrillHoods",
         },
         {
-            title: "מנדפים למטבח הביתי",
+            title: "קולטי אדים למטבח הביתי",
             description: "קולטי אדים יוקרתיים למטבח הביתי המשלבים עיצוב מודרני עם ביצועים מקצועיים.",
             image: "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             path: "HomeHoods",
