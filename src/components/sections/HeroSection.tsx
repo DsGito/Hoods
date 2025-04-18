@@ -46,22 +46,23 @@ const HeroSection = () => {
                             מקצוענים בתחום המטבחים והנירוסטה
                         </div>
                          */}
-                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">פתרונות מקצועיים</span>
-                       
-                        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
-                            מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
-                        </h1>
+                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">
+                            פתרונות מקצועיים
+                        </span>
 
-                        <h1 className="text-2xl md:text-5xl font-bold text-white leading-tight ">
-                        
-                        </h1>
 
-                        <h2 className="text-2xl md:text-3xl text-yellow-300 mb-6 leading-tight">
-                            איכות, עוצמה ושקט נפשי במטבח שלכם
-                            {/* 
+
+                        <div className="flex flex-wrap items-center ">
+                            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
+                                מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
+                            </h1>
+                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 leading-tight whitespace-nowrap">
+                                איכות, עוצמה ושקט נפשי במטבח שלכם
+                                {/* 
                             <span className="text-yellow-300"> בקליק אחד</span>
                             */}
-                        </h2>
+                            </h2>
+                        </div>
 
                         {/* Benefits */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -110,7 +111,7 @@ const HeroSection = () => {
 
 
                 {/* Features Grid */}
-                
+
                 <div className="container mx-auto px-4">
                     {/* 
                     <motion.div
