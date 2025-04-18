@@ -2,17 +2,18 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
-  const services = [
+ 
+ /* const services = [
     { name: 'התקנת מנדפים', href: '/services' },
     { name: 'תחזוקת מנדפים', href: '/services' },
     { name: 'ייעוץ מקצועי', href: '/services' },
     { name: 'שירות תיקונים', href: '/services' },
-  ];
+  ];*/
 
   const quickLinks = [
     { name: 'דף הבית', href: '/' },
     { name: 'אודות', href: '/about' },
-    { name: 'גלריית פרויקטים', href: '/gallery' },
+    { name: 'מוצרים', href: '/Products' },
     /* { name: 'בלוג', href: '/blog' }, 
     { name: 'המלצות', href: '/testimonials' }, */
     { name: 'צור קשר', href: '/contact' },
@@ -43,6 +44,8 @@ const Footer = () => {
           </div>
 
           {/* Services */}
+
+          {/* 
           <div>
             <h3 className="text-xl font-bold mb-4">השירותים שלנו</h3>
             <ul className="space-y-2">
@@ -55,7 +58,9 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+           */}
 
+           
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-bold mb-4">קישורים מהירים</h3>

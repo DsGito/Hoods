@@ -51,10 +51,10 @@ const HeroSection = () => {
                         </span>
 
                         <div className="flex flex-wrap items-center">
-                            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight md:whitespace-nowrap">
+                            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight whitespace-normal sm:whitespace-nowrap">
                                 מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                             </h1>
-                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 mb-6 leading-tight md:whitespace-nowrap">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 mb-6 leading-tight whitespace-normal sm:whitespace-nowrap">
                                 איכות, עוצמה ושקט נפשי במטבח שלך
                                 {/* 
                             <span className="text-yellow-300"> בקליק אחד</span>
