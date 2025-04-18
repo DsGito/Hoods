@@ -45,18 +45,18 @@ const HeroSection = () => {
                         <div className="inline-block mb-4 px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
                             מקצוענים בתחום המטבחים והנירוסטה
                         </div>
-                       
-                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">מנדפי מטבח</span>
                          */}
+                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">פתרונות מקצועיים</span>
+                       
                         <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
-                            פתרונות מטבח מקצועיים, מנדפים איכותיים ועבודות נירוסטה
+                            מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                         </h1>
 
                         <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight ">
-                            בהתאמה אישית
+                        
                         </h1>
 
-                        <h2 className="text-4xl text-yellow-300 mb-6 leading-tight">
+                        <h2 className="text-3xl text-yellow-300 mb-6 leading-tight">
                             איכות, עוצמה ושקט נפשי במטבח שלכם
                             {/* 
                             <span className="text-yellow-300"> בקליק אחד</span>
