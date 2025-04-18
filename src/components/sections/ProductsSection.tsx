@@ -11,7 +11,7 @@ const ProductsSection = () => {
             path: "RestaurantHoods",
         },
         {
-            title: "מנדפים לבתי קפה",
+            title: "מנדפים לבתי קפה ומאפיות",
             description: "מנדפים מעוצבים ושקטים במיוחד, מותאמים לחללים הקטנים ולאופי השקט של בתי קפה ומאפיות.",
             image: "https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
             path: "CafeHoods",
