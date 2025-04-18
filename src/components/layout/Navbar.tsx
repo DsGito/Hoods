@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'אודות', path: '/About', icon: <Info className="w-5 h-5" /> },
     { name: 'מוצרים', path: '/Products', icon: <Package2 className="w-5 h-5" /> },
     /*{ name: 'שירותים', path: '/services', icon: <Settings className="w-5 h-5" /> },*/
-    { name: 'גלריית פרויקטים', path: '/gallery', icon: <MapPin className="w-5 h-5" /> },
+    { name: 'גלריית הפרויקטים', path: '/gallery', icon: <MapPin className="w-5 h-5" /> },
     /*{ name: 'בלוג מקצועי', path: '/blog' , icon: <MessageCircle className="w-5 h-5" />},*/
   ]
 
@@ -93,10 +93,12 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="w-full mt-4">
-              <Phone className="ml-2 h-4 w-4" />
-              התקשר עכשיו
-            </Button>
+              <Link to="/contact" className="flex-shrink-0 flex items-center space-x-2">
+                <Button className="flex items-center">
+                  <Phone className="ml-2 h-4 w-4" />
+                  צרו קשר
+                </Button>
+              </Link>
           </div>
         </div>
       )}
