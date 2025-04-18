@@ -64,7 +64,7 @@ const Navbar = () => {
       </div>
 
       {/* Quick Links Bar */}
-      <div className="hidden md:block bg-[#111827]/50 backdrop-blur-sm border-t border-gray-700">
+      <div className="hidden md:block bg-primary backdrop-blur-sm text-white">
         <div className="container mx-auto px-4">
           <div className="flex justify-center space-x-8 space-x-reverse py-2 text-sm">
             <a href="#" className="text-gray-300 hover:text-white transition-colors">מטבחים תעשייתיים</a>

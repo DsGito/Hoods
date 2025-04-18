@@ -14,9 +14,9 @@ const Footer = () => {
     { name: 'דף הבית', href: '/' },
     { name: 'אודות', href: '/about' },
     { name: 'מוצרים', href: '/Products' },
+    { name: 'צור קשר', href: '/contact' },
     /* { name: 'בלוג', href: '/blog' }, 
     { name: 'המלצות', href: '/testimonials' }, */
-    { name: 'צור קשר', href: '/contact' },
   ];
 
   return (
