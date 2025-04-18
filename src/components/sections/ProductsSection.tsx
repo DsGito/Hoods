@@ -29,12 +29,6 @@ const ProductsSection = () => {
             path: "HomeHoods",
         },
         {
-            title: "מערכות סינון עשן",
-            description: "למסעדות, בתי קפה ומפעלי מזון. עוצמה וביצועים ללא פשרות מסנני פחם, מסנני נירוסטה, מסנני גריז ועוד לאוויר נקי ובריא.",
-            image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            path: "SmokeFilters",
-        },
-        {
             title: "מטבחים מקצועיים",
             description: "מטבחים מקצועיים לעסקים בכל גודל - ממסעדות קטנות ועד למטבחים מוסדיים גדולים.",
             image: "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
