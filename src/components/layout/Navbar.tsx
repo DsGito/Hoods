@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X, Phone, Fan, HomeIcon, Info, Package2, Settings, MapPin } from 'lucide-react'
+import { Menu, X, Phone, Fan, HomeIcon, Info, Package2, MapPin } from 'lucide-react'
 import { Button } from '../ui/button'
 
 const Navbar = () => {
