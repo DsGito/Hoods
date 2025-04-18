@@ -48,11 +48,11 @@ const HeroSection = () => {
                          */}
                         <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">פתרונות מקצועיים</span>
                        
-                        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
+                        <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight break-words">
                             מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                         </h1>
 
-                        <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight ">
+                        <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight ">
                         
                         </h1>
 
