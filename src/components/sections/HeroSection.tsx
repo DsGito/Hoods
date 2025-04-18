@@ -50,13 +50,11 @@ const HeroSection = () => {
                             פתרונות מקצועיים בשבילך
                         </span>
 
-
-
-                        <div className="flex flex-wrap items-center ">
-                            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight whitespace-nowrap">
+                        <div className="flex flex-wrap items-center">
+                            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight md:whitespace-nowrap">
                                 מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                             </h1>
-                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 mb-6 leading-tight whitespace-nowrap">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 mb-6 leading-tight md:whitespace-nowrap">
                                 איכות, עוצמה ושקט נפשי במטבח שלך
                                 {/* 
                             <span className="text-yellow-300"> בקליק אחד</span>
@@ -87,12 +85,11 @@ const HeroSection = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4, delay: 0.4 }}
-                            className="flex space-x-4 rtl:space-x-reverse"
+                            className="flex flex-wrap space-x-4 rtl:space-x-reverse"
                         >
-
                             <Link
                                 to="/Products"
-                                className="inline-flex items-center bg-white-400 text-white px-8 py-3 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group"
+                                className="inline-flex items-center bg-white-400 text-white px-8 py-3 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group mb-2 sm:mb-0"
                             >
                                 צפו בפתרונות שלנו
                                 <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
@@ -110,36 +107,8 @@ const HeroSection = () => {
                     </motion.div>
                 </div>
 
-
-                {/* Features Grid */}
-
                 <div className="container mx-auto px-4">
-                    {/* 
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
-                    >
-                        {[
-                            { title: 'לקוחות מרוצים', value: '+1000' },
-                            { title: 'פרויקטים', value: '+5000' },
-                            { title: 'שנות ניסיון', value: '20+' },
-                            { title: 'חיסכון שנתי', value: '30%' },
-                        ].map((stat, index) => (
-                            <motion.div
-                                key={stat.title}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
-                                className="bg-white/10 backdrop-blur-md  rounded-lg p-4 justify-center text-center"
-                            >
-                                <div className="text-2xl font-bold mb-2">{stat.value}</div>
-                                <div className="text-sm opacity-80">{stat.title}</div>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                     */}
+
                 </div>
 
             </div>
