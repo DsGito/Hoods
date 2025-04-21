@@ -26,12 +26,13 @@ const steps = [
         description: 'אנחנו מלווים אתכם מהייעוץ הראשוני, דרך התכנון וההתקנה, ועד לשירות ותחזוקה שוטפת',
         color: 'bg-green-500',
     },
+    /*{
     {
         icon: <Check className="h-10 w-10" />,
         title: 'אמינים',
         description: 'אחריות מלאה על כל העבודות',
         color: 'bg-pink-500',
-    },
+    },*/
 ];
 
 const BenefitsSection = () => {

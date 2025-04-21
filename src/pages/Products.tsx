@@ -9,7 +9,7 @@ export default function Products() {
       title: "מנדפים ומערכות יניקה למסעדות",
       description: "מנדפים מקצועיים המותאמים לעומסים גבוהים ושימוש אינטנסיבי במסעדות ובתי קפה.",
       image: '/images/gallery1.jpg',
-      features: ["עמידות בעומסים גבוהים", "עמידה בתקנים מחמירים", "יעילות שאיבה גבוהה",'ייעוץ מקיף לבחירת המנדף המתאים ביותר לצרכים שלכם', 'התאמה לכל סוגי המטבחים', 'מערכות חכמות לחיסכון באנרגיה', 'עמידה בתקני בטיחות'],
+      features: ["עמידות בעומסים גבוהים", "עמידה בתקנים מחמירים", "יעילות שאיבה גבוהה", 'ייעוץ מקיף לבחירת המנדף המתאים ביותר לצרכים שלכם', 'התאמה לכל סוגי המטבחים', 'מערכות חכמות לחיסכון באנרגיה', 'עמידה בתקני בטיחות'],
       path: "RestaurantHoods",
     },
     {
@@ -50,7 +50,7 @@ export default function Products() {
       title: "מטבחים מקצועיים בהתאמה אישית",
       description: 'עיצוב וביצוע מטבחי חוץ המשלבים עמידות לתנאי מזג האוויר עם אסתטיקה יוקרתית ופונקציונליות מלאה. תכנון וביצוע מטבחי פנים פונקציונליים ומעוצבים. שילוב מושלם בין אסתטיקה לפרקטיות.',
       image: "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      features: ["עיצוב מודרני", "פעולה שקטה", "תאורת LED משולבת",'עיצוב מותאם אישית', 'חומרים איכותיים', 'פתרונות אחסון חכמים','חומרים עמידים לתנאי חוץ', 'אזורי עבודה מרווחים', 'אחסון מוגן'],
+      features: ["עיצוב מודרני", "פעולה שקטה", "תאורת LED משולבת", 'עיצוב מותאם אישית', 'חומרים איכותיים', 'פתרונות אחסון חכמים', 'חומרים עמידים לתנאי חוץ', 'אזורי עבודה מרווחים', 'אחסון מוגן'],
       path: "HomeHoods",
     },
     {
@@ -92,13 +92,13 @@ export default function Products() {
                 <div className="md:w-3/5 p-8">
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">{category.title}</h2>
                   <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
-                  
+
                   <div className="mb-8">
                     <h3 className="font-semibold text-gray-800 mb-3">מאפיינים עיקריים:</h3>
                     <div className="flex flex-wrap gap-2">
                       {category.features.map((feature, index) => (
-                        <span 
-                          key={index} 
+                        <span
+                          key={index}
                           className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-50 text-blue-700"
                         >
                           <Tag className="w-3 h-3 ml-1" />
@@ -116,7 +116,7 @@ export default function Products() {
                       </Button>
                     </Link>
                     <Link to={`/Contact?product=${category.id}`}>
-                    <Button variant="outline">
+                      <Button variant="outline">
                         קבלת הצעת מחיר
                       </Button>
                     </Link>
@@ -127,15 +127,13 @@ export default function Products() {
           ))}
         </div>
 
-        <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-          מעוניינים לשמוע עוד?
-        </h2>
-        <p className="text-gray-600 mb-6 max-w-3xl mx-auto">
-          הצוות המקצועי שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם.
-          אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
-        </p>
-        {/*
+        <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center border border-blue-100">
+          <h2 className="text-2xl font-bold mb-4">מעוניינים לשמוע עוד?
+          </h2>
+          <p className="text-lg mb-6 max-w-3xl mx-auto">
+            הצוות המקצועי שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם. אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
+          </p>
+          {/*
         <a
           href="/contact"
           className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"

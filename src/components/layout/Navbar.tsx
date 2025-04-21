@@ -8,11 +8,11 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'דף הבית', path: '/Home', icon: <HomeIcon className="w-5 h-5" /> },
-    { name: 'אודות', path: '/About', icon: <Info className="w-5 h-5" /> },
     { name: 'מוצרים', path: '/Products', icon: <Package2 className="w-5 h-5" /> },
-    /*{ name: 'שירותים', path: '/services', icon: <Settings className="w-5 h-5" /> },*/
+    { name: 'אודות', path: '/About', icon: <Info className="w-5 h-5" /> },
+    /*{ name: 'שירותים', path: '/services', icon: <Settings className="w-5 h-5" /> },
     { name: 'גלריית הפרויקטים', path: '/gallery', icon: <MapPin className="w-5 h-5" /> },
-    /*{ name: 'בלוג מקצועי', path: '/blog' , icon: <MessageCircle className="w-5 h-5" />},*/
+    { name: 'בלוג מקצועי', path: '/blog' , icon: <MessageCircle className="w-5 h-5" />},*/
   ]
 
   return (
