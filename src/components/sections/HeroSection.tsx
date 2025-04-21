@@ -28,7 +28,7 @@ const HeroSection = () => {
                     playsInline
                     className="w-full h-full object-cover opacity-30"
                 >
-                    <source src="/videos/kitchen-hood-hero2.mp4" type="video/mp4" />
+                    <source src="/videos/kitchen-hood-hero1.mp4" type="video/mp4" />
                 </video>
             </div>
 
