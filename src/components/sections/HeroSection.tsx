@@ -12,7 +12,7 @@ const benefits = [
 const HeroSection = () => {
     return (
 
-        <div className="relative h-[90vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div className="relative min-h-[90vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0">
 
@@ -32,29 +32,35 @@ const HeroSection = () => {
                 </video>
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
-                <div className="grid grid-cols-1 gap-12 items-center">
-                    {/* Left Column - Text Content */}
+            {/* Content Container */}
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full py-12 md:py-16 lg:py-24 flex items-center">
+                <div className="w-full">
+                    {/* Text Content */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-white"
+                        className="text-white max-w-3xl"
                     >
                         {/* 
                         <div className="inline-block mb-4 px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
                             מקצוענים בתחום המטבחים והנירוסטה
                         </div>
                          */}
-                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">
+
+                        {/* Badge */}
+                        <span className="inline-block mb-3 bg-yellow-300 text-black px-4 py-1 rounded-full text-sm md:text-lg font-medium">
                             הבית לפתרונות מקצועיים בשבילך
                         </span>
+                        
 
-                        <div className="flex flex-wrap items-center">
-                            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white leading-tight whitespace-normal sm:whitespace-nowrap">
+                        {/* Headings */}
+                        <div className="mb-6">
+
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3">
                                 מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                             </h1>
-                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 mb-6 leading-tight whitespace-normal sm:whitespace-nowrap">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 leading-tight">
                                 איכות, עוצמה ושקט נפשי במטבח שלך
                                 {/* 
                             <span className="text-yellow-300"> בקליק אחד</span>
@@ -62,9 +68,8 @@ const HeroSection = () => {
                             </h2>
                         </div>
 
-
                         {/* Benefits */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-8">
                             {benefits.map((benefit, index) => (
                                 <motion.div
                                     key={benefit}
@@ -73,8 +78,8 @@ const HeroSection = () => {
                                     transition={{ duration: 0.4, delay: index * 0.1 }}
                                     className="flex items-center space-x-2 rtl:space-x-reverse"
                                 >
-                                    <CheckCircle className="h-5 w-5 text-yellow-300 flex-shrink-0" />
-                                    <span>{benefit}</span>
+                                    <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-yellow-300 flex-shrink-0" />
+                                    <span className="text-sm md:text-base">{benefit}</span>
                                 </motion.div>
                             ))}
                         </div>
@@ -85,10 +90,10 @@ const HeroSection = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4, delay: 0.4 }}
-                            className="flex flex-wrap space-x-4 rtl:space-x-reverse" >
+                            className="flex flex-col sm:flex-row gap-4" >
                             <Link
                                 to="/Products"
-                                className="inline-flex items-center bg-white-400 text-white px-8 py-3 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group mb-2 sm:mb-0"
+                                className="inline-flex justify-center items-center bg-transparent text-white px-6 py-3 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group"
                             >
                                 צפו בפתרונות שלנו
                                 <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
@@ -97,7 +102,7 @@ const HeroSection = () => {
 
                             <Link
                                 to="/onboarding"
-                                className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
+                                className="inline-flex justify-center items-center bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
                             >
                                 בחרו את הפתרון שלכם
                                 <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
@@ -105,11 +110,6 @@ const HeroSection = () => {
                         </motion.div>
                     </motion.div>
                 </div>
-
-                <div className="container mx-auto px-4">
-
-                </div>
-
             </div>
         </div>
     );
