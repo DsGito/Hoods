@@ -40,7 +40,7 @@ const HeroSection = () => {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="text-white max-w-3xl"
+                        className="text-white w-full lg:max-w-4xl xl:max-w-5xl"
                     >
                         {/* 
                         <div className="inline-block mb-4 px-6 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
@@ -52,12 +52,12 @@ const HeroSection = () => {
                         <span className="inline-block mb-3 bg-yellow-300 text-black px-4 py-1 rounded-full text-sm md:text-lg font-medium">
                             הבית לפתרונות מקצועיים בשבילך
                         </span>
-                        
+
 
                         {/* Headings */}
                         <div className="mb-6">
 
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 break-words md:whitespace-normal lg:whitespace-nowrap">
                                 מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                             </h1>
                             <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 leading-tight">
