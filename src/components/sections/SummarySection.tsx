@@ -31,7 +31,6 @@ const SummarySection = () => {
                         </motion.div>
 
 
-
                         {/* CTA Button */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

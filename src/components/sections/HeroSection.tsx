@@ -46,7 +46,7 @@ const HeroSection = () => {
                             מקצוענים בתחום המטבחים והנירוסטה
                         </div>
                          */}
-                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">                    
+                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">
                             הבית לפתרונות מקצועיים בשבילך
                         </span>
 
@@ -85,8 +85,7 @@ const HeroSection = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4, delay: 0.4 }}
-                            className="flex flex-wrap space-x-4 rtl:space-x-reverse"
-                        >
+                            className="flex flex-wrap space-x-4 rtl:space-x-reverse" >
                             <Link
                                 to="/Products"
                                 className="inline-flex items-center bg-white-400 text-white px-8 py-3 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group mb-2 sm:mb-0"

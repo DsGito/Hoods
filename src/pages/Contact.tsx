@@ -1,18 +1,13 @@
-import { Mail, MapPin, PhoneCall, Clock, MessageSquare } from 'lucide-react'
+import { MapPin, Clock, MessageSquare } from 'lucide-react'
 import { motion } from 'framer-motion';
 
 const Contact = () => {
   const contactInfo = [
     {
-      icon: PhoneCall,
-      title: 'טלפון',
-      details: ['074-0000000'],
-    },
-    {
-      icon: Mail,
-      title: 'דואר אלקטרוני',
-      details: ['info@kitchen-hoods-mail.co.il'],
-      description: 'מענה תוך 24 שעות'
+      icon: MessageSquare,
+      title: 'תיאום פגישת ייעוץ',
+      details: ['074-0000000', 'info@kitchen-hoods-mail.co.il'],
+      description: 'הדגמות במקום'
     },
     {
       icon: MapPin,
@@ -20,12 +15,7 @@ const Contact = () => {
       details: ['רחוב התעשייה 000', 'אזור התעשייה, תל אביב'],
       description: 'אולם תצוגה פתוח לקהל'
     },
-    {
-      icon: MessageSquare,
-      title: 'ייעוץ מקצועי',
-      details: ['תיאום פגישת ייעוץ', 'הדגמות במקום'],
-      description: 'פגישת ייעוץ ללא עלות'
-    },
+
     {
       icon: Clock,
       title: 'שעות פעילות',
