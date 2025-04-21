@@ -46,8 +46,8 @@ const HeroSection = () => {
                             מקצוענים בתחום המטבחים והנירוסטה
                         </div>
                          */}
-                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">
-                            פתרונות מקצועיים בשבילך
+                        <span className="bg-yellow-300 text-black px-4 py-1 rounded-full text-lg font-medium">                    
+                            הבית לפתרונות מקצועיים בשבילך
                         </span>
 
                         <div className="flex flex-wrap items-center">

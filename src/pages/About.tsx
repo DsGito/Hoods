@@ -1,10 +1,10 @@
-import { Building, Users, Award, Palette } from 'lucide-react'
+import { Shield, Settings, Wrench, ThumbsUp, Building, Users, Award, Palette } from 'lucide-react'
 import { motion } from 'framer-motion';
 
 const About = () => {
   const companyFeatures = [
     {
-      icon: Building,
+      icon: Settings,
       title: 'מומחיות מקיפה',
       description: 'התמחות במגוון פתרונות למטבחי פנים וחוץ, מנדפים ומערכות מידוף'
     },
@@ -19,20 +19,20 @@ const About = () => {
       description: 'שימוש בטכנולוגיות מתקדמות וחומרים איכותיים העומדים בתקנים המחמירים'
     },
     {
-      icon: Palette,
+      icon: Wrench,
       title: 'עיצוב מותאם',
       description: 'פתרונות מעוצבים בהתאמה אישית במיוחד עבורכם המשלבים פונקציונליות ואסתטיקה'
     }
 
     ,
     {
-      icon: Palette,
+      icon: Building,
       title: 'מקצועיות',
       description: 'צוות המומחים שלנו מתעדכן באופן שוטף בכל החידושים והשינויים בתחום'
     }
     ,
     {
-      icon: Palette,
+      icon: ThumbsUp,
       title: 'אמינות',
       description: 'אנו מחויבים לשקיפות מלאה ולסטנדרטים האתיים הגבוהים ביותר'
     }
@@ -41,29 +41,35 @@ const About = () => {
       icon: Palette,
       title: 'שירות אישי',
       description: 'כל לקוח מקבל יחס אישי ומותאם לצרכיו הספציפיים'
+    },
+    {
+      icon: Shield,
+      title: "איכות ללא פשרות",
+      description: "חומרי גלם איכותיים העומדים בתקנים",    
     }
   ];
-
-  const teamMembers = [
-    {
-      name: 'ישראל ישראלי',
-      role: 'מהנדס ראשי',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a',
-      description: 'בעל 15 שנות ניסיון בבהנדסה וייעוץ לעסקים.',
-    },
-    {
-      name: 'שרה כהן',
-      role: 'יועצת מכירות',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
-      description: 'יועצת מכירות עם התמחות בעסקים קטנים ובינוניים.',
-    },
-    {
-      name: 'דוד לוי',
-      role: 'מעצב ראשי',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
-      description: 'מעצב ראשי עם התמחות בהתקנות.',
-    },
-  ];
+  /*
+    const teamMembers = [
+      {
+        name: 'ישראל ישראלי',
+        role: 'מהנדס ראשי',
+        image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a',
+        description: 'בעל 15 שנות ניסיון בבהנדסה וייעוץ לעסקים.',
+      },
+      {
+        name: 'שרה כהן',
+        role: 'יועצת מכירות',
+        image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
+        description: 'יועצת מכירות עם התמחות בעסקים קטנים ובינוניים.',
+      },
+      {
+        name: 'דוד לוי',
+        role: 'מעצב ראשי',
+        image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e',
+        description: 'מעצב ראשי עם התמחות בהתקנות.',
+      },
+    ];
+  */
 
   return (
     <div className="rtl">
@@ -85,46 +91,8 @@ const About = () => {
         </div>
       </section>
 
-
-      {/* סיפור החברה */}
-      <section className="mb-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden">
-            <div className="md:flex">
-              <div className="md:w-1/2">
-                <img
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-
-                  alt="סיפור החברה"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="md:w-1/2 p-8">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">הסיפור שלנו</h2>
-                <div className=" text-gray-600">
-                  <p>
-                    טי אנד מדפים - המומחים לעיצוב וייצור מטבחים ומנדפים מקצועיים
-                    במשך שנים, חברתנו מובילה את תחום עיצוב וייצור המטבחים והמדפים המקצועיים. אנו מתמחים במתן פתרונות מתקדמים למטבחים מסחריים וביתיים, תוך הקפדה על איכות חומרים בלתי מתפשרת ועמידה בתקנים המחמירים ביותר, כולל תקן 1001 חלק 6.
-                    הצוות שלנו כולל מהנדסים, טכנאים ואנשי שירות בעלי תשוקה אמיתית לתחום המזון והמטבח, המלווים אתכם לאורך כל שלבי הפרויקט - מהתכנון הראשוני ועד להתקנה ולהענקת שירות מתמשך.
-                    בין לקוחותינו נמנים מסעדות, בתי קפה, בתי מלון, מאפיות ומוסדות נוספים. אנו מציעים מגוון רחב של פתרונות, הכוללים מנדפים מתקדמים, מערכות יניקה וסינון, מדפים מותאמים אישית ומערכות צלייה איכותיות.
-                    אנו מתחייבים לשירות אמין, אחריות מלאה ועמידה בלוחות זמנים, תוך ליווי מלא בתהליך קבלת האישורים הנדרשים. בטיחות ואיכות העבודה שלנו הם בראש סדר העדיפויות, ואנו כאן כדי להבטיח שקט נפשי ללקוחותינו.
-                    טי אנד מדפים - הבחירה הנכונה למטבח מקצועי ובטוח!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </section>
-
       {/* חזון החברה */}
-      <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100">
+      <section className="py-16 bg-white text-gray-100">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -134,16 +102,16 @@ const About = () => {
         >
           <div className="max-w-7xl mx-auto px-4">
             <div className="rounded-lg">
-              <h2 className="text-3xl font-bold mb-6 text-center text-white">החזון שלנו</h2>
-              <div className="bg-gray-700 rounded-xl p-12">
-                <div className="max-w-3xl mx-auto text-center">
-                  <p className="text-2xl font-light leading-relaxed text-gray-300">
-                    "אנו שואפים להוביל את תעשיית המנדפים בישראל תוך הקפדה על איכות בלתי מתפשרת,
-                    חדשנות טכנולוגית, ושירות לקוחות מעולה. חזוננו הוא לספק מנדפים שלא רק עומדים בתקנים הנדרשים,
-                    אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר."
-                  </p>
-                </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">החזון שלנו</h2>
+
+              <div className="max-w-3xl mx-auto text-center">
+                <p className="text-lg text-gray-600 mb-6">
+                  "אנו שואפים להוביל את תעשיית המנדפים בישראל תוך הקפדה על איכות בלתי מתפשרת,
+                  חדשנות טכנולוגית, ושירות לקוחות מעולה. חזוננו הוא לספק מנדפים שלא רק עומדים בתקנים הנדרשים,
+                  אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר."
+                </p>
               </div>
+
             </div>
           </div>
         </motion.div>
@@ -189,7 +157,9 @@ const About = () => {
         </div>
       </section>
 
+
       {/* Team Section */}
+      {/* 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -234,6 +204,8 @@ const About = () => {
           </div>
         </div>
       </section>
+
+       */}
 
       {/* קריאה לפעולה */}
       <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center">
