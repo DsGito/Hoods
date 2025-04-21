@@ -16,7 +16,6 @@ import {
 const AccessibilityWidget = () => {
   // ניהול מצב הרכיב
   const [isOpen, setIsOpen] = useState(false)
-  const [isHovered, setIsHovered] = useState(false)
   const [fontSize, setFontSize] = useState(100)
   const [contrast, setContrast] = useState('normal')
   const [cursor, setCursor] = useState('default')
@@ -108,8 +107,7 @@ const AccessibilityWidget = () => {
     <div 
       id="accessibility-widget"
       className="fixed bottom-2 right-0 z-50"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+
     >
       <div className="relative">
         {/* תפריט נגישות */}
@@ -221,20 +219,14 @@ const AccessibilityWidget = () => {
           </div>
         </div>
 
-        {/* כפתור פתיחה - הצגת אייקון בחלק הבולט החוצה */}
-        <div className="relative">
+          {/* כפתור פתיחה */}
           <Button
             size="lg"
-            className={`drag-handle rounded-full shadow-lg bg-primary/80 hover:bg-primary border-2 border-white transition-all duration-300 hover:scale-105 cursor-pointer transform ${
-              isHovered || isOpen ? 'translate-x-0' : 'translate-x-2/3'
-            } flex items-center justify-start`}
+            className="drag-handle rounded-full shadow-lg bg-primary/80 hover:bg-primary border-2 border-white transition-all duration-300 hover:scale-105 cursor-move"
             onClick={handleClick}
           >
-            <div className="absolute left-0 ml-1">
             <Accessibility className="h-5 w-5" />
-            </div>
           </Button>
-        </div>
       </div>
     </div>
   )
