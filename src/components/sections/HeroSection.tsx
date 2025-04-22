@@ -49,7 +49,7 @@ const HeroSection = () => {
                          */}
 
                         {/* Badge */}
-                        <span className="inline-block mb-3 bg-yellow-300 text-black px-4 py-1 rounded-full text-sm md:text-lg font-medium">
+                        <span className="inline-block mb-3 bg-amber-400 text-black px-4 py-1 rounded-full text-sm md:text-lg font-medium">
                             הבית לפתרונות מקצועיים בשבילך
                         </span>
 
@@ -60,10 +60,10 @@ const HeroSection = () => {
                             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 break-words md:whitespace-normal lg:whitespace-nowrap">
                                 מנדפים איכותיים ועבודות נירוסטה בהתאמה אישית
                             </h1>
-                            <h2 className="text-xl sm:text-2xl md:text-3xl text-yellow-300 leading-tight">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl text-amber-400 leading-tight">
                                 איכות, עוצמה ושקט נפשי במטבח שלך
                                 {/* 
-                            <span className="text-yellow-300"> בקליק אחד</span>
+                            <span className="text-amber-400"> בקליק אחד</span>
                             */}
                             </h2>
                         </div>
@@ -78,7 +78,7 @@ const HeroSection = () => {
                                     transition={{ duration: 0.4, delay: index * 0.1 }}
                                     className="flex items-center space-x-2 rtl:space-x-reverse"
                                 >
-                                    <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-yellow-300 flex-shrink-0" />
+                                    <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-amber-400 flex-shrink-0" />
                                     <span className="text-sm md:text-base">{benefit}</span>
                                 </motion.div>
                             ))}
@@ -102,7 +102,7 @@ const HeroSection = () => {
 
                             <Link
                                 to="/onboarding"
-                                className="inline-flex justify-center items-center bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
+                                className="inline-flex justify-center items-center bg-amber-500 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-amber-400 transition-colors group"
                             >
                                 בחרו את הפתרון שלכם
                                 <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
