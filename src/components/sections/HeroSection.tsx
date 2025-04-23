@@ -83,15 +83,6 @@ const HeroSection = () => {
                                 צפו בפתרונות שלנו
                                 <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
                             </Link>
-
-
-                            <Link
-                                to="/onboarding"
-                                className="inline-flex justify-center items-center bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
-                            >
-                                בחרו את הפתרון שלכם
-                                <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
-                            </Link>
                         </motion.div>
                     </motion.div>
                 </div>

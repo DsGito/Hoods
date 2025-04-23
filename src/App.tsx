@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import Products from './pages/Products';
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Onboarding from './pages/Onboarding';
 import Accessibility from './pages/Accessibility'
 
 import RestaurantHoods from './subpages/RestaurantHoods';
@@ -28,7 +27,6 @@ function App() {
               <Route path="/Products" element={<Products />} />
               <Route path="/About" element={<About />} />
               <Route path="/Contact" element={<Contact />} />
-              <Route path="/Onboarding" element={<Onboarding />} />
               <Route path="/Accessibility" element={<Accessibility />} />
 
               <Route path="/RestaurantHoods" element={<RestaurantHoods />} />
