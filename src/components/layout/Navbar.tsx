@@ -35,7 +35,7 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-white hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-white hover:text-[#d6b16c] px-3 py-2 rounded-md text-sm font-medium"
                   >
                   {item.name}
                 </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
             <div className="flex items-center">
               <Link to="/contact" className="flex-shrink-0 flex items-center space-x-2">
-              <Button className="flex items-center text-white bg-transparent hover:bg-yellow-500 hover:text-white border border-white hover:border-yellow-500">
+              <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500">
               <Phone className="ml-2 h-4 w-4" />
                   צרו קשר
                 </Button>
@@ -59,7 +59,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 focus:outline-none"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6 text-[#d6b16c]" />}
             </button>
           </div>
         </div>
