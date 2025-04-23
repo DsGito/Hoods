@@ -12,7 +12,7 @@ const benefits = [
 const HeroSection = () => {
     return (
 
-        <div className="relative min-h-[90vh] h-screen bg-black text-white overflow-hidden">
+        <div className="relative min-h-[90vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">
              
             {/* Background Pattern */}
             <div className="absolute inset-0">
