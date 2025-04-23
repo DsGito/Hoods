@@ -10,9 +10,6 @@ const Navbar = () => {
     { name: 'דף הבית', path: '/Home', icon: <HomeIcon className="w-5 h-5" /> },
     { name: 'מוצרים', path: '/Products', icon: <Package2 className="w-5 h-5" /> },
     { name: 'אודות', path: '/About', icon: <Info className="w-5 h-5" /> },
-    /*{ name: 'שירותים', path: '/services', icon: <Settings className="w-5 h-5" /> },
-    { name: 'גלריית הפרויקטים', path: '/gallery', icon: <MapPin className="w-5 h-5" /> },
-    { name: 'בלוג מקצועי', path: '/blog' , icon: <MessageCircle className="w-5 h-5" />},*/
   ]
 
   return (
@@ -21,8 +18,13 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/Home" className="flex-shrink-0 flex items-center space-x-2">
-              <Fan className="h-8 w-8 text-primary logo-spin" />
-              <span className="text-xl font-bold mr-2">טי אמ מנדפים - T.M mindafim</span>
+
+              <img
+                src="/icon/aa.png" 
+                alt="T.M mindafim"
+                className="h-12"
+              />
+
             </Link>
           </div>
 
