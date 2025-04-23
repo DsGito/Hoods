@@ -12,7 +12,7 @@ const benefits = [
 const HeroSection = () => {
     return (
 
-        <div className="relative min-h-[90vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">             
+        <div className="relative min-h-[120vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">             
             {/* Background Pattern */}
             <div className="absolute inset-0">
                 <video
@@ -21,7 +21,7 @@ const HeroSection = () => {
                     loop
                     playsInline
                     className="w-full h-full object-cover opacity-30"
-                    style={{ minHeight: '90vh' }}
+                   
                 >
                     <source src="/videos/kitchen-hood-hero1.mp4" type="video/mp4" />
                 </video>
