@@ -12,7 +12,8 @@ const benefits = [
 const HeroSection = () => {
     return (
 
-        <div className="relative min-h-[90vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">
+        <div className="relative min-h-[90vh] h-screen bg-black text-white overflow-hidden">
+             
             {/* Background Pattern */}
             <div className="absolute inset-0">
                 <video
@@ -38,7 +39,7 @@ const HeroSection = () => {
                     >
                         {/* Badge */}
                         <span className="inline-block mb-3 bg-[#d6b16c] text-black px-4 py-1 rounded-full text-sm md:text-lg font-medium shadow-md">
-                        טי אמ מנדפים הבית לפתרונות מקצועיים בשבילך
+                            טי אמ מנדפים הבית לפתרונות מקצועיים בשבילך
                         </span>
 
 

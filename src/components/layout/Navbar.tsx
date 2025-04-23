@@ -13,8 +13,8 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full z-50 top-0">
-      <div className="max-w-7xl mx-auto px-4">
+<nav className="bg-black/50 backdrop-blur-md text-white fixed w-full z-50 top-0">
+<div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/Home" className="flex-shrink-0 flex items-center space-x-2">
@@ -35,8 +35,8 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
-                >
+                  className="text-white hover:text-yellow-400 px-3 py-2 rounded-md text-sm font-medium"
+                  >
                   {item.name}
                 </Link>
               ))}
