@@ -13,7 +13,7 @@ const Navbar = () => {
   ]
 
   return (
-<nav className="bg-black/50 backdrop-blur-md text-white fixed w-full z-50 top-0">
+<nav className="bg-[rgba(18,15,30,0.9)] backdrop-blur-md text-white fixed w-full z-50 top-0">
 <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -44,8 +44,8 @@ const Navbar = () => {
 
             <div className="flex items-center">
               <Link to="/contact" className="flex-shrink-0 flex items-center space-x-2">
-                <Button className="flex items-center">
-                  <Phone className="ml-2 h-4 w-4" />
+              <Button className="flex items-center text-white bg-transparent hover:bg-yellow-500 hover:text-white border border-white hover:border-yellow-500">
+              <Phone className="ml-2 h-4 w-4" />
                   צרו קשר
                 </Button>
               </Link>
