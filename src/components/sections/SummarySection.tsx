@@ -1,35 +1,32 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-
-
 const SummarySection = () => {
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="md:flex items-center gap-12">
 
-                    <div className="md:w-1/2">
+                    <div >
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <h2 className="text-3xl font-bold mb-2">מי אנחנו</h2>
+                            <h2 className="text-3xl font-bold mb-2 text-center">מי אנחנו</h2>
                             <p className="text-lg text-gray-600 ">
-                                מנדפי מטבח מתמחה בתכנון, ייצור והתקנה של מערכות מנדפים וקולטי אדים למטבחים בהתאמה אישית,
+                            טי אמ מנדפים - T.M mindafim מתמחה בתכנון, ייצור והתקנה של מערכות מנדפים וקולטי אדים למטבחים בהתאמה אישית,
                                 לצד מערכות נירוסטה ייחודיות תוך הקפדה על חדשנות טכנולוגית ואיכות בלתי מתפשרת.
-                                עם ניסיון עשיר של שנים בתחום, אנו מלווים את לקוחותינו משלב הרעיון ועד למסירה – במקצועיות, יצירתיות ודיוק.
+                                עם ניסיון עשיר בתחום, אנו מלווים את לקוחותינו משלב הרעיון ועד למסירה – במקצועיות, יצירתיות ודיוק.
                             </p>
 
-                            <p className="text-2xl font-light leading-relaxed ">
+                            <p className="text-xl font-light leading-relaxed ">
                                 "חזוננו הוא לספק מנדפים שלא רק עומדים בתקנים הנדרשים,
                                 אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר."
                             </p>
 
                         </motion.div>
-
 
                         {/* CTA Button */}
                         <motion.div
@@ -45,26 +42,12 @@ const SummarySection = () => {
                             >
                                 קראו עוד עלינו
                                 <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
-
                             </a>
                         </motion.div>
 
                     </div>
 
-                    <div className="md:w-1/2 mb-8 md:mb-0">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                        >
-                            <img
-                                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-                                alt="המטבח המקצועי שלכם"
-                                className="rounded-xl shadow-lg w-full h-auto"
-                            />
-                        </motion.div>
-                    </div>
+
                 </div>
             </div>
         </section>

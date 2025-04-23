@@ -49,7 +49,7 @@ const Accessibility = () => {
         <section className="bg-white rounded-lg shadow-sm p-8 mb-8">
           <h2 className="text-2xl font-bold mb-4">מחויבות לנגישות</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            חברת Kitchen Hoods מאמינה ומקדמת את זכותם של אנשים עם מוגבלות להשתתפות שוויונית ופעילה בחברה. 
+            חברת טי אמ מנדפים - T.M mindafim מאמינה ומקדמת את זכותם של אנשים עם מוגבלות להשתתפות שוויונית ופעילה בחברה. 
             אתר זה תוכנן ופותח כך שיהיה נגיש עבור אנשים עם מוגבלות, בהתאם לתקן הישראלי (ת"י 5568) 
             ולהנחיות הנגישות WCAG 2.1 ברמה AA.
           </p>
@@ -93,7 +93,7 @@ const Accessibility = () => {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-primary ml-2" />
-                  <span>accessibility@kitchen-hoods.co.il</span>
+                  <span>accessibility@kitchen-hoods-mail.co.il</span>
                 </div>
               </div>
             </div>

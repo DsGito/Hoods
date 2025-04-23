@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/Home" className="flex-shrink-0 flex items-center space-x-2">
               <Fan className="h-8 w-8 text-primary logo-spin" />
-              <span className="text-xl font-bold mr-2">מנדפי מטבח</span>
+              <span className="text-xl font-bold mr-2">טי אמ מנדפים - T.M mindafim</span>
             </Link>
           </div>
 
@@ -62,22 +62,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* Quick Links Bar */}
-      <div className="hidden md:block bg-primary backdrop-blur-sm text-white">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-center space-x-8 space-x-reverse py-2 text-sm">
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">מטבחים תעשייתיים</a>
-            <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">מנדפים מקצועיים</a>
-            <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">ציוד נירוסטה</a>
-            <span className="text-gray-600">|</span>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">פתרונות מותאמים אישית</a>
-          </div>
-        </div>
-      </div>
-
 
       {/* Mobile Menu */}
       {isOpen && (

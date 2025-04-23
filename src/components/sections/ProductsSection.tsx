@@ -34,8 +34,13 @@ const ProductsSection = () => {
             image: "https://images.unsplash.com/photo-1588644525273-f37b60d78512?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
             path: "StainlessWorks",
         },
-
-
+        {
+            title: "מערכות סינון עשן",
+            description:
+                "מערכות הסינון המתקדמות שלנו מציעות פתרון כולל להפחתת עשן, ריחות, ואדי שמן במטבחים מסחריים וביתיים. הטכנולוגיות החדשניות מאפשרות לכם לעמוד בכל התקנים והרגולציות, לשמור על סביבת עבודה בריאה, ולהפחית מטרדים לסביבה..",
+            image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+            path: "SmokeFilters",
+        },
         {
             title: 'מטבחי חוץ יוקרתיים',
             description: 'עיצוב וביצוע מטבחי חוץ המשלבים עמידות לתנאי מזג האוויר עם אסתטיקה יוקרתית ופונקציונליות מלאה.',
@@ -47,13 +52,6 @@ const ProductsSection = () => {
             description: 'מגוון פתרונות צלייה, החל ממנגלים בסיסיים ועד למערכות גריל מקצועיות משולבות במטבחי החוץ.',
             image: '/images/gallery5.jpg',
             path: "/",
-        },
-        {
-            title: "תחזוקה ושירות",
-            description:
-                "אנו מציעים שירותי תחזוקה שוטפים לשמירה על תקינות המנדף לאורך זמן. השירותים כוללים ניקוי מסננים, בדיקת מנועים ועוד.",
-            image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-            path: "/SrvMaintenance",
         },
     ];
 

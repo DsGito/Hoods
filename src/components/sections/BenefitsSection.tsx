@@ -26,13 +26,6 @@ const steps = [
         description: 'אנחנו מלווים אתכם מהייעוץ הראשוני, דרך התכנון וההתקנה, ועד לשירות ותחזוקה שוטפת',
         color: 'bg-green-500',
     },
-    /*{
-    {
-        icon: <Check className="h-10 w-10" />,
-        title: 'אמינים',
-        description: 'אחריות מלאה על כל העבודות',
-        color: 'bg-pink-500',
-    },*/
 ];
 
 const BenefitsSection = () => {
@@ -86,26 +79,6 @@ const BenefitsSection = () => {
                         </motion.div>
                     ))}
                 </div>
-
-                {/* CTA Button */}
-                {/*
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.6 }}
-                    className="text-center mt-12"
-                >
-                    <a
-                        href="/contact"
-                        className="inline-flex items-center bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors group"
-                    >
-                        התחילו עכשיו
-                        <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
-
-                    </a>
-                </motion.div>
-                */}
             </div>
         </section>
     );

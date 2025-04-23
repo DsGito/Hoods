@@ -28,7 +28,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">עקבו אחרינו</h3>
             <p className="text-gray-400 mb-4">
-              מגוון פתרונות מתקדמים למטבחי פנים וחוץ, המשלבים טכנולוגיה חדשנית עם עיצוב מוקפד
+            טי אמ מנדפים - T.M mindafim פתרונות מתקדמים למטבחי פנים וחוץ, המשלבים טכנולוגיה חדשנית עם עיצוב מוקפד
             </p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-gray-300">
@@ -98,7 +98,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
           <p>
-            © {new Date().getFullYear()} כל הזכויות שמורות | מנדפי מטבח
+            © {new Date().getFullYear()} כל הזכויות שמורות | טי אמ מנדפים - T.M mindafim
           </p>
           <div className="mt-8 text-center text-gray-400">
             <Link to="/accessibility" className="hover:text-white transition-colors">
