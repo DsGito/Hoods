@@ -25,18 +25,6 @@ const HeroSection = () => {
                 >
                     <source src="/videos/kitchen-hood-hero1.mp4" type="video/mp4" />
                 </video>
-
-                 {/* Mobile Video */}
-                 <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover opacity-30" 
-                    style={{ minHeight: '20vh' }} // רק בוידאו הזה
-                >
-                    <source src="/videos/kitchen-hood-hero1-mobile.mp4" type="video/mp4" />
-                </video>
             </div>
 
             {/* Content Container */}
