@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">עקבו אחרינו</h3>
             <p className="text-gray-400 mb-4">
-            טי אמ מנדפים פתרונות מתקדמים המשלבים טכנולוגיה חדשנית עם עיצוב איכותי
+            טי אמ מנדפים פתרונות מתקדמים, משלבים טכנולוגיה חדשנית עם עיצוב איכותי
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/p/%D7%98%D7%99-%D7%90%D7%9E-%D7%9E%D7%A0%D7%93%D7%A4%D7%99%D7%9D-TM-mindafim-100075547016088" className="hover:text-gray-300">
