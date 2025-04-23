@@ -2,21 +2,12 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
- 
- /* const services = [
-    { name: 'התקנת מנדפים', href: '/services' },
-    { name: 'תחזוקת מנדפים', href: '/services' },
-    { name: 'ייעוץ מקצועי', href: '/services' },
-    { name: 'שירות תיקונים', href: '/services' },
-  ];*/
 
   const quickLinks = [
     { name: 'דף הבית', href: '/' },
     { name: 'אודות', href: '/about' },
     { name: 'מוצרים', href: '/Products' },
     { name: 'צור קשר', href: '/contact' },
-    /* { name: 'בלוג', href: '/blog' }, 
-    { name: 'המלצות', href: '/testimonials' }, */
   ];
 
   return (
@@ -28,10 +19,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">עקבו אחרינו</h3>
             <p className="text-gray-400 mb-4">
-            טי אמ מנדפים - T.M mindafim פתרונות מתקדמים למטבחי פנים וחוץ, המשלבים טכנולוגיה חדשנית עם עיצוב מוקפד
+            טי אמ מנדפים פתרונות מתקדמים המשלבים טכנולוגיה חדשנית עם עיצוב איכותי
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300">
+              <a href="https://www.facebook.com/p/%D7%98%D7%99-%D7%90%D7%9E-%D7%9E%D7%A0%D7%93%D7%A4%D7%99%D7%9D-TM-mindafim-100075547016088" className="hover:text-gray-300">
                 <Facebook className="h-6 w-6" />
               </a>
               <a href="#" className="hover:text-gray-300">
@@ -42,24 +33,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
-          {/* Services */}
-
-          {/* 
-          <div>
-            <h3 className="text-xl font-bold mb-4">השירותים שלנו</h3>
-            <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service.name}>
-                  <Link to={service.href} className="text-gray-400 hover:text-white">
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-           */}
-
            
           {/* Quick Links */}
           <div>
@@ -81,11 +54,11 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 ml-2" />
-                <span className="text-gray-400">000-000-0000</span>
+                <span className="text-gray-400">054-9659008</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 ml-2" />
-                <span className="text-gray-400">info@kitchen-hoods-mail.co.il</span>
+                <span className="text-gray-400">Tm.mindaf@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 ml-2" />

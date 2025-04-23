@@ -6,7 +6,7 @@ const Contact = () => {
     {
       icon: MessageSquare,
       title: 'תיאום פגישת ייעוץ',
-      details: ['074-0000000', 'info@kitchen-hoods-mail.co.il'],
+      details: ['054-9659008', 'Tm.mindaf@gmail.com'],
       description: 'הדגמות במקום'
     },
     {
@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: 'שעות פעילות',
-      details: ['ראשון - חמישי: 09:00 - 18:00', 'שישי: 09:00 - 13:00']
+      details: ['ראשון - חמישי: 08:00 - 18:00']
     }
   ]
 
