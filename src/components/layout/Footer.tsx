@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
 
   const quickLinks = [
-    { name: 'דף הבית', href: '/' },
-    { name: 'אודות', href: '/about' },
+    { name: 'דף הבית', href: '/Home' },
+    { name: 'אודות', href: '/About' },
     { name: 'מוצרים', href: '/Products' },
-    { name: 'צור קשר', href: '/contact' },
+    { name: 'צור קשר', href: '/Contact' },
   ];
 
   return (
@@ -82,7 +82,7 @@ const Footer = () => {
             © {new Date().getFullYear()} כל הזכויות שמורות | טי אמ מנדפים - T.M mindafim
           </p>
           <div className="mt-8 text-center text-gray-400">
-            <Link to="/accessibility" className="hover:text-white transition-colors">
+            <Link to="/Accessibility" className="hover:text-white transition-colors">
               הצהרת נגישות
             </Link>
           </div>

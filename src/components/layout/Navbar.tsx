@@ -43,7 +43,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center">
-              <Link to="/contact" className="flex-shrink-0 flex items-center space-x-2">
+              <Link to="/Contact" className="flex-shrink-0 flex items-center space-x-2">
               <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500">
               <Phone className="ml-2 h-4 w-4" />
                   צרו קשר
@@ -79,7 +79,7 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/contact" className="flex-shrink-0 flex items-center space-x-2">
+            <Link to="/Contact" className="flex-shrink-0 flex items-center space-x-2">
               <Button className="w-full mt-4">
                 <Phone className="ml-2 h-4 w-4" />
                 צרו קשר

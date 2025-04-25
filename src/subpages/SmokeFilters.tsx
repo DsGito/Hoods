@@ -105,7 +105,7 @@ export default function SmokeFilters() {
               </nav>
             </div>
             <div className="mt-4 md:mt-0">
-              <Link to="/Contact?product=filter">
+              <Link to="/Contact?Product=filter">
                 <Button className="bg-blue-600 hover:bg-blue-700">
                   לקבלת הצעת מחיר
                 </Button>
@@ -165,7 +165,7 @@ export default function SmokeFilters() {
                 </div>
                 
                 <div className="flex flex-wrap gap-4">
-                  <Link to="/Contact?product=filter">
+                  <Link to="/Contact?Product=filter">
                     <Button className="bg-blue-600 hover:bg-blue-700">
                       לקבלת ייעוץ מקצועי
                     </Button>
@@ -303,7 +303,7 @@ export default function SmokeFilters() {
                 </div>
                 
                 <div className="flex gap-4">
-                  <Link to="/Contact?product=${system.id}">
+                  <Link to="/Contact?Product=${system.id}">
                     <Button className="bg-blue-600 hover:bg-blue-700">
                       לקבלת הצעת מחיר
                     </Button>
@@ -362,7 +362,7 @@ export default function SmokeFilters() {
                   <div className="p-5">
                     <h3 className="text-lg font-semibold mb-2">{accessory.title}</h3>
                     <p className="text-gray-600 text-sm">{accessory.description}</p>
-                    <Link to={`/Contact?accessory=${encodeURIComponent(accessory.title)}`}>
+                    <Link to={`/Contact?Accessory=${encodeURIComponent(accessory.title)}`}>
                       <Button variant="link" className="mt-2 p-0 h-auto">
                         למידע נוסף
                       </Button>
@@ -469,12 +469,12 @@ export default function SmokeFilters() {
                 </div>
                 
                 <div className="flex gap-4">
-                  <Link to="/Services?service=maintenance">
+                  <Link to="/Services?Service=maintenance">
                     <Button className="bg-blue-600 hover:bg-blue-700">
                       שירותי תחזוקה
                     </Button>
                   </Link>
-                  <Link to="/Contact?service=filters">
+                  <Link to="/Contact?Service=filters">
                     <Button variant="outline">
                       הזמנת מסננים חלופיים
                     </Button>
@@ -495,7 +495,7 @@ export default function SmokeFilters() {
               צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות. המומחים שלנו ישמחו לעזור לכם לבחור את מערכת הסינון המתאימה ביותר עבורכם.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/Contact?product=filter">
+              <Link to="/Contact?Product=filter">
                 <Button 
                   size="lg" 
                   className="bg-white text-blue-700 hover:bg-gray-100"

@@ -5,7 +5,7 @@ import { Tag } from "lucide-react";
 export default function Products() {
   const categories = [
     {
-      id: "restaurant",
+      id: "Restaurant",
       title: "מנדפים ומערכות יניקה למסעדות",
       description: "מנדפים מקצועיים המותאמים לעומסים גבוהים ושימוש אינטנסיבי במסעדות ובתי קפה.",
       image: '/images/gallery1.jpg',
@@ -21,7 +21,7 @@ export default function Products() {
       path: "CafeHoods",
     },
     {
-      id: "grill",
+      id: "Grill",
       title: "מנדפי גריל",
       description: "מנדפים חזקים במיוחד המתמודדים ביעילות עם עשן וריחות חזקים של גריל ובישול בשר.",
       image: "https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -29,7 +29,7 @@ export default function Products() {
       path: "GrillHoods",
     },
     {
-      id: "home",
+      id: "Home",
       title: "קולטי אדים ביתיים",
       description: "קולטי אדים יוקרתיים ושקטים למטבח הביתי המספקים פתרון יעיל וחסכוני.",
       image: "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -37,7 +37,7 @@ export default function Products() {
       path: "HomeHoods",
     },
     {
-      id: "filter",
+      id: "Filter",
       title: "מערכות סינון עשן",
       description: "מערכות סינון מתקדמות לטיפול יעיל בעשן, ריחות וחלקיקים מזיקים.",
       image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -46,7 +46,7 @@ export default function Products() {
     },
 
     {
-      id: "home",
+      id: "Home",
       title: "מטבחים מקצועיים בהתאמה אישית",
       description: 'עיצוב וביצוע מטבחי חוץ המשלבים עמידות לתנאי מזג האוויר עם אסתטיקה יוקרתית ופונקציונליות מלאה. תכנון וביצוע מטבחי פנים פונקציונליים ומעוצבים. שילוב מושלם בין אסתטיקה לפרקטיות.',
       image: "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -54,7 +54,7 @@ export default function Products() {
       path: "HomeHoods",
     },
     {
-      id: "filter",
+      id: "Filter",
       title: "עבודות נירוסטה מקצועיות וייצור מותאם אישית",
       description: "מוצרי נירוסטה סטנדרטיים, לצד ייצור מותאם אישית לפי תכניות ודרישות ספציפיות של הלקוח.",
       image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
@@ -115,7 +115,7 @@ export default function Products() {
                         פרטים נוספים
                       </Button>
                     </Link>
-                    <Link to={`/Contact?product=${category.id}`}>
+                    <Link to={`/Contact?Product=${category.id}`}>
                       <Button variant="outline">
                         קבלת הצעת מחיר
                       </Button>

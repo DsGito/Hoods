@@ -32,7 +32,7 @@ export default function GrillHoods() {
               </nav>
             </div>
             <div className="mt-4 md:mt-0">
-              <Link to="/Contact?product=grill">
+              <Link to="/Contact?Product=grill">
                 <Button className="bg-blue-600 hover:bg-blue-700">
                   לקבלת הצעת מחיר
                 </Button>
@@ -91,7 +91,7 @@ export default function GrillHoods() {
                 </div>
                 
                 <div className="flex flex-wrap gap-4">
-                  <Link to="/Contact?product=grill">
+                  <Link to="/Contact?Product=grill">
                     <Button className="bg-blue-600 hover:bg-blue-700">
                       אנא צרו קשר לייעוץ
                     </Button>
@@ -236,7 +236,7 @@ export default function GrillHoods() {
                       </ul>
                     </div>
               
-                    <Link to={`/Contact?product=${product.id}`}>
+                    <Link to={`/Contact?Product=${product.id}`}>
                       <Button className="w-full bg-blue-600 hover:bg-blue-700">
                         בקשת הצעת מחיר
                       </Button>
@@ -295,7 +295,7 @@ export default function GrillHoods() {
                   </div>
                 </div>
                 
-                <Link to="/Contact?product=grill&service=filtration">
+                <Link to="/Contact?Product=grill&service=filtration">
                   <Button className="bg-blue-600 hover:bg-blue-700">
                     למידע נוסף על מערכות הסינון
                   </Button>
@@ -409,7 +409,7 @@ export default function GrillHoods() {
               אנחנו כאן כדי לעזור לכם למצוא את הפתרון המושלם עבור העסק שלכם.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/Contact?product=grill">
+              <Link to="/Contact?Product=grill">
                 <Button 
                   size="lg" 
                   className="bg-white text-blue-700 hover:bg-gray-100"

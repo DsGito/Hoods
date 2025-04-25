@@ -85,7 +85,7 @@ const About = () => {
 
             <div className="flex justify-center">
               <Link
-                to="/contact"
+                to="/Contact"
                 className="px-8 py-3 bg-white text-blue-900 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
                 יצירת קשר

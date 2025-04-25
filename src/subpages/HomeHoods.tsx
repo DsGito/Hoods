@@ -77,7 +77,7 @@ export default function HomeHoods() {
                             </nav>
                         </div>
                         <div className="mt-4 md:mt-0">
-                            <Link to="/Contact?product=home">
+                            <Link to="/Contact?Product=home">
                                 <Button className="bg-blue-600 hover:bg-blue-700">
                                     לקבלת הצעת מחיר
                                 </Button>
@@ -136,12 +136,12 @@ export default function HomeHoods() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact?product=home">
+                                    <Link to="/Contact?Product=home">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
                                         </Button>
                                     </Link>
-                                    <Link to="#product-catalog">
+                                    <Link to="#Product-catalog">
                                         <Button variant="outline">
                                             צפייה בדגמים
                                         </Button>
@@ -239,7 +239,7 @@ export default function HomeHoods() {
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <Link to="/Contact?product=${product.id}">
+                                    <Link to="/Contact?Product=${product.id}">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
                                         </Button>
@@ -299,7 +299,7 @@ export default function HomeHoods() {
                                     חיישני טמפרטורה ולחות, ואפילו אפשרות לשליטה דרך אפליקציה.
                                 </p>
 
-                                <Link to="/Contact?product=home&service=custom">
+                                <Link to="/Contact?Product=home&service=custom">
                                     <Button className="bg-blue-600 hover:bg-blue-700">
                                         ייעוץ עיצובי חינם
                                     </Button>
@@ -355,7 +355,7 @@ export default function HomeHoods() {
                                             <span>בדיקת תקינות ותפקוד</span>
                                         </li>
                                     </ul>
-                                    <Link to="/Services?service=installation">
+                                    <Link to="/Services?Service=installation">
                                         <Button variant="outline" className="w-full">
                                             מידע נוסף על שירותי התקנה
                                         </Button>
@@ -406,7 +406,7 @@ export default function HomeHoods() {
                                             <span>בדיקת תקינות שנתית על ידי טכנאי</span>
                                         </li>
                                     </ul>
-                                    <Link to="/Services?service=maintenance">
+                                    <Link to="/Services?Service=maintenance">
                                         <Button variant="outline" className="w-full">
                                             מידע נוסף על שירותי תחזוקה
                                         </Button>
@@ -473,7 +473,7 @@ export default function HomeHoods() {
                             צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות. המומחים שלנו ישמחו לעזור לכם לבחור את קולט האדים המושלם לבית שלכם.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Link to="/Contact?product=home">
+                            <Link to="/Contact?Product=Home">
                                 <Button
                                     size="lg"
                                     className="bg-white text-blue-700 hover:bg-gray-100"

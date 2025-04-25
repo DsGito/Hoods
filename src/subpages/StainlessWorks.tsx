@@ -135,7 +135,7 @@ export default function StainlessWorks() {
                             </nav>
                         </div>
                         <div className="mt-4 md:mt-0">
-                            <Link to="/Contact?product=stainless-steel">
+                            <Link to="/Contact?Product=stainless-steel">
                                 <Button className="bg-blue-600 hover:bg-blue-700">
                                     לקבלת הצעת מחיר
                                 </Button>
@@ -195,12 +195,12 @@ export default function StainlessWorks() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact?product=stainless-steel">
+                                    <Link to="/Contact?Product=stainless-steel">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
                                         </Button>
                                     </Link>
-                                    <Link to="/Projects?category=stainless-steel">
+                                    <Link to="/Projects?Category=stainless-steel">
                                         <Button variant="outline">
                                             צפו בגלריית פרויקטים
                                         </Button>
@@ -260,7 +260,7 @@ export default function StainlessWorks() {
                                         </ul>
                                     </div>
 
-                                    <Link to={`/Contact?product=${product.id}`}>
+                                    <Link to={`/Contact?Product=${product.id}`}>
                                         <Button className="w-full bg-blue-600 hover:bg-blue-700">
                                             לקבלת פרטים והצעת מחיר
                                         </Button>
@@ -415,7 +415,7 @@ export default function StainlessWorks() {
                             צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות. המומחים שלנו ישמחו לעזור לכם לבחור או לתכנן את מוצרי הנירוסטה המושלמים עבורכם.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Link to="/Contact?product=stainless-steel">
+                            <Link to="/Contact?Product=stainless-steel">
                                 <Button
                                     size="lg"
                                     className="bg-white text-blue-700 hover:bg-gray-100"
