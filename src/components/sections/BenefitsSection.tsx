@@ -46,7 +46,8 @@ const BenefitsSection = () => {
 
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {steps.map((step, index) => (
                         <motion.div
                             key={step.title}
@@ -54,10 +55,10 @@ const BenefitsSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="relative mb-6 flex justify-center"
+                            className="relative mb-6 flex justify-center hover:shadow-lg transition-all duration-300"
                         >
                             {/* Step Number */}
-                            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">
+                            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-[#d6b16c] text-white flex items-center justify-center font-bold">
                                 {index + 1}
                             </div>
 
