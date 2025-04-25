@@ -12,27 +12,26 @@ const benefits = [
 const HeroSection = () => {
     return (
 
-        <div className="relative min-h-[90vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">             
+        <div className="relative min-h-[90vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 w-full h-full">
+                <div className="relative w-full h-full">
 
-            <div className="relative w-full h-full">
-
-            <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover opacity-30 sm:object-contain md:object-cover lg:object-cover"
-                    style={{ 
-                        minHeight: '100%',
-                        objectPosition: 'center',
-                        maxWidth: '100%'
-                    }}
-                >
-                    <source src="/videos/kitchen-hood-hero1.mp4" type="video/mp4" />
-                </video>
-                <div className="absolute inset-0 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10"></div>
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover opacity-30 sm:object-contain md:object-cover lg:object-cover"
+                        style={{
+                            minHeight: '100%',
+                            objectPosition: 'center',
+                            maxWidth: '100%'
+                        }}
+                    >
+                        <source src="/videos/kitchen-hood-hero1.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute inset-0 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10"></div>
                 </div>
             </div>
 
