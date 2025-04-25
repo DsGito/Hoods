@@ -7,7 +7,7 @@ const ProductsSection = () => {
         {
             title: "מנדפים למסעדות",
             description: "מנדפים עוצמתיים ועמידים המתוכננים במיוחד עבור המטבח המסעדתי העמוס והאינטנסיבי למסעדות, בתי קפה ומפעלי מזון. עוצמה וביצועים ללא פשרות.",
-            image: '/images/img0.jpg',
+            image: '/images/img2.jpg',
             path: "RestaurantHoods",
         },
         {
@@ -19,13 +19,13 @@ const ProductsSection = () => {
         {
             title: "מנדפי גריל",
             description: "מנדפים ייעודיים לשימוש עם גריל, טאבון או מנגל, עם יכולת התמודדות עם חום גבוה ועשן כבד.",
-            image: '/images/img2.jpg',
+            image: '/images/img3.jpg',
             path: "GrillHoods",
         },
         {
             title: "קולטי אדים למטבח הביתי",
             description: "קולטי אדים יוקרתיים למטבח הביתי המשלבים עיצוב מודרני עם ביצועים מקצועיים.",
-            image: '/images/img3.jpg',
+            image: '/images/img7.jpg',
             path: "HomeHoods",
         },
         {
@@ -50,7 +50,7 @@ const ProductsSection = () => {
         {
             title: 'מנגלים ומערכות צלייה',
             description: 'מגוון פתרונות צלייה, החל ממנגלים בסיסיים ועד למערכות גריל מקצועיות משולבות במטבחי החוץ.',
-            image: '/images/img7.jpg',
+            image: '/images/img0.jpg',
             path: "/",
         },
     ];
