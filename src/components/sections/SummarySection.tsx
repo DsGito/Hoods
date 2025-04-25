@@ -23,38 +23,19 @@ const SummarySection = () => {
                             <div className="h-1 w-16 bg-[#d6b16c] rounded-full mb-6"></div>
                         </div>
 
-
                         <p className="text-lg text-gray-600 mb-6">
                             טי אמ מנדפים מתמחה בתכנון, ייצור והתקנה של מערכות מנדפים וקולטי אדים למטבחים בהתאמה אישית,
                             לצד מערכות נירוסטה ייחודיות תוך הקפדה על חדשנות טכנולוגית ואיכות בלתי מתפשרת.
                             עם ניסיון עשיר בתחום, אנו מלווים את לקוחותינו משלב הרעיון ועד למסירה – במקצועיות, יצירתיות ודיוק.
                         </p>
 
-
-
-                        <blockquote className="border-r-4 border-blue-600 pr-4 py-2 mb-8 border-[#d6b16c]">
+                        <blockquote className="border-r-4 border-[#d6b16c] pr-4 py-2 mb-8">
                             <p className="text-xl font-light leading-relaxed text-gray-700 italic">
                                 "חזוננו הוא לספק מנדפים שלא רק עומדים בתקנים הנדרשים,
                                 אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר."
                             </p>
                         </blockquote>
 
-
-                        {/* CTA Button */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                        >
-                            <a
-                                href="/About"
-                                className="inline-flex items-center bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-[#d6b16c] transition-colors group"
-                            >
-                                קראו עוד עלינו
-                                <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
-                            </a>
-                        </motion.div>
                     </motion.div>
 
                     {/* About Us Images */}
@@ -100,17 +81,25 @@ const SummarySection = () => {
                             </div>
                         </div>
                     </motion.div>
-
                 </div>
             </div>
 
-
-            {/* Divider with wave pattern */}
-            <div className="absolute bottom-0 left-0 w-full">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" className="text-gray-50">
-                    <path fill="currentColor" fillOpacity="1" d="M0,32L120,37.3C240,43,480,53,720,53.3C960,53,1200,43,1320,37.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-                </svg>
-            </div>
+            {/* CTA Button */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mt-6 text-center"
+            >
+                <a
+                    href="/About"
+                    className="inline-flex items-center bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-[#d6b16c] transition-colors group"
+                >
+                    קראו עוד עלינו
+                    <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
+                </a>
+            </motion.div>
         </section>
     );
 };
