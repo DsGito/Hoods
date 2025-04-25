@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Tag } from "lucide-react";
+import CtaMoreSection from '../components/sections/CtaMoreSection';
 
 export default function Products() {
   const categories = [
@@ -115,35 +116,17 @@ export default function Products() {
                         פרטים נוספים
                       </Button>
                     </Link>
-                    <Link to={`/Contact?Product=${category.id}`}>
-                      <Button variant="outline">
-                        קבלת הצעת מחיר
-                      </Button>
-                    </Link>
+
                   </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
-        <div className="mt-16 bg-blue-50 rounded-xl p-8 text-center border border-blue-100">
-          <h2 className="text-2xl font-bold mb-4">מעוניינים לשמוע עוד?
-          </h2>
-          <p className="text-lg mb-6 max-w-3xl mx-auto">
-            הצוות המקצועי שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם. אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
-          </p>
-          {/*
-        <a
-          href="/contact"
-          className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-medium hover:bg-yellow-300 transition-colors group"
-        >
-          צרו קשר
-          <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
-        </a>
-        */}
-        </div>
       </div>
+      
+      {/* קריאה לפעולה */}
+      <CtaMoreSection/>
     </div>
   );
 }

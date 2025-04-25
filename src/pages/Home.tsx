@@ -2,6 +2,7 @@ import HeroSection from '../components/sections/HeroSection';
 import BenefitsSection from '../components/sections/BenefitsSection';
 import SummarySection from '../components/sections/SummarySection';
 import ProductsSection from '../components/sections/ProductsSection';
+import CtaMoreSection from '../components/sections/CtaMoreSection';
 
 const Home = () => {
 
@@ -19,6 +20,9 @@ const Home = () => {
 
       {/* Benefits Section */}
       <BenefitsSection />
+
+      {/* קריאה לפעולה */}
+      <CtaMoreSection />
 
     </div>
   )

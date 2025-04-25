@@ -13,14 +13,14 @@ const Navbar = () => {
   ]
 
   return (
-<nav className="bg-[rgba(18,15,30,0.9)] backdrop-blur-md text-white fixed w-full z-50 top-0">
-<div className="max-w-7xl mx-auto px-4">
+    <nav className="bg-[rgba(18,15,30,0.9)] backdrop-blur-md text-white fixed w-full z-50 top-0">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/Home" className="flex-shrink-0 flex items-center space-x-2">
 
               <img
-                src="/icon/aa.png" 
+                src="/icon/aa.png"
                 alt="T.M mindafim"
                 className="h-12"
               />
@@ -36,7 +36,7 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   className="text-white hover:text-[#d6b16c] px-3 py-2 rounded-md text-sm font-medium"
-                  >
+                >
                   {item.name}
                 </Link>
               ))}
@@ -44,8 +44,8 @@ const Navbar = () => {
 
             <div className="flex items-center">
               <Link to="/Contact" className="flex-shrink-0 flex items-center space-x-2">
-              <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500">
-              <Phone className="ml-2 h-4 w-4" />
+                <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500">
+                  <Phone className="ml-2 h-4 w-4" />
                   צרו קשר
                 </Button>
               </Link>

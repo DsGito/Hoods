@@ -81,17 +81,6 @@ const BenefitsSection = () => {
                     ))}
                 </div>
             </div>
-
-            {/* קריאה לפעולה */}
-            <div className=" bg-blue-50 rounded-xl p-8 text-center">
-                <h2 className="text-2xl font-bold text-gray-900">
-                    מעוניינים לשמוע עוד?
-                </h2>
-                <p className="text-gray-600 max-w-3xl mx-auto">
-                    הצוות המקצועי שלנו ישמח לייעץ ולהתאים עבורכם את הפתרון המושלם.
-                    אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
-                </p>
-            </div>
         </section>
     );
 };
