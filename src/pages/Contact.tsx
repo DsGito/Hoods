@@ -1,6 +1,7 @@
 import { MapPin, Clock, MessageSquare, PhoneCall, Mail, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const contactInfo = [
@@ -63,19 +64,19 @@ const Contact = () => {
               נשמח לשמוע מכם, לייעץ ולהתאים את הפתרון המושלם עבורכם
             </p>
             <div className="flex justify-center gap-4">
-              <a
-                href="tel:+972549659008"
+              <Link
+                to="tel:+972549659008"
                 className="px-8 py-3 bg-white text-blue-900 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
                 <PhoneCall className="h-5 w-5 ml-2" />
                 התקשרו עכשיו
-              </a>
-              <a
-                href="mailto:Tm.mindaf@gmail.com"
+              </Link>
+              <Link
+                to="mailto:Tm.mindaf@gmail.com"
                 className="px-8 py-3 bg-transparent border-2 border-white rounded-full font-medium hover:bg-white/10 transition-all"
               >
                 שלחו מייל
-              </a>
+              </Link>
             </div>
           </motion.h1>
         </div>
@@ -118,12 +119,12 @@ const Contact = () => {
                         <div key={i} className="flex items-center">
                           {detail.icon && <detail.icon className="h-4 w-4 text-gray-500 ml-2" />}
                           {detail.link ? (
-                            <a
-                              href={detail.link}
+                            <Link
+                              to={detail.link}
                               className="text-gray-700 hover:text-[#d6b16c] hover:underline transition-colors"
                             >
                               {detail.text}
-                            </a>
+                            </Link>
                           ) : (
                             <span className="text-gray-700">{detail.text}</span>
                           )}

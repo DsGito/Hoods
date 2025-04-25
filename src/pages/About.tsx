@@ -1,6 +1,7 @@
 import { Shield, Settings, Wrench, ThumbsUp, Building, Users, Award, Palette, ChevronLeft } from 'lucide-react'
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const companyFeatures = [
@@ -83,13 +84,13 @@ const About = () => {
             </p>
 
             <div className="flex justify-center">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="px-8 py-3 bg-white text-blue-900 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
                 יצירת קשר
                 <ChevronLeft className="h-5 w-5 mr-2" />
-              </a>
+              </Link>
             </div>
           </motion.h1>
         </div>
@@ -195,18 +196,18 @@ const About = () => {
                   אנו מציעים ייעוץ מקצועי, התאמה אישית ותמיכה לאורך כל הדרך.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/Contact"
                     className="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
                   >
                     צור קשר
-                  </a>
-                  <a
-                    href="/products"
+                  </Link>
+                  <Link
+                    to="/Products"
                     className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-medium hover:bg-white/10 transition-all"
                   >
                     למוצרים שלנו
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="md:w-1/3 flex items-center justify-center p-12">
