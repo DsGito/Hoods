@@ -127,14 +127,14 @@ const ProductsSection = () => {
                     transition={{ duration: 0.5 }}
                     className="mt-16 text-center"
                 >
-                    <a
-                        href="/Products"
+                    <Link
+                        to="/Products"
                         className="inline-flex items-center bg-white-400 text-white px-8 py-3 border border-white rounded-lg font-medium hover:bg-[#d6b16c] hover:text-black transition-colors group"
                     >
                         לצפייה בכל המוצרים
                         <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
 
-                    </a>
+                    </Link>
 
                 </motion.div>
             </div>
