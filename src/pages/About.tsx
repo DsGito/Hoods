@@ -1,4 +1,4 @@
-import { Shield, Settings, Wrench, ThumbsUp, Building, Users, Award, Palette, ChevronLeft } from 'lucide-react'
+import { Shield, Settings, Wrench, ThumbsUp, Building, Users, Award, Palette } from 'lucide-react'
 import { MapPin, Clock, MessageSquare, PhoneCall, Mail, ExternalLink } from 'lucide-react';
 
 import { motion } from 'framer-motion';
