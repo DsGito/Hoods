@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const SummarySection = () => {
     return (
@@ -92,13 +93,13 @@ const SummarySection = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="mt-6 text-center"
             >
-                <a
-                    href="/About"
+                <Link
+                    to="/About"
                     className="inline-flex items-center bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-[#d6b16c] transition-colors group"
                 >
                     קראו עוד עלינו
                     <ArrowRight className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
-                </a>
+                </Link>
             </motion.div>
         </section>
     );
