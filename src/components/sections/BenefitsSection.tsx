@@ -6,32 +6,27 @@ const steps = [
         icon: <Shield className="h-10 w-10" />,
         title: 'איכות ללא פשרות',
         description: 'המנדפים שלנו מיוצרים מחומרי הגלם האיכותיים ביותר ועומדים בתקנים מחמירים כולל תקן 1001 חלק 6',
-        color: 'bg-orange-500',
     },
     {
         icon: <ClipboardCheck className="h-10 w-10" />,
         title: 'מומחיות מקצועית',
         description: 'צוות המומחים שלנו מביא איתו שנים של ניסיון בתכנון, ייצור והתקנה של מנדפים לכל סוגי העסקים',
-        color: 'bg-blue-500',
     },
     {
         icon: <Wrench className="h-10 w-10" />,
         title: 'התאמה אישית',
-        description: 'פתרונות מותאמים אישית לכל לקוח, אנו מתאימים כל מנדף לצרכים הספציפיים של הלקוח - מהמידות המדויקות ועד לעוצמת השאיבה הנדרשת',
-        color: 'bg-purple-500',
+        description: 'פתרונות מותאמים אישית לכל לקוח - מהמידות המדויקות ועד לעוצמת השאיבה הנדרשת',
     },
     {
         icon: <MessageSquare className="h-10 w-10" />,
         title: 'שירות מקצועי ומקיף',
         description: 'אנחנו מלווים אתכם מהייעוץ הראשוני, דרך התכנון וההתקנה, ועד לשירות ותחזוקה שוטפת',
-        color: 'bg-green-500',
     },
 ];
 
 const BenefitsSection = () => {
     return (
         <section className="py-6 bg-white">
-
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <motion.div
@@ -43,40 +38,31 @@ const BenefitsSection = () => {
                     >
                         <h2>למה לבחור בנו?</h2>
                     </motion.div>
-
+                    <div className="mx-auto h-1 w-16 bg-[#d6b16c] rounded-full" />
                 </div>
 
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     {steps.map((step, index) => (
                         <motion.div
                             key={step.title}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="relative mb-6 flex justify-center hover:shadow-lg transition-all duration-300"
+                            className="relative group transition-all"
                         >
-                            {/* Step Number */}
-                            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-[#d6b16c] text-white flex items-center justify-center font-bold">
+                            {/* מספר */}
+                            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-[#d6b16c] text-white flex items-center justify-center font-bold shadow-md">
                                 {index + 1}
                             </div>
 
-                            {/* Content */}
-                            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-                                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${step.color} text-white mb-4`}>
+                            <div className="bg-white rounded-2xl shadow-md p-6 text-center border border-gray-100 group-hover:shadow-xl group-hover:scale-105 transition duration-300">
+                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#d6b16c] text-white mb-4 shadow-sm">
                                     {step.icon}
                                 </div>
-                                <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                                <p className="text-gray-600">{step.description}</p>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
+                                <p className="text-gray-700 leading-relaxed">{step.description}</p>
                             </div>
-
-                            {/* Connector Line */}
-                            {index < steps.length - 1 && (
-                                <div className="hidden lg:block absolute top-1/2 right-full w-full h-0.5 bg-gray-200 -translate-y-1/2 translate-x-8">
-                                    <div className="absolute top-1/2 right-0 w-2 h-2 rounded-full bg-indigo-600 -translate-y-1/2" />
-                                </div>
-                            )}
                         </motion.div>
                     ))}
                 </div>
