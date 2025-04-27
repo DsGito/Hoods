@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Tag } from 'lucide-react';
+import { Tag } from 'lucide-react';
 
 const ProductsSection = () => {
     const products = [
