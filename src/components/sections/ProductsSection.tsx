@@ -64,7 +64,7 @@ const ProductsSection = () => {
             title: 'מנגלים ומערכות צלייה',
             description: 'מגוון פתרונות צלייה, החל ממנגלים בסיסיים ועד למערכות גריל מקצועיות משולבות במטבחי החוץ.',
             image: '/images/img0.jpg',
-            features: ["עיצוב מודרני", "תאורת LED משולבת", 'עיצוב מותאם אישית','חומרים עמידים לתנאי חוץ'],
+            features: ["עיצוב מודרני", "תאורת LED משולבת", 'עיצוב מותאם אישית', 'חומרים עמידים לתנאי חוץ'],
 
             path: "/",
         },
@@ -132,7 +132,7 @@ const ProductsSection = () => {
                                             </span>
                                         </div>
                                     */}
-                                    <div className="mb-8">
+                                    <div className="mb-2">
                                         <h3 className="font-semibold text-gray-800 mb-3">מאפיינים עיקריים:</h3>
                                         <div className="flex flex-wrap gap-2">
                                             {category.features.map((feature, index) => (
@@ -152,6 +152,7 @@ const ProductsSection = () => {
                     ))}
                 </div>
 
+                {/*
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -169,6 +170,8 @@ const ProductsSection = () => {
                     </Link>
 
                 </motion.div>
+                 */}
+
             </div>
         </section>
     );

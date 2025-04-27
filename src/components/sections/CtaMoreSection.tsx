@@ -23,12 +23,14 @@ const CtaMoreSection = () => {
                                 >
                                     צרו קשר
                                 </Link>
-                                <Link
+                                
+                                 {/*<Link
                                     to="/Products"
                                     className="px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-medium hover:bg-white/10 transition-all"
                                 >
                                     למוצרים שלנו
                                 </Link>
+                                 */}
                             </div>
                         </div>
                         <div className="md:w-1/3 flex items-center justify-center p-12">
