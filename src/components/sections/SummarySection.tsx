@@ -49,14 +49,14 @@ const SummarySection = () => {
                     >
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4">
-                                <div className="overflow-hidden rounded-lg shadow-lg h-48">
+                                <div className="overflow-hidden rounded-lg shadow-lg h-48 border-r-4 border-[#d6b16c]">
                                     <img
                                         src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                                         alt="Kitchen equipment"
                                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                     />
                                 </div>
-                                <div className="overflow-hidden rounded-lg shadow-lg h-32">
+                                <div className="overflow-hidden rounded-lg shadow-lg h-32 border-r-4 border-[#d6b16c]">
                                     <img
                                         src='/images/img8.jpg'
                                         alt="Restaurant kitchen"
@@ -65,14 +65,14 @@ const SummarySection = () => {
                                 </div>
                             </div>
                             <div className="space-y-4 mt-8">
-                                <div className="overflow-hidden rounded-lg shadow-lg h-32">
+                                <div className="overflow-hidden rounded-lg shadow-lg h-32 border-r-4 border-[#d6b16c]">
                                     <img
                                         src='/images/img29.jpg'
                                         alt="Kitchen hood"
                                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                     />
                                 </div>
-                                <div className="overflow-hidden rounded-lg shadow-lg h-48">
+                                <div className="overflow-hidden rounded-lg shadow-lg h-48 border-r-4 border-[#d6b16c]">
                                     <img
                                         src='/images/img11.jpg'
                                         alt="Professional kitchen"
