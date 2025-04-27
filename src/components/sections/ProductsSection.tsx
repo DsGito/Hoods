@@ -139,7 +139,7 @@ const ProductsSection = () => {
                                             {category.features.map((feature, index) => (
                                                 <span
                                                     key={index}
-                                                    className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-primary text-[#d6b16c]"
+                                                    className="inline-flex items-center px-3 py-1 rounded-full text-sm text-primary bg-[#d6b16c]"
                                                 >
                                                     <Tag className="w-3 h-3 ml-1" />
                                                     {feature}
