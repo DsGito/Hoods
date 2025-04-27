@@ -74,7 +74,7 @@ const ProductsSection = () => {
     const featuredProducts = products.slice(0, 8);
 
     return (
-        <section className="py-6 bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100">
+        <section id="products-section" className="py-6 bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

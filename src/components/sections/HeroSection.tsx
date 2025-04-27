@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { ArrowDown, CheckCircle } from 'lucide-react';
+ {/*import { Link } from 'react-router-dom'; */}
 
 const benefits = [
     'איכות ללא פשרות',
@@ -10,6 +10,19 @@ const benefits = [
 ];
 
 const HeroSection = () => {
+
+    // פונקציה לגלילה חלקה אל האלמנט המבוקש
+    const scrollToSection = (elementId: string): void => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
+
     return (
         <div className="rtl">
             {/* Hero Section */}
@@ -17,7 +30,7 @@ const HeroSection = () => {
                 {/* Background Pattern */}
                 <div className="absolute inset-0 w-full h-full opacity-10">
 
-                    {/* Video Background with Overlay 
+                  
                     <div className="relative w-full h-full">
                         <video
                             autoPlay
@@ -35,7 +48,7 @@ const HeroSection = () => {
                         </video>
                         <div className="absolute inset-0 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10"></div>
                     </div>
-                    */}
+                  
                 </div>
 
                 {/* Content Container */}
@@ -88,6 +101,17 @@ const HeroSection = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, delay: 0.4 }}
                                 className="flex flex-col sm:flex-row gap-4" >
+
+                                <button
+                                    onClick={() => scrollToSection('products-section')}
+                                    className="inline-flex justify-center items-center bg-transparent text-white px-6 py-3 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer"
+                                >
+                                    צפו בפתרונות שלנו
+                                    <ArrowDown className="mr-2 h-5 w-5 transform transition-transform duration-300 group-hover:translate-y-1" />
+
+                                </button>
+
+                                {/* 
                                 <Link
                                     to="/Products"
                                     className="inline-flex justify-center items-center bg-transparent text-white px-6 py-3 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group"
@@ -95,6 +119,8 @@ const HeroSection = () => {
                                     צפו בפתרונות שלנו
                                     <ArrowLeft className="mr-2 h-5 w-5 transform group-hover:-translate-x-1 transition-transform ltr:rotate-180" />
                                 </Link>
+                                */}
+
                             </motion.div>
                         </motion.div>
                     </div>
