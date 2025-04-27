@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SummarySection = () => {
     return (
-        <section className="relative bg-white py-16">
+        <section className="relative bg-white py-10">
             <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-gray-100 to-white"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

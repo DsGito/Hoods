@@ -92,7 +92,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
-                <span className="inline-block border-b-4 border-blue-500 pb-2">פרטי התקשרות</span>
+              <span className="inline-block border-b-4 border-primary pb-2">פרטי התקשרות</span>
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

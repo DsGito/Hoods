@@ -58,7 +58,7 @@ const HeroSection = () => {
                             <div className="mb-6">
 
                                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-3 break-words md:whitespace-normal lg:whitespace-nowrap">
-                                    מנדפים, קולטי אדים ועבודות נירוסטה בהתאמה אישית
+                                    מנדפים, קולטי אדים ועבודות נירוסטה <span className="text-blue-300"> בהתאמה אישית</span>
                                 </h1>
                                 <h2 className="text-xl sm:text-2xl md:text-3xl text-[#d6b16c] leading-tight">
                                     איכות, עוצמה ושקט נפשי במטבח שלך
