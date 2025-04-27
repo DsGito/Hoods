@@ -13,7 +13,7 @@ const ProductsSection = () => {
         {
             title: "מנדפים לבתי קפה ומאפיות",
             description: "מנדפים מעוצבים ושקטים במיוחד, מותאמים לחללים הקטנים ולאופי השקט של בתי קפה ומאפיות.",
-            image: '/images/img1.jpg',
+            image: '/images/img7.jpg',
             path: "CafeHoods",
         },
         {
@@ -25,7 +25,7 @@ const ProductsSection = () => {
         {
             title: "קולטי אדים למטבח הביתי",
             description: "קולטי אדים יוקרתיים למטבח הביתי המשלבים עיצוב מודרני עם ביצועים מקצועיים.",
-            image: '/images/img7.jpg',
+            image: '/images/img1.jpg',
             path: "HomeHoods",
         },
         {
@@ -38,8 +38,8 @@ const ProductsSection = () => {
             title: "מערכות סינון עשן",
             description:
                 "מערכות הסינון המתקדמות שלנו מציעות פתרון כולל להפחתת עשן, ריחות, ואדי שמן במטבחים מסחריים וביתיים. הטכנולוגיות החדשניות מאפשרות לכם לעמוד בכל התקנים והרגולציות, לשמור על סביבת עבודה בריאה, ולהפחית מטרדים לסביבה..",
-                image: '/images/img5.jpg',
-                path: "SmokeFilters",
+            image: '/images/img5.jpg',
+            path: "SmokeFilters",
         },
         {
             title: 'מטבחי חוץ יוקרתיים',
@@ -91,14 +91,14 @@ const ProductsSection = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-gray-700 hover:border-[#d6b16c]"
-                            >
+                        >
                             <Link to={"/" + category.path}>
                                 <div className="relative h-52">
                                     <img
                                         src={category.image}
                                         alt={category.title}
                                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                                        />
+                                    />
                                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
                                 </div>
                                 <div className="p-6">
@@ -108,12 +108,16 @@ const ProductsSection = () => {
                                     <p className="text-gray-300 mb-6">
                                         {category.description}
                                     </p>
-                                    <div className="flex justify-end">
-                                        <span className="text-[#d6b16c] hover:text-blue-100 font-medium inline-flex items-center">
-                                            פרטים נוספים
-                                            <ArrowLeft className="w-4 h-4 mr-2" />
-                                        </span>
-                                    </div>
+
+                                    {/*
+                                        <div className="flex justify-end">
+                                            <span className="text-[#d6b16c] hover:text-blue-100 font-medium inline-flex items-center">
+                                                פרטים נוספים
+                                                <ArrowLeft className="w-4 h-4 mr-2" />
+                                            </span>
+                                        </div>
+                                    */}
+
                                 </div>
                             </Link>
                         </motion.div>

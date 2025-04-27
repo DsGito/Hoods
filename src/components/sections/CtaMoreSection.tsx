@@ -21,7 +21,7 @@ const CtaMoreSection = () => {
                                     to="/Contact"
                                     className="px-8 py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
                                 >
-                                    צור קשר
+                                    צרו קשר
                                 </Link>
                                 <Link
                                     to="/Products"
