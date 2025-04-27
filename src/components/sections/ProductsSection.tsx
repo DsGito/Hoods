@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Tag } from 'lucide-react';
 
 const ProductsSection = () => {
     const products = [
@@ -8,30 +8,40 @@ const ProductsSection = () => {
             title: "מנדפים למסעדות",
             description: "מנדפים עוצמתיים ועמידים המתוכננים במיוחד עבור המטבח המסעדתי העמוס והאינטנסיבי למסעדות, בתי קפה ומפעלי מזון. עוצמה וביצועים ללא פשרות.",
             image: '/images/img2.jpg',
+            features: ["עמידות בעומסים גבוהים", "עמידה בתקנים מחמירים", "יעילות שאיבה גבוהה", 'ייעוץ מקיף לבחירת המנדף המתאים ביותר לצרכים שלכם', 'התאמה לכל סוגי המטבחים', 'מערכות חכמות לחיסכון באנרגיה', 'עמידה בתקני בטיחות'],
+
             path: "RestaurantHoods",
         },
         {
             title: "מנדפים לבתי קפה ומאפיות",
             description: "מנדפים מעוצבים ושקטים במיוחד, מותאמים לחללים הקטנים ולאופי השקט של בתי קפה ומאפיות.",
             image: '/images/img7.jpg',
+            features: ["עיצוב אסתטי", "פעולה שקטה", "התאמה לחללים קטנים"],
+
             path: "CafeHoods",
         },
         {
             title: "מנדפי גריל",
             description: "מנדפים ייעודיים לשימוש עם גריל, טאבון או מנגל, עם יכולת התמודדות עם חום גבוה ועשן כבד.",
             image: '/images/img3.jpg',
+            features: ["טיפול בעשן כבד", "מסנני שומן מתקדמים", "עמידות בטמפרטורות גבוהות"],
+
             path: "GrillHoods",
         },
         {
             title: "קולטי אדים למטבח הביתי",
             description: "קולטי אדים יוקרתיים למטבח הביתי המשלבים עיצוב מודרני עם ביצועים מקצועיים.",
             image: '/images/img1.jpg',
+            features: ["עיצוב מודרני", "פעולה שקטה", "תאורת LED משולבת"],
+
             path: "HomeHoods",
         },
         {
             title: "עבודות נירוסטה",
             description: "עבודות נירוסטה מותאמות אישית - מדפים, ארונות, כיורים, משטחי עבודה ועוד.",
             image: '/images/img6.jpg',
+            features: ["סינון יעיל של חלקיקים", "הפחתת ריחות", "חיסכון באנרגיה"],
+
             path: "StainlessWorks",
         },
         {
@@ -39,18 +49,24 @@ const ProductsSection = () => {
             description:
                 "מערכות הסינון המתקדמות שלנו מציעות פתרון כולל להפחתת עשן, ריחות, ואדי שמן במטבחים מסחריים וביתיים. הטכנולוגיות החדשניות מאפשרות לכם לעמוד בכל התקנים והרגולציות, לשמור על סביבת עבודה בריאה, ולהפחית מטרדים לסביבה..",
             image: '/images/img5.jpg',
+            features: ["סינון יעיל של חלקיקים", "הפחתת ריחות", "חיסכון באנרגיה"],
+
             path: "SmokeFilters",
         },
         {
             title: 'מטבחי חוץ יוקרתיים',
             description: 'עיצוב וביצוע מטבחי חוץ המשלבים עמידות לתנאי מזג האוויר עם אסתטיקה יוקרתית ופונקציונליות מלאה.',
             image: '/images/img4.jpg',
+            features: ["עיצוב מודרני", "פעולה שקטה", "תאורת LED משולבת", 'עיצוב מותאם אישית', 'חומרים איכותיים', 'פתרונות אחסון חכמים', 'חומרים עמידים לתנאי חוץ', 'אזורי עבודה מרווחים', 'אחסון מוגן'],
+
             path: "/",
         },
         {
             title: 'מנגלים ומערכות צלייה',
             description: 'מגוון פתרונות צלייה, החל ממנגלים בסיסיים ועד למערכות גריל מקצועיות משולבות במטבחי החוץ.',
             image: '/images/img0.jpg',
+            features: ["עיצוב מודרני", "פעולה שקטה", "תאורת LED משולבת", 'עיצוב מותאם אישית', 'חומרים איכותיים', 'פתרונות אחסון חכמים', 'חומרים עמידים לתנאי חוץ', 'אזורי עבודה מרווחים', 'אחסון מוגן'],
+
             path: "/",
         },
     ];
@@ -117,7 +133,20 @@ const ProductsSection = () => {
                                             </span>
                                         </div>
                                     */}
-
+                                    <div className="mb-8">
+                                        <h3 className="font-semibold text-gray-800 mb-3">מאפיינים עיקריים:</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {category.features.map((feature, index) => (
+                                                <span
+                                                    key={index}
+                                                    className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-primary text-[#d6b16c]"
+                                                >
+                                                    <Tag className="w-3 h-3 ml-1" />
+                                                    {feature}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                             </Link>
                         </motion.div>
