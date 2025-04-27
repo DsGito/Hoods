@@ -49,7 +49,7 @@ const SummarySection = () => {
                     >
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4">
-                                <div className="overflow-hidden rounded-lg shadow-lg h-48 border-r-4 border-[#d6b16c]">
+                                <div className="overflow-hidden rounded-lg shadow-lg h-48 border-r-4 border-primary">
                                     <img
                                         src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                                         alt="Kitchen equipment"
@@ -72,7 +72,7 @@ const SummarySection = () => {
                                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                     />
                                 </div>
-                                <div className="overflow-hidden rounded-lg shadow-lg h-48 border-r-4 border-[#d6b16c]">
+                                <div className="overflow-hidden rounded-lg shadow-lg h-48 border-r-4 border-primary">
                                     <img
                                         src='/images/img11.jpg'
                                         alt="Professional kitchen"
