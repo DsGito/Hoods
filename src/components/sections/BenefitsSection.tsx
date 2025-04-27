@@ -52,7 +52,7 @@ const BenefitsSection = () => {
                             className="relative group transition-all"
                         >
                             {/* מספר */}
-                            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-[#d6b16c] text-white flex items-center justify-center font-bold shadow-md">
+                            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shadow-md">
                                 {index + 1}
                             </div>
 
