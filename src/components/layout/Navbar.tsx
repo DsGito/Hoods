@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X, Phone, HomeIcon, Info, Package2 } from 'lucide-react'
+import { Menu, X, Phone, HomeIcon, Info } from 'lucide-react'
 import { Button } from '../ui/button'
 
 const Navbar = () => {
@@ -8,8 +8,8 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'דף הבית', path: '/Home', icon: <HomeIcon className="w-5 h-5" /> },
-    { name: 'מוצרים', path: '/Products', icon: <Package2 className="w-5 h-5" /> },
     { name: 'אודות', path: '/About', icon: <Info className="w-5 h-5" /> },
+    /*   { name: 'מוצרים', path: '/Products', icon: <Package2 className="w-5 h-5" /> }, */
   ]
 
   return (

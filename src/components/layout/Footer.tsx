@@ -6,7 +6,6 @@ const Footer = () => {
   const quickLinks = [
     { name: 'דף הבית', href: '/Home' },
     { name: 'אודות', href: '/About' },
-    { name: 'מוצרים', href: '/Products' },
     { name: 'צור קשר', href: '/Contact' },
   ];
 
