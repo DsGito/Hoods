@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
 interface WhatsAppButtonProps {
-  phoneNumber: string
-  message?: string
+  phoneNumber: string;
+  message?: string;
 }
 
 export const WhatsAppButton = ({ phoneNumber, message = 'היי, אני מעוניין לקבל פרטים נוספים על הפתרונות המקצועיים שלכם' }: WhatsAppButtonProps) => {

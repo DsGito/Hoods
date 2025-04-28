@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, CheckCircle } from 'lucide-react';
- {/*import { Link } from 'react-router-dom'; */}
+{/*import { Link } from 'react-router-dom'; */ }
+
 
 const benefits = [
     'איכות ללא פשרות',
@@ -30,7 +31,7 @@ const HeroSection = () => {
                 {/* Background Pattern */}
                 <div className="absolute inset-0 w-full h-full opacity-10">
 
-                  
+
                     <div className="relative w-full h-full">
                         <video
                             autoPlay
@@ -48,7 +49,7 @@ const HeroSection = () => {
                         </video>
                         <div className="absolute inset-0 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10"></div>
                     </div>
-                  
+
                 </div>
 
                 {/* Content Container */}

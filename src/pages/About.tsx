@@ -73,7 +73,7 @@ const About = () => {
             className="font-bold mb-6"
           >
             <h1 className="text-5xl font-bold text-white mb-6">
-              אודות <span className="text-blue-300">טי אמ מנדפים</span>
+              חברת <span className="text-blue-300">טי אמ מנדפים</span>
             </h1>
 
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-6 leading-relaxed">
