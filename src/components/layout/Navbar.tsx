@@ -9,6 +9,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'דף הבית', path: '/Home', icon: <HomeIcon className="w-5 h-5" /> },
     { name: 'אודות', path: '/About', icon: <Info className="w-5 h-5" /> },
+    { name: 'צרו קשר', path: '/Contact', icon: <Phone className="w-5 h-5" /> },
     /*   { name: 'מוצרים', path: '/Products', icon: <Package2 className="w-5 h-5" /> }, */
   ]
 
@@ -30,26 +31,29 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center space-x-4 ml-4">
-              {navItems.map((item) => (
+            {navItems.map((item) => (
+              item.name === 'צרו קשר' ? (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-white hover:text-[#d6b16c] px-3 py-2 rounded-md text-sm font-medium"
+                  className="flex-shrink-0 flex items-center space-x-2"
                 >
-                  {item.name}
+                  <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500 px-3 py-2 rounded-md text-sm font-medium">
+                    {item.icon}
+                    <span className="ml-2"></span>{item.name}
+                  </Button>
                 </Link>
-              ))}
-            </div>
-
-            <div className="flex items-center">
-              <Link to="/Contact" className="flex-shrink-0 flex items-center space-x-2">
-                <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500">
-                  <Phone className="ml-2 h-4 w-4" />
-                  צרו קשר
-                </Button>
-              </Link>
-            </div>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className="text-white hover:text-[#d6b16c] px-3 py-2 rounded-md text-sm font-medium flex items-center"
+                >
+                  {item.icon}
+                  <span className="ml-2"></span>{item.name}
+                </Link>
+              )
+            ))}
 
           </div>
 
@@ -66,29 +70,41 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden absolute w-full bg-white shadow-lg">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="text-gray-700 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <Link to="/Contact" className="flex-shrink-0 flex items-center space-x-2">
-              <Button className="w-full mt-4">
-                <Phone className="ml-2 h-4 w-4" />
-                צרו קשר
-              </Button>
-            </Link>
+      {
+        isOpen && (
+          <div className="md:hidden absolute w-full bg-white shadow-lg">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {navItems.map((item) =>
+                item.name === 'צרו קשר' ? (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setIsOpen(false)}
+                    className="block w-full"
+                  >
+                    <Button className="w-full flex items-center justify-center text-white hover:bg-[#c59e50] px-4 py-2 rounded-md text-base font-medium">
+                      {item.icon}
+                      <span className="ml-2"></span> {item.name}
+                    </Button>
+                  </Link>
+                ) : (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setIsOpen(false)}
+                    className="text-gray-700 hover:text-gray-900 block px-4 py-2 rounded-md text-base font-medium"
+                  >
+                    {item.icon} 
+                    {item.name}
+                  </Link>
+                )
+              )}
+
+            </div>
           </div>
-        </div>
-      )}
-    </nav>
+        )
+      }
+    </nav >
   )
 }
 
