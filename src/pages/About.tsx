@@ -8,7 +8,7 @@ const About = () => {
 
   // צבע הנושא המרכזי של האתר - שימוש עקבי בצבע זה לאורך כל הדף
   const themeColor = '#d6b16c'; // צבע זהב
-  const themeColorDark = '#b8964a'; // גרסה כהה יותר של צבע הזהב
+  //const themeColorDark = '#b8964a'; // גרסה כהה יותר של צבע הזהב
   //const themeColorLight = '#f0dba8'; // גרסה בהירה יותר של צבע הזהב
 
   const companyFeatures = [
@@ -76,9 +76,8 @@ const About = () => {
   return (
     <div className="rtl">
 
-      {/* Hero Section  bg-gray-900  
-      <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 py-24 text-white overflow-hidden"> */}
-      <section className={`relative py-24 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-[${themeColorDark}]`}>
+      {/* Hero Section  bg-gray-900  */}
+      <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 py-24 text-white overflow-hidden"> 
 
         <div className="absolute inset-0 opacity-10">
           {/* רקע דקורטיבי */}
