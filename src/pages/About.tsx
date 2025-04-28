@@ -1,6 +1,7 @@
-import { Shield, Settings, Wrench, ThumbsUp, Building, Users, Award, Palette } from 'lucide-react'
+import { Shield, Settings, Wrench, ThumbsUp, Building, Users, Award, Palette, PhoneCall } from 'lucide-react'
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import CtaMoreSection from '../components/sections/CtaMoreSection';
 
@@ -77,7 +78,7 @@ const About = () => {
     <div className="rtl">
 
       {/* Hero Section  bg-gray-900  */}
-      <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 py-24 text-white overflow-hidden"> 
+      <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 py-24 text-white overflow-hidden">
 
         <div className="absolute inset-0 opacity-10">
           {/* רקע דקורטיבי */}
@@ -102,10 +103,17 @@ const About = () => {
             {/* כפתור קריאה לפעולה בצבע התמה */}
             <motion.button
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 rounded-lg font-medium text-gray-900 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] shadow-lg hover:shadow-xl transition-all duration-300"
+              whileTap={{ scale: 0.95 }}             
             >
-              צרו קשר עכשיו
+              <Link
+                to="/Contact"
+                  className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-gray-900 rounded-full font-medium hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
+              >
+                <PhoneCall className="h-5 w-5" />
+                צרו קשר עכשיו
+              </Link>
+
+
             </motion.button>
           </motion.div>
         </div>
@@ -198,9 +206,8 @@ const About = () => {
                 variants={fadeInUp}
                 onMouseEnter={() => setHoveredFeature(index)}
                 onMouseLeave={() => setHoveredFeature(null)}
-                className={`bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${
-                  hoveredFeature === index ? 'transform -translate-y-2 shadow-xl' : ''
-                }`}
+                className={`bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${hoveredFeature === index ? 'transform -translate-y-2 shadow-xl' : ''
+                  }`}
               >
                 {/* רצועת צבע בראש הכרטיס */}
                 <div className={`h-2 bg-[${themeColor}]`}></div>
@@ -220,7 +227,7 @@ const About = () => {
       </section>
 
 
-      
+
       {/* סקשן ביניים - ציטוט */}
       <section className={`py-16 bg-[${themeColor}]/10`}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -241,7 +248,7 @@ const About = () => {
         </div>
       </section>
 
-      
+
 
       {/* קריאה לפעולה */}
       <CtaMoreSection />

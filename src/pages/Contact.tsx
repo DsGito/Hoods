@@ -4,6 +4,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
+
+  const themeColor = '#d6b16c'; // צבע זהב
+
+
   const contactInfo = [
     {
       icon: MessageSquare,
@@ -83,7 +87,7 @@ const Contact = () => {
             className="font-bold mb-6"
           >
             <h1 className="text-5xl font-bold mb-6 leading-tight">
-              רוצים אוויר נקי במטבח? <span className="text-blue-300">צרו קשר!</span>
+              רוצים אוויר נקי במטבח? <span style={{ color: themeColor }}>צרו קשר!</span>
             </h1>
 
             <p className="text-xl max-w-2xl mx-auto mb-12 text-blue-100">
