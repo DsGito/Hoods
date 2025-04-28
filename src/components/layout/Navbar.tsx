@@ -70,39 +70,37 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {
-        isOpen && (
-          <div className="md:hidden absolute w-full bg-white shadow-lg">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navItems.map((item) =>
-                item.name === 'צרו קשר' ? (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    onClick={() => setIsOpen(false)}
-                    className="block w-full"
-                  >
-                    <Button className="w-full flex items-center justify-center text-white hover:bg-[#c59e50] px-4 py-2 rounded-md text-base font-medium">
-                      {item.icon}
-                      <span className="ml-2"></span> {item.name}
-                    </Button>
-                  </Link>
-                ) : (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    onClick={() => setIsOpen(false)}
-                    className="text-gray-700 hover:text-gray-900 block px-4 py-2 rounded-md text-base font-medium"
-                  >
-                    {item.icon} 
-                    {item.name}
-                  </Link>
-                )
-              )}
-
-            </div>
+      {isOpen && (
+        <div className="md:hidden absolute w-full bg-white shadow-lg">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navItems.map((item) =>
+              item.name === 'צרו קשר' ? (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className="block w-full"
+                >
+                  <Button className="w-full flex items-center justify-center text-white hover:bg-[#c59e50] px-4 py-2 rounded-md text-base font-medium">
+                    {item.icon}
+                    <span className="ml-2"></span> {item.name}
+                  </Button>
+                </Link>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className="text-gray-700 hover:text-gray-900 block px-4 py-2 rounded-md text-base font-medium"
+                >
+                  {item.icon}
+                  {item.name}
+                </Link>
+              ))
+            }
           </div>
-        )
+        </div>
+      )
       }
     </nav >
   )
