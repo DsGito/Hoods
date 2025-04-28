@@ -96,14 +96,14 @@ const Contact = () => {
             <div className="flex justify-center gap-4">
               <Link
                 to="tel:+972549659008"
-                className="px-8 py-3 bg-white text-primary rounded-lg font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
+                className="px-8 py-3 bg-white text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
                 <PhoneCall className="h-5 w-5 ml-2" />
                 התקשרו עכשיו
               </Link>
               <Link
                 to={`https://wa.me/972549659008?text=היי, אני מעוניין לקבל פרטים נוספים על הפתרונות המקצועיים שלכם`}
-                className="px-8 py-3 bg-[#25D366] text-white rounded-lg font-medium hover:bg-[#1DA851] transition-all shadow-lg flex items-center hover:scale-105"
+                className="px-8 py-3 bg-[#25D366] text-white rounded-full font-medium hover:bg-[#1DA851] transition-all shadow-lg flex items-center hover:scale-105"
               >
                 <svg
                   className="h-5 w-5 ml-2"
