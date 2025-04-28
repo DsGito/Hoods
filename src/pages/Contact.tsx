@@ -1,6 +1,6 @@
 import { MapPin, Clock, MessageSquare, PhoneCall, Mail, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -13,7 +13,8 @@ const Contact = () => {
         { text: 'Tm.mindaf@gmail.com', link: 'mailto:Tm.mindaf@gmail.com', icon: Mail }
       ],
       description: 'הדגמות במקום',
-      color: 'bg-blue-50 border-blue-200'
+      color: 'bg-blue-50 border-blue-200',
+      hoverColor: 'hover:border-blue-300 hover:bg-blue-100'
     },
     {
       icon: MapPin,
@@ -27,24 +28,49 @@ const Contact = () => {
         }
       ],
       description: 'אולם תצוגה פתוח לקהל',
-      color: 'bg-green-50 border-green-200'
+      color: 'bg-green-50 border-green-200',
+      hoverColor: 'hover:border-green-300 hover:bg-green-100'
     },
     {
       icon: Clock,
       title: 'שעות פעילות',
       details: [{ text: 'ראשון - חמישי: 08:00 - 18:00', link: null, icon: Clock }],
-      color: 'bg-amber-50 border-amber-200'
+      description: 'סגור בשבת',
+      color: 'bg-amber-50 border-amber-200',
+      hoverColor: 'hover:border-amber-300 hover:bg-amber-100'
     }
   ];
 
-  // State for hover effects
+  // State for animations and interactive elements
   // עבור אנימציות ואפקטים אינטראקטיביים
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Animation for section visibility
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
 
   return (
-    <div className="rtl">
+    <div className="rtl min-h-screen bg-gradient-to-b from-white to-gray-50">
 
-      {/* Hero Section  bg-gray-900   */} 
+      {/* Hero Section  bg-gray-900   */}
       <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('/path-to-abstract-pattern.svg')] bg-repeat opacity-30"></div>
@@ -66,7 +92,7 @@ const Contact = () => {
             <div className="flex justify-center gap-4">
               <Link
                 to="tel:+972549659008"
-                className="px-8 py-3 bg-white text-blue-900 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
+                className="px-8 py-3 bg-white text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
                 <PhoneCall className="h-5 w-5 ml-2" />
                 התקשרו עכשיו
@@ -74,7 +100,7 @@ const Contact = () => {
               <Link
                 to={`https://wa.me/972549659008?text=היי, אני מעוניין לקבל פרטים נוספים על הפתרונות המקצועיים שלכם`}
                 className="px-8 py-3 bg-[#25D366] text-white rounded-full font-medium hover:bg-[#1DA851] transition-all shadow-lg flex items-center hover:scale-105"
-                >
+              >
                 <svg
                   className="h-5 w-5 ml-2"
                   fill="currentColor"
@@ -88,86 +114,78 @@ const Contact = () => {
             </div>
           </motion.h1>
         </div>
+
+        {/* Decorative wave for smooth transition to next section */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" fill="#ffffff">
+            <path d="M0,96L80,80C160,64,320,32,480,32C640,32,800,64,960,80C1120,96,1280,96,1360,96L1440,96L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+          </svg>
+        </div>
+
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1  gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
 
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-          >
-            {/* Contact Information */}
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
-                <span className="inline-block border-b-4 border-primary pb-2">פרטי התקשרות</span>
+      <motion.div
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          variants={containerVariants}
+        >
+          {/* Contact Information */}
+          <div className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2 inline-block">
+                פרטי התקשרות
               </h2>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {contactInfo.map((info, index) => (
-                  <div
-                    key={index}
-                    className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 ${info.color} ${hoveredCard === index ? 'transform -translate-y-2 shadow-md' : ''
-                      }`}
-                    onMouseEnter={() => setHoveredCard(index)}
-                    onMouseLeave={() => setHoveredCard(null)}
-                  >
-                    <div className="flex items-center mb-4">
-                      <div className="p-3 rounded-full bg-white shadow-sm mr-4">
-                        <info.icon className="h-6 w-6 text-gray-700" />
-                      </div>
-                      <h3 className="text-xl font-bold">{info.title}</h3>
-                    </div>
-
-                    <div className="space-y-3">
-                      {info.details.map((detail, i) => (
-                        <div key={i} className="flex items-center">
-                          {detail.icon && <detail.icon className="h-4 w-4 text-gray-500 ml-2" />}
-                          {detail.link ? (
-                            <Link
-                              to={detail.link}
-                              className="text-gray-700 hover:text-[#d6b16c] hover:underline transition-colors"
-                            >
-                              {detail.text}
-                            </Link>
-                          ) : (
-                            <span className="text-gray-700">{detail.text}</span>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-
-                    {info.description && (
-                      <p className="mt-4 text-sm text-gray-500 border-t border-gray-200 pt-3">
-                        {info.description}
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
+              <div className="h-1 w-20 bg-[#d6b16c] mx-auto rounded-full"></div>
             </div>
 
-          </motion.div>
-        </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {contactInfo.map((info, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                  whileHover={{ y: -5, transition: { duration: 0.2 } }}
+                  className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 ${info.color} ${info.hoverColor}`}
+                  onMouseEnter={() => setHoveredCard(index)}
+                  onMouseLeave={() => setHoveredCard(null)}
+                >
+                  <div className="flex items-center mb-4">
+                    <div className={`p-3 rounded-full bg-white shadow-sm mr-4 ${hoveredCard === index ? 'bg-opacity-100' : 'bg-opacity-80'}`}>
+                      <info.icon className={`h-6 w-6 ${hoveredCard === index ? 'text-[#d6b16c]' : 'text-gray-700'}`} />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800">{info.title}</h3>
+                  </div>
 
+                  <div className="space-y-3">
+                    {info.details.map((detail, i) => (
+                      <div key={i} className="flex items-center">
+                        {detail.icon && <detail.icon className="h-4 w-4 text-gray-500 ml-2" />}
+                        {detail.link ? (
+                          <Link
+                            to={detail.link}
+                            className="text-gray-700 hover:text-[#d6b16c] hover:underline transition-colors"
+                          >
+                            {detail.text}
+                          </Link>
+                        ) : (
+                          <span className="text-gray-700">{detail.text}</span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
 
-        {/* Google Map Section */}
-        {/*
-        <div className="rounded-2xl overflow-hidden shadow-lg">
-          <h2 className="text-2xl font-bold p-6 bg-gray-100">המיקום שלנו</h2>
-          <div className="aspect-video w-full">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54051.85107632526!2d34.77302442345724!3d32.0879544016021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca1dd351df3%3A0x6a52a1d4d041358c!2z16rXnCDXkNeo15nXkS3Xmdek15U!5e0!3m2!1siw!2sil!4v1656924726462!5m2!1siw!2sil"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: "400px" }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade">
-            </iframe>
+                  {info.description && (
+                    <p className="mt-4 text-sm text-gray-500 border-t border-gray-200 pt-3">
+                      {info.description}
+                    </p>
+                  )}
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
-        */}
-
+        </motion.div>
+        
       </div>
     </div>
   )
