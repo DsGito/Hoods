@@ -107,7 +107,7 @@ const About = () => {
             >
               <Link
                 to="/Contact"
-                  className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-gray-900 rounded-full font-medium hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-gray-900 rounded-lg font-medium hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 <PhoneCall className="h-5 w-5" />
                 צרו קשר עכשיו
