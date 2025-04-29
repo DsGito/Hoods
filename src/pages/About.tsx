@@ -103,22 +103,20 @@ const About = () => {
             {/* כפתור קריאה לפעולה בצבע התמה */}
             <motion.button
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}             
+              whileTap={{ scale: 0.95 }}
             >
               <Link
                 to="/Contact"
-                  className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-gray-900 rounded-lg font-medium hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-gray-900 rounded-lg font-medium hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 <PhoneCall className="h-5 w-5" />
                 צרו קשר עכשיו
               </Link>
-
-
             </motion.button>
           </motion.div>
         </div>
 
-        {/* אלמנט דקורטיבי בתחתית החלק */}
+        {/* Decorative wave for smooth transition to next section */}
         <div className="absolute bottom-0 left-0 right-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full">
             <path
