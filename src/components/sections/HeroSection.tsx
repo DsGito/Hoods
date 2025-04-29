@@ -46,7 +46,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Content Container */}
-                <div className="relative flex items-start md:items-center min-h-screen md:min-h-[90vh] w-full h-full py-8 sm:py-10 md:py-16 lg:py-24">
+                <div className="relative flex items-start md:items-center min-h-screen md:min-h-[90vh] w-full h-full pt-10 pb-8 sm:py-10 md:py-16 lg:py-24">
 
                     <div className="w-full flex justify-end pr-6 sm:pr-10 lg:pr-20 xl:pr-28">
                         {/* Text Content */}
@@ -98,8 +98,8 @@ const HeroSection = () => {
 
                                 <button
                                     onClick={() => scrollToSection('products-section')}
-                                    className="inline-flex justify-center items-center bg-transparent text-white px-8 py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-lg"
-                                >
+                                    className="inline-flex justify-center items-center bg-transparent text-white px-8 py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-lg w-full sm:w-auto"
+                                    >
                                     צפו בפתרונות שלנו
                                     <ArrowDown className="mr-3 h-5 w-5 transform transition-transform duration-300 group-hover:translate-y-1" />
                                 </button>
