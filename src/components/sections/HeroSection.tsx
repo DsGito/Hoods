@@ -46,7 +46,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Content Container */}
-                <div className="relative flex items-center min-h-[90vh] w-full h-full py-6 sm:py-8 md:py-16 lg:py-24">
+                <div className="relative flex items-start md:items-center min-h-screen md:min-h-[90vh] w-full h-full py-8 sm:py-10 md:py-16 lg:py-24">
 
                     <div className="w-full flex justify-end pr-6 sm:pr-10 lg:pr-20 xl:pr-28">
                         {/* Text Content */}
