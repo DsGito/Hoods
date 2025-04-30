@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Check, Droplets, Shield, Hammer, ThermometerSnowflake } from "lucide-react";
 import CtaMoreSection from '../components/sections/CtaMoreSection';
 
@@ -135,13 +134,6 @@ export default function StainlessWorks() {
                                 </ol>
                             </nav>
                         </div>
-                        <div className="mt-4 md:mt-0">
-                            <Link to="/Contact">
-                                <Button className="bg-blue-600 hover:bg-blue-700">
-                                    לקבלת הצעת מחיר
-                                </Button>
-                            </Link>
-                        </div>
                     </div>
 
                     <div className="bg-white rounded-xl overflow-hidden shadow-md">
@@ -193,14 +185,6 @@ export default function StainlessWorks() {
                                             <p className="text-gray-600">תכנון והתאמה אישית</p>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact">
-                                        <Button className="bg-blue-600 hover:bg-blue-700">
-                                            לקבלת הצעת מחיר
-                                        </Button>
-                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Check, FileText, Gauge, Shield } from "lucide-react";
 import { motion } from 'framer-motion';
 import CtaMoreSection from '../components/sections/CtaMoreSection';
@@ -74,13 +73,6 @@ export default function RestaurantHoods() {
                                 </ol>
                             </nav>
                         </div>
-                        <div className="mt-4 md:mt-0">
-                            <Link to="/Contact">
-                                <Button className="bg-blue-600 hover:bg-blue-700">
-                                    לקבלת הצעת מחיר
-                                </Button>
-                            </Link>
-                        </div>
                     </div>
 
                     <div className="bg-white rounded-xl overflow-hidden shadow-md">
@@ -131,14 +123,6 @@ export default function RestaurantHoods() {
                                             <p className="text-gray-600">התאמה אישית למטבח שלכם</p>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact">
-                                        <Button className="bg-blue-600 hover:bg-blue-700">
-                                            אנא צרו קשר לייעוץ
-                                        </Button>
-                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -215,14 +199,6 @@ export default function RestaurantHoods() {
                                             </li>
                                         ))}
                                     </ul>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <Link to="/Contact">
-                                        <Button className="bg-blue-600 hover:bg-blue-700">
-                                            לקבלת הצעת מחיר
-                                        </Button>
-                                    </Link>
                                 </div>
                             </div>
                         </div>

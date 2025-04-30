@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Check, FireExtinguisher, Flame, Shield, Thermometer } from "lucide-react";
 import { motion } from 'framer-motion';
 import CtaMoreSection from '../components/sections/CtaMoreSection';
@@ -31,13 +30,6 @@ export default function GrillHoods() {
                   <li className="text-gray-900 font-medium">מנדפי גריל</li>
                 </ol>
               </nav>
-            </div>
-            <div className="mt-4 md:mt-0">
-              <Link to="/Contact">
-                <Button className="bg-blue-600 hover:bg-blue-700">
-                  לקבלת הצעת מחיר
-                </Button>
-              </Link>
             </div>
           </div>
 
@@ -89,14 +81,6 @@ export default function GrillHoods() {
                       <p className="text-gray-600">חומרים עמידים במיוחד</p>
                     </div>
                   </div>
-                </div>
-
-                <div className="flex flex-wrap gap-4">
-                  <Link to="/Contact">
-                    <Button className="bg-blue-600 hover:bg-blue-700">
-                      אנא צרו קשר לייעוץ
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </div>
