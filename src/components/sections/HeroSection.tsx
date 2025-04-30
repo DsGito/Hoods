@@ -63,11 +63,11 @@ const HeroSection = () => {
 
                             {/* Headings */}
                             <div className="mb-6 md:mb-10">
-                            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight mb-2 md:mb-4 break-words md:whitespace-normal lg:whitespace-nowrap">
-                            מנדפים, קולטי אדים ועבודות נירוסטה <span className="text-blue-300"> בהתאמה אישית</span>
+                                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight mb-2 md:mb-4 break-words md:whitespace-normal lg:whitespace-nowrap">
+                                    מנדפים, קולטי אדים ועבודות נירוסטה <span className="text-blue-300"> בהתאמה אישית</span>
                                 </h1>
                                 <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl text-[#d6b16c] leading-tight">
-                                איכות, עוצמה ושקט נפשי במטבח שלך
+                                    איכות, עוצמה ושקט נפשי במטבח שלך
                                 </h2>
                             </div>
 
@@ -94,29 +94,29 @@ const HeroSection = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, delay: 0.4 }}
                                 className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center"
-                                >
+                            >
 
                                 <button
                                     onClick={() => scrollToSection('products-section')}
                                     className="inline-flex justify-center items-center bg-transparent text-white px-6 sm:px-8 py-3 sm:py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-base sm:text-lg w-full sm:w-auto"
-                                    >
+                                >
                                     צפו בפתרונות שלנו
                                     <ArrowDown className="mr-2 sm:mr-3 h-4 sm:h-5 w-4 sm:w-5 transform transition-transform duration-300 group-hover:translate-y-1" />
-                                    </button>
+                                </button>
                             </motion.div>
                         </motion.div>
                     </div>
                 </div>
 
-                        <div className="absolute bottom-0 left-0 right-0">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full">
-            <path
-              fill="#f9fafb"
-              fillOpacity="1"
-              d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,53.3C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"
-            ></path>
-          </svg>
-        </div>
+                <div className="absolute bottom-0 left-0 right-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full">
+                        <path
+                            fill="#f9fafb"
+                            fillOpacity="1"
+                            d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,53.3C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"
+                        ></path>
+                    </svg>
+                </div>
             </section>
         </div>
     );
