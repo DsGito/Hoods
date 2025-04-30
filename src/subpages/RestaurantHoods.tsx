@@ -178,13 +178,6 @@ export default function RestaurantHoods() {
                             key={product.id}
                             className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} bg-white rounded-xl shadow-md overflow-hidden mb-8`}
                         >
-                            <div className="md:w-2/5">
-                                <img
-                                    src={product.image}
-                                    alt={product.title}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
                             <div className="md:w-3/5 p-8">
                                 <h3 className="text-2xl font-bold mb-3">{product.title}</h3>
                                 <p className="text-gray-600 mb-6">{product.description}</p>
@@ -203,67 +196,6 @@ export default function RestaurantHoods() {
                             </div>
                         </div>
                     ))}
-                </section>
-
-                {/* Technical Specifications */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">מפרט טכני</h2>
-                    <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                        <div className="p-8">
-                            <div className="overflow-x-auto">
-                                <table className="min-w-full">
-                                    <thead className="bg-gray-50">
-                                        <tr>
-                                            <th className="py-3.5 px-4 text-right text-sm font-semibold text-gray-900">מאפיין</th>
-                                            <th className="py-3.5 px-4 text-right text-sm font-semibold text-gray-900">מפרט</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody className="divide-y divide-gray-200 bg-white">
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">חומר</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">נירוסטה 304, עובי 1.5 מ"מ</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">ספיקת אוויר</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">1,000-5,000 מק"ש (בהתאם לגודל)</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">לחץ סטטי</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">300-500 פסקל</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">מערכת תאורה</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">LED אטום למים IP65</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">מסננים</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">נירוסטה מחוזקת הניתנת לפירוק ושטיפה</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">יעילות סינון</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">עד 95% של חלקיקי שמן וגריז</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">רמת רעש</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">עד 65dBA</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">מידות אפשריות</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">רוחב: 100-400 ס"מ, עומק: 70-140 ס"מ</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">אחריות</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">שנתיים אחריות כולל שירות</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="py-4 px-4 text-sm font-medium text-gray-900">תקנים</td>
-                                            <td className="py-4 px-4 text-sm text-gray-600">ת"י 1001 חלק 6, אישורי כיבוי אש, תקנות משרד הבריאות</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
                 </section>
 
                 {/* FAQ Section */}
