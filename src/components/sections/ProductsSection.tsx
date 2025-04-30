@@ -58,7 +58,7 @@ const ProductsSection = () => {
             description: 'עיצוב וביצוע מטבחי חוץ המשלבים עמידות לתנאי מזג האוויר עם אסתטיקה יוקרתית ופונקציונליות מלאה.',
             image: '/images/img4.jpg',
             features: ['עיצוב מותאם אישית', 'חומרים איכותיים', 'חומרים עמידים לתנאי חוץ'],
-            path: "/",
+            path: "SmokeFilters",
         },
         {
             title: 'מנגלים ומערכות צלייה',
@@ -66,7 +66,7 @@ const ProductsSection = () => {
             image: '/images/img0.jpg',
             features: ["תאורת LED משולבת", 'עיצוב מותאם אישית', 'חומרים עמידים לתנאי חוץ'],
 
-            path: "/",
+            path: "SmokeFilters",
         },
     ];
 
