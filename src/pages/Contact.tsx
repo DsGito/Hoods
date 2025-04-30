@@ -71,7 +71,7 @@ const Contact = () => {
       {/* Hero Section  bg-gray-900   */}
       <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-24 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-bold mb-6">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-bold mb-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               רוצים אוויר נקי במטבח? <span style={{ color: themeColor }}>צרו קשר!</span>
             </h1>
@@ -104,7 +104,7 @@ const Contact = () => {
               </Link>
               */}
             </div>
-          </motion.h1>
+          </motion.div>
         </div>
 
         {/* Decorative wave for smooth transition to next section */}
