@@ -34,7 +34,7 @@ export default function StainlessWorks() {
             id: "shelving",
             title: "מדפים ומערכות אחסון",
             description: "מדפים מנירוסטה לתליה על הקיר או כיחידות עצמאיות, מותאמים לעומס גבוה ולשימוש מקצועי.",
-            image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            image: "https://images.unsplash.com/photo-1588644525273-f37b60d78512?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "עומס עד 150 ק\"ג למדף",
                 "מבנה מודולרי",
@@ -47,20 +47,19 @@ export default function StainlessWorks() {
             id: "cabinets",
             title: "ארונות וארוניות",
             description: "ארונות מנירוסטה עם דלתות, מגירות ומדפים פנימיים - מתאימים לאחסון כלים, ציוד ומזון.",
-            image: "https://images.unsplash.com/photo-1584505192000-bfcfd8449c97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            image: "https://images.unsplash.com/photo-1588644525273-f37b60d78512?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "דלתות עם אטימה היקפית",
                 "אפשרות לנעילה",
                 "מגירות טלסקופיות",
                 "אפשרות חימום/קירור",
-                "התאמה לדרישות HACCP",
             ],
         },
         {
             id: "trolleys",
             title: "עגלות שירות",
             description: "עגלות נירוסטה לשינוע מזון, כלים וציוד במטבח - עם מדפים, דפנות ואפשרויות נוספות.",
-            image: "https://images.unsplash.com/photo-1589269146448-8610d99c9f4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            image: "https://images.unsplash.com/photo-1588644525273-f37b60d78512?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "גלגלים איכותיים",
                 "מדפים מחוזקים",
@@ -73,7 +72,7 @@ export default function StainlessWorks() {
             id: "custom",
             title: "פריטים בהתאמה אישית",
             description: "כל פריט נירוסטה שדמיינתם - מתאפשר אצלנו. ייצור מותאם לפי מידות, עיצוב ודרישות מיוחדות.",
-            image: "https://images.unsplash.com/photo-1574351286859-5c4afec7d762?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            image: "https://images.unsplash.com/photo-1588644525273-f37b60d78512?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "תכנון הנדסי מדויק",
                 "ביצוע בכל מידה",

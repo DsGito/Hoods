@@ -169,7 +169,7 @@ export default function SmokeFilters() {
             {[
               {
                 title: "עמידה ברגולציה",
-                description: "מערכות סינון מתקדמות מבטיחות עמידה בכל התקנים והדרישות של משרדי הבריאות, כיבוי אש, ואיכות הסביבה.",
+                description: "מערכות סינון מתקדמות מבטיחות עמידה בתקנים ודרישות של משרדי הבריאות, כיבוי אש, ואיכות הסביבה.",
                 image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
               },
               {
@@ -284,58 +284,6 @@ export default function SmokeFilters() {
               </div>
             </div>
           ))}
-        </section>
-
-        {/* Accessories & Add-ons */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">אביזרים ותוספות</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "מערכת ניטור איכות אוויר",
-                description: "חיישנים מתקדמים המנטרים את איכות האוויר בזמן אמת ומתאימים את עוצמת הסינון בהתאם.",
-                image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-              },
-              {
-                title: "מערכת רחיצה אוטומטית",
-                description: "מערכת המנקה את המסננים באופן אוטומטי, מצמצמת את זמן התחזוקה ומגדילה את יעילות הסינון.",
-                image: "https://images.unsplash.com/photo-1608613304205-4e4c7f361f8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-              },
-              {
-                title: "בקרת מהירות חכמה",
-                description: "מערכת המתאימה את מהירות המפוח בהתאם לעומס העבודה, מפחיתה רעש וחוסכת באנרגיה.",
-                image: "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-              },
-              {
-                title: "פתרונות נטרול ריחות",
-                description: "מערכות ייעודיות לנטרול ריחות ספציפיים, כגון ריחות צלייה, טיגון או עישון.",
-                image: "https://images.unsplash.com/photo-1599155253646-9ee6a1fb869e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-              },
-            ].map((accessory, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="overflow-hidden shadow-sm"
-              >
-                <div className="relative pb-[70%]">
-                  <img
-                    src={accessory.image}
-                    alt={accessory.title}
-                    className="absolute w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold mb-2">{accessory.title}</h3>
-                  <p className="text-gray-600 text-sm">{accessory.description}</p>
-                </div>
-              </motion.div>
-            ))
-            }
-          </div>
         </section>
 
         {/* Maintenance & Replacement */}
