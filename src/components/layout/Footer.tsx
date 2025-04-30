@@ -2,7 +2,6 @@ import { Phone, Mail, MapPin, Instagram, Linkedin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
-
   const quickLinks = [
     { name: 'דף הבית', href: '/Home' },
     { name: 'אודות', href: '/About' },
@@ -11,17 +10,15 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Social Media */}
-          <div>
+          <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4">עקבו אחרינו</h3>
             <p className="text-gray-400 mb-4">
               טי אמ מנדפים פתרונות מתקדמים, משלבים טכנולוגיה חדשנית עם עיצוב איכותי
             </p>
-            <div className="flex space-x-4">
-
+            <div className="flex flex-wrap gap-4">
               <a href="https://www.facebook.com/p/%D7%98%D7%99-%D7%90%D7%9E-%D7%9E%D7%A0%D7%93%D7%A4%D7%99%D7%9D-TM-mindafim-100075547016088" className="text-gray-400 hover:text-white transition-colors">
                 <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22,12.07C22,6.53,17.47,2,12,2S2,6.53,2,12.07C2,17.1,5.66,21.31,10.44,22V15.13H7.9V12.07h2.54V9.79c0-2.5,1.49-3.89,3.78-3.89,1.09,0,2.23.2,2.23.2v2.46H15.2c-1.24,0-1.63.77-1.63,1.56v1.88h2.78l-.45,3.06h-2.33V22C18.34,21.31,22,17.1,22,12.07z" />
@@ -34,13 +31,13 @@ const Footer = () => {
                 </svg>
               </a>
 
-              <a href="#" className="hover:text-gray-300">
+              <a href="#" className="text-gray-400 hover:text-white">
                 <Instagram className="h-6 w-6" />
               </a>
-
-              <a href="#" className="hover:text-gray-300">
+              <a href="#" className="text-gray-400 hover:text-white">
                 <Linkedin className="h-6 w-6" />
               </a>
+
             </div>
           </div>
 
@@ -50,7 +47,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-gray-400 hover:text-white">
+                  <Link to={link.href} className="text-gray-400 hover:text-white transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -59,39 +56,39 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="md:col-span-2 lg:col-span-1">
             <h3 className="text-xl font-bold mb-4">יצירת קשר</h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 ml-2" />
-                <a className="text-gray-400" href="tel:+972549659008">054-9659008</a>
+                <a className="text-gray-400 hover:text-white" href="tel:+972549659008">054-9659008</a>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 ml-2" />
-                <a className="text-gray-400" href="mailto:Tm.mindaf@gmail.com">Tm.mindaf@gmail.com</a>
+                <a className="text-gray-400 hover:text-white" href="mailto:Tm.mindaf@gmail.com">Tm.mindaf@gmail.com</a>
               </div>
+              {/* 
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 ml-2" />
                 <a
                   href="https://waze.com/ul?ll=32.0853,34.7818&navigate=yes"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400"
+                  className="text-gray-400 hover:text-white"
                 >
                   תל אביב, ישראל
                 </a>
-
               </div>
+              */}
             </div>
           </div>
-
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p>
+        <div className="mt-10 pt-8 border-t border-gray-700 text-center text-gray-400">
+          <p className="text-sm">
             © {new Date().getFullYear()} כל הזכויות שמורות | טי אמ מנדפים - T.M mindafim
           </p>
-          <div className="mt-8 text-center text-gray-400">
+          <div className="mt-4">
             <Link to="/Accessibility" className="hover:text-white transition-colors">
               הצהרת נגישות
             </Link>
@@ -102,4 +99,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

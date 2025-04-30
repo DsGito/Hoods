@@ -34,10 +34,10 @@ const HeroSection = () => {
                         muted
                         loop
                         playsInline
-                        className="w-full h-full object-cover opacity-30 sm:object-contain md:object-cover lg:object-cover"
+                        className="w-full h-full object-cover opacity-30 xs:object-cover sm:object-contain md:object-cover lg:object-cover"
                         style={{
                             minHeight: '100%',
-                            objectPosition: 'center',
+                            objectPosition: 'center 30%', // מיקום טוב יותר במובייל
                             maxWidth: '100%'
                         }}
                     >
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 {/* Content Container */}
                 <div className="relative flex items-start md:items-center min-h-screen md:min-h-[90vh] w-full h-full pt-10 pb-8 sm:py-10 md:py-16 lg:py-24">
 
-                    <div className="w-full flex justify-end pr-6 sm:pr-10 lg:pr-20 xl:pr-28">
+                    <div className="w-full flex justify-end px-4 sm:pr-10 lg:pr-20 xl:pr-28">
                         {/* Text Content */}
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
@@ -57,17 +57,17 @@ const HeroSection = () => {
                             className="text-white w-full lg:max-w-4xl xl:max-w-5xl ml-auto"
                         >
                             {/* Badge */}
-                            <span className="inline-block mb-4 bg-[#d6b16c] text-black px-4 py-2 rounded-full text-sm md:text-lg font-medium shadow-md">
+                            <span className="inline-block mb-3 md:mb-4 bg-[#d6b16c] text-black px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm md:text-lg font-medium shadow-md">
                                 טי אמ מנדפים הבית לפתרונות מקצועיים בשבילך
                             </span>
 
                             {/* Headings */}
-                            <div className="mb-13">
-                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight mb-4 break-words md:whitespace-normal lg:whitespace-nowrap">
-                                    מנדפים, קולטי אדים ועבודות נירוסטה <span className="text-blue-300"> בהתאמה אישית</span>
+                            <div className="mb-6 md:mb-10">
+                            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight mb-2 md:mb-4 break-words md:whitespace-normal lg:whitespace-nowrap">
+                            מנדפים, קולטי אדים ועבודות נירוסטה <span className="text-blue-300"> בהתאמה אישית</span>
                                 </h1>
-                                <h2 className="text-xl sm:text-2xl md:text-3xl text-[#d6b16c] leading-tight">
-                                    איכות, עוצמה ושקט נפשי במטבח שלך
+                                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl text-[#d6b16c] leading-tight">
+                                איכות, עוצמה ושקט נפשי במטבח שלך
                                 </h2>
                             </div>
 
@@ -93,16 +93,16 @@ const HeroSection = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4, delay: 0.4 }}
-                                className="flex flex-col sm:flex-row gap-4 items-center"
+                                className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center"
                                 >
 
                                 <button
                                     onClick={() => scrollToSection('products-section')}
-                                    className="inline-flex justify-center items-center bg-transparent text-white px-8 py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-lg w-full sm:w-auto"
+                                    className="inline-flex justify-center items-center bg-transparent text-white px-6 sm:px-8 py-3 sm:py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-base sm:text-lg w-full sm:w-auto"
                                     >
                                     צפו בפתרונות שלנו
-                                    <ArrowDown className="mr-3 h-5 w-5 transform transition-transform duration-300 group-hover:translate-y-1" />
-                                </button>
+                                    <ArrowDown className="mr-2 sm:mr-3 h-4 sm:h-5 w-4 sm:w-5 transform transition-transform duration-300 group-hover:translate-y-1" />
+                                    </button>
                             </motion.div>
                         </motion.div>
                     </div>

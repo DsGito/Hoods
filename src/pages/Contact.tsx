@@ -1,13 +1,10 @@
-import { MapPin, Clock, MessageSquare, PhoneCall, Mail, ExternalLink } from 'lucide-react';
+import { Clock, MessageSquare, PhoneCall, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
-
   const themeColor = '#d6b16c'; // צבע זהב
-
-
   const contactInfo = [
     {
       icon: MessageSquare,
@@ -20,6 +17,8 @@ const Contact = () => {
       color: 'bg-blue-50 border-blue-200',
       hoverColor: 'hover:border-blue-300 hover:bg-blue-100'
     },
+
+    /* 
     {
       icon: MapPin,
       title: 'משרד ראשי',
@@ -35,6 +34,7 @@ const Contact = () => {
       color: 'bg-green-50 border-green-200',
       hoverColor: 'hover:border-green-300 hover:bg-green-100'
     },
+    */
     {
       icon: Clock,
       title: 'שעות פעילות',
@@ -54,15 +54,11 @@ const Contact = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
   };
 
   const itemVariants = {
@@ -70,30 +66,19 @@ const Contact = () => {
     visible: { opacity: 1, y: 0 }
   };
 
-
   return (
-    <div className="rtl min-h-screen bg-gradient-to-b from-white to-gray-50">
-
+    <div className="rtl min-h-screen bg-gradient-to-b from-white to-gray-50 w-full overflow-x-hidden">
       {/* Hero Section  bg-gray-900   */}
       <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/path-to-abstract-pattern.svg')] bg-repeat opacity-30"></div>
-        </div>
-
         <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="font-bold mb-6"
-          >
-            <h1 className="text-5xl font-bold mb-6 leading-tight">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               רוצים אוויר נקי במטבח? <span style={{ color: themeColor }}>צרו קשר!</span>
             </h1>
-
-            <p className="text-xl max-w-2xl mx-auto mb-12 text-blue-100">
+            <p className="text-base sm:text-lg max-w-2xl mx-auto mb-12 text-blue-100">
               נשמח לשמוע מכם, לייעץ ולהתאים את הפתרון המושלם עבורכם
             </p>
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
               <Link
                 to="tel:+972549659008"
                 className="px-8 py-3 bg-white text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
@@ -101,6 +86,8 @@ const Contact = () => {
                 <PhoneCall className="h-5 w-5 ml-2" />
                 התקשרו עכשיו
               </Link>
+
+              {/*
               <Link
                 to={`https://wa.me/972549659008?text=היי, אני מעוניין לקבל פרטים נוספים על הפתרונות המקצועיים שלכם`}
                 className="px-8 py-3 bg-[#25D366] text-white rounded-full font-medium hover:bg-[#1DA851] transition-all shadow-lg flex items-center hover:scale-105"
@@ -115,6 +102,7 @@ const Contact = () => {
                 </svg>
                 שלחו הודעה בוואטסאפ
               </Link>
+              */}
             </div>
           </motion.h1>
         </div>
@@ -130,22 +118,14 @@ const Contact = () => {
           </svg>
         </div>
 
-
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-
-      <motion.div
-          initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
-          variants={containerVariants}
-        >
+        <motion.div initial="hidden" animate={isVisible ? 'visible' : 'hidden'} variants={containerVariants}>
           {/* Contact Information */}
           <div className="mb-16">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2 inline-block">
-                פרטי התקשרות
-              </h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 inline-block">פרטי התקשרות</h2>
               <div className="h-1 w-20 bg-[#d6b16c] mx-auto rounded-full"></div>
             </div>
 
@@ -163,18 +143,15 @@ const Contact = () => {
                     <div className={`p-3 rounded-full bg-white shadow-sm mr-4 ${hoveredCard === index ? 'bg-opacity-100' : 'bg-opacity-80'}`}>
                       <info.icon className={`h-6 w-6 ${hoveredCard === index ? 'text-[#d6b16c]' : 'text-gray-700'}`} />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800">{info.title}</h3>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-800">{info.title}</h3>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-3 text-sm sm:text-base">
                     {info.details.map((detail, i) => (
                       <div key={i} className="flex items-center">
                         {detail.icon && <detail.icon className="h-4 w-4 text-gray-500 ml-2" />}
                         {detail.link ? (
-                          <Link
-                            to={detail.link}
-                            className="text-gray-700 hover:text-[#d6b16c] hover:underline transition-colors"
-                          >
+                          <Link to={detail.link} className="text-gray-700 hover:text-[#d6b16c] hover:underline transition-colors">
                             {detail.text}
                           </Link>
                         ) : (
@@ -194,7 +171,7 @@ const Contact = () => {
             </div>
           </div>
         </motion.div>
-        
+
       </div>
     </div>
   )
