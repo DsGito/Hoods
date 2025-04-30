@@ -11,7 +11,7 @@ export default function StainlessWorks() {
             image: "https://images.unsplash.com/photo-1588644525273-f37b60d78512?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "נירוסטה 304 (או 316 לפי דרישה)",
-                "עובי פלטה 1.5 מ\"מ",
+                "עובי פלטה 1.25 מ\"מ",
                 "חיזוקים תחתונים",
                 "רגליים מתכווננות",
                 "אפשרות לגלגלים",
