@@ -34,7 +34,7 @@ export default function StainlessWorks() {
             id: "shelving",
             title: "מדפים ומערכות אחסון",
             description: "מדפים מנירוסטה לתליה על הקיר או כיחידות עצמאיות, מותאמים לעומס גבוה ולשימוש מקצועי.",
-            image: "https://images.unsplash.com/photo-1590590470233-195e8f45cd76?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "עומס עד 150 ק\"ג למדף",
                 "מבנה מודולרי",
