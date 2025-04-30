@@ -172,22 +172,3 @@ html, body {
 .skip-to-main:focus {
   top: 0;
 }
-
-@media (max-width: 380px) {
-  h1 {
-    font-size: 1.5rem !important;
-  }
-  h2 {
-    font-size: 1.25rem !important;
-  }
-  .mobile-text-sm {
-    font-size: 0.875rem !important;
-  }
-  .mobile-p-small {
-    padding: 0.5rem !important;
-  }
-  .mobile-my-small {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
-  }
-}
