@@ -209,57 +209,6 @@ export default function GrillHoods() {
           </div>
         </section>
 
-        {/* Filtration Systems */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">מערכות סינון מתקדמות</h2>
-
-          <div className="bg-white rounded-xl shadow-md overflow-hidden">
-            <div className="md:flex">
-              <div className="md:w-2/5">
-                <img
-                  src="https://images.unsplash.com/photo-1620236104164-d2e71398f8b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
-                  alt="מערכות סינון מתקדמות"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="md:w-3/5 p-8">
-                <h3 className="text-2xl font-bold mb-4">טכנולוגיית סינון ייחודית לגרילים</h3>
-                <p className="text-gray-600 mb-6">
-                  המנדפים שלנו מגיעים עם מערכות סינון מתקדמות המסננות את העשן והריחות ביעילות.
-                  מערכות אלו מאפשרות עבודה עם גריל גם באזורים צפופים ובקרבת שכנים, תוך שמירה על איכות האוויר והפחתת מטרדי הריח.
-                </p>
-
-                <div className="space-y-4 mb-6">
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2">שלב 1: מסנני השומן המכניים</h4>
-                    <p className="text-gray-600">
-                      מסנני נירוסטה מיוחדים בעלי יעילות סינון של עד 95% של חלקיקי שומן, ניתנים לפירוק ולניקוי בקלות.
-                    </p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2">שלב 2: מערכת UV לנטרול ריחות</h4>
-                    <p className="text-gray-600">
-                      קרינת UV-C המפרקת מולקולות של ריחות וחומרים אורגניים, מפחיתה משמעותית את הריחות מהגריל.
-                    </p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2">שלב 3: מסנני פחם פעיל</h4>
-                    <p className="text-gray-600">
-                      מסנני פחם פעיל קטליטי הסופגים מולקולות של ריח וגזים מזיקים, ניתנים להחלפה תקופתית.
-                    </p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2">שלב 4: מסנן HEPA (אופציונלי)</h4>
-                    <p className="text-gray-600">
-                      לוכד 99.97% מהחלקיקים בגודל 0.3 מיקרון ומעלה, מושלם לסביבות רגישות במיוחד.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
       </div>
       {/* קריאה לפעולה */}
       <CtaMoreSection />
