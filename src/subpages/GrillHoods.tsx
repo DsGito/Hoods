@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Check, FireExtinguisher, Flame, Shield, Thermometer } from "lucide-react";
+import { Check, Flame, Shield, Thermometer } from "lucide-react";
 import { motion } from 'framer-motion';
 import CtaMoreSection from '../components/sections/CtaMoreSection';
 
@@ -70,14 +70,6 @@ export default function GrillHoods() {
                       <Check className="h-5 w-5 text-green-500" />
                     </div>
                     <div className="mr-3">
-                      <p className="text-gray-600">מערכות כיבוי אש אוטומטיות</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 p-1">
-                      <Check className="h-5 w-5 text-green-500" />
-                    </div>
-                    <div className="mr-3">
                       <p className="text-gray-600">חומרים עמידים במיוחד</p>
                     </div>
                   </div>
@@ -95,12 +87,7 @@ export default function GrillHoods() {
               {
                 icon: Flame,
                 title: "עמידות בחום גבוה",
-                description: "נירוסטה 316 עמידה בטמפרטורות של עד 600°C, מושלמת לעבודה עם גריל ופחמים לוהטים."
-              },
-              {
-                icon: FireExtinguisher,
-                title: "בטיחות מקסימלית",
-                description: "מערכות כיבוי אש אוטומטיות מובנות, המופעלות בזמן אמת במקרה של התלקחות."
+                description: "נירוסטה 304 עמידה בטמפרטורות של עד 600°C, מושלמת לעבודה עם גריל ופחמים לוהטים."
               },
               {
                 icon: Thermometer,
@@ -147,7 +134,6 @@ export default function GrillHoods() {
                   "מבנה חזק במיוחד העומד בתנאי חום קיצוניים",
                   "מערכת סינון ניצוצות ייחודית",
                   "עוצמת שאיבה גבוהה במיוחד",
-                  "מערכת כיבוי אש אוטומטית מובנית",
                 ],
               },
               {
@@ -158,7 +144,6 @@ export default function GrillHoods() {
                 features: [
                   "בקרת עוצמה אלקטרונית",
                   "מסנני שומן נשלפים קלים לניקוי",
-                  "התראות חכמות על מצב המסננים",
                   "תאורת LED משולבת להארת אזור הבישול",
                 ],
               },
@@ -270,45 +255,6 @@ export default function GrillHoods() {
                     </p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Fire Safety Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">בטיחות אש</h2>
-
-          <div className="bg-red-50 rounded-xl p-6 border border-red-100">
-            <div className="md:flex items-center gap-8">
-              <div className="md:w-1/4 flex justify-center mb-6 md:mb-0">
-                <FireExtinguisher className="w-32 h-32 text-red-500" />
-              </div>
-              <div className="md:w-3/4">
-                <h3 className="text-2xl font-bold text-red-700 mb-4">מערכות כיבוי אש אוטומטיות</h3>
-                <p className="text-gray-700 mb-4">
-                  גריל הוא אחד מהגורמים העיקריים לשריפות במסעדות. כל מנדפי הגריל שלנו מגיעים עם מערכות כיבוי אש אוטומטיות
-                  העומדות בתקנים המחמירים ביותר. המערכות כוללות:
-                </p>
-                <ul className="space-y-2 mb-6">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-red-500 ml-2 mt-0.5" />
-                    <span>חיישני חום וניטור להבה</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-red-500 ml-2 mt-0.5" />
-                    <span>מערכת כיבוי אש אוטומטית מבוססת תרסיס</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-red-500 ml-2 mt-0.5" />
-                    <span>ניתוק אוטומטי של אספקת הגז במקרה שריפה</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-red-500 ml-2 mt-0.5" />
-                    <span>התרעה קולית וחזותית במקרה חירום</span>
-                  </li>
-                </ul>
-
               </div>
             </div>
           </div>
