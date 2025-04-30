@@ -15,9 +15,7 @@ export default function HomeHoods() {
                 "עוצמת שאיבה של עד 1,000 מ\"ק לשעה",
                 "רמת רעש נמוכה (עד 55dB)",
                 "תאורת LED חסכונית ועוצמתית",
-                "פאנל שליטה דיגיטלי",
             ],
-            price: "החל מ-1,500 ₪",
         },
         {
             id: "island-hood",
@@ -27,11 +25,9 @@ export default function HomeHoods() {
             features: [
                 "עיצוב דו-צדדי תלוי",
                 "שאיבה חזקה (עד 1,200 מ\"ק לשעה)",
-                "שליטה בכל צד בנפרד",
                 "תאורת LED היקפית",
                 "עיצובים ייחודיים לבחירה",
             ],
-            price: "החל מ-2,500 ₪",
         },
         {
             id: "built-in-hood",
@@ -42,10 +38,8 @@ export default function HomeHoods() {
                 "שילוב מושלם במטבח",
                 "מנגנון שליפה נוח",
                 "מסנני אלומיניום או נירוסטה",
-                "אפשרות לשליטה מרחוק",
                 "התקנה קלה ופשוטה",
             ],
-            price: "החל מ-1,200 ₪",
         },
     ];
 
@@ -197,7 +191,6 @@ export default function HomeHoods() {
                                 <div className="flex justify-between items-start">
                                     <div>
                                         <h3 className="text-2xl font-bold mb-3">{product.title}</h3>
-                                        <p className="text-blue-600 font-medium mb-3">{product.price}</p>
                                     </div>
                                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-blue-100 text-blue-800">
                                         פופולרי
@@ -263,11 +256,6 @@ export default function HomeHoods() {
                                     </div>
                                 </div>
 
-                                <p className="text-gray-600 mb-6">
-                                    בנוסף, אנו מציעים מגוון רחב של אביזרים ותוספות כמו תאורה בהתאמה אישית, שלט רחוק,
-                                    חיישני טמפרטורה ולחות, ואפילו אפשרות לשליטה דרך אפליקציה.
-                                </p>
-
                             </div>
                         </div>
                     </div>
@@ -275,9 +263,9 @@ export default function HomeHoods() {
 
                 {/* Installation & Maintenance */}
                 <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">התקנה ותחזוקה</h2>
+                    <h2 className="text-3xl font-bold text-center mb-8">התקנה</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 gap-8">
                         <motion.div
                             key="installation"
                             initial={{ opacity: 0, y: 20 }}
@@ -323,52 +311,6 @@ export default function HomeHoods() {
                             </div>
                         </motion.div>
 
-
-                        <motion.div
-                            key="maintenance"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                            className="shadow-md"
-                        >
-                            <div className="p-0">
-                                <div className="relative pb-[60%]">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                        alt="תחזוקה שוטפת"
-                                        className="absolute w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-3">תחזוקה שוטפת</h3>
-                                    <p className="text-gray-600 mb-4">
-                                        תחזוקה נכונה מאריכה את חיי קולט האדים ומבטיחה ביצועים מיטביים לאורך זמן.
-                                        אנו מספקים הדרכה מקיפה על תחזוקה שוטפת ומציעים שירותי תחזוקה מקצועיים.
-                                    </p>
-                                    <h4 className="font-semibold mb-2">המלצות לתחזוקה:</h4>
-                                    <ul className="space-y-1 mb-4">
-                                        <li className="flex items-start">
-                                            <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                            <span>ניקוי מסננים אחת לחודש</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                            <span>החלפת פילטרי פחם (אם יש) כל 3-6 חודשים</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                            <span>ניקוי חיצוני של הקולט בחומרים מתאימים</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                            <span>בדיקת תקינות שנתית על ידי טכנאי</span>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </motion.div>
 
                     </div>
                 </section>
