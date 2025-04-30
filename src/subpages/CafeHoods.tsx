@@ -12,7 +12,6 @@ export default function CafeHoods() {
             image: "https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "גדלים מותאמים למטבחי בתי קפה קטנים",
-                "רמת רעש נמוכה במיוחד (45dB)",
                 "מסנני אלומיניום איכותיים",
                 "תאורת LED מובנית",
                 "קל לניקוי ותחזוקה",
@@ -209,115 +208,6 @@ export default function CafeHoods() {
                             </div>
                         </div>
                     ))}
-                </section>
-
-                {/* Cafe Specific Considerations */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">שיקולים מיוחדים לבתי קפה</h2>
-
-                    <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
-                            <div>
-                                <h3 className="text-xl font-bold mb-4">שיקולי אסתטיקה ועיצוב</h3>
-                                <p className="text-gray-600 mb-4">
-                                    בבתי קפה, בהם החלל המשמש ללקוחות קרוב למטבח ולעתים בעל גישה ויזואלית למטבח, עיצוב המנדף הוא שיקול חשוב:
-                                </p>
-                                <ul className="space-y-2">
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>עיצוב תואם לקונספט הכללי של בית הקפה</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>חומרי גמר יוקרתיים הניתנים לבחירה</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>אפשרות לתאורה מוטמעת המשתלבת בעיצוב הכללי</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מנדפים שקטים במיוחד המותאמים לחללים משותפים</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-xl font-bold mb-4">סינון ריחות ייחודי</h3>
-                                <p className="text-gray-600 mb-4">
-                                    המנדפים לבתי קפה מכילים מערכות סינון מיוחדות המותאמות לסוגי הריחות והאדים הייחודיים של בתי קפה:
-                                </p>
-                                <ul className="space-y-2">
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מסנני פחם מיוחדים לקליטת ריחות הקפה</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מערכת סינון אדי אפייה לבתי קפה עם מאפייה במקום</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מסנני שומן בעלי יעילות גבוהה למנות קלות</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מערכת בקרת ריחות חכמה המתאימה את עצמה לעוצמת הריחות</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-xl font-bold mb-4">התאמה למטבחים קטנים</h3>
-                                <p className="text-gray-600 mb-4">
-                                    מטבחי בתי קפה בדרך כלל קטנים יותר ממטבחי מסעדות, ולכן דורשים התאמות מיוחדות:
-                                </p>
-                                <ul className="space-y-2">
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מידות קומפקטיות המותאמות לחללים מצומצמים</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>אפשרויות התקנה מגוונות לניצול אופטימלי של החלל</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מערכות תעלות קומפקטיות וגמישות</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>פתרונות משולבים למספר תחנות עבודה</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 className="text-xl font-bold mb-4">חיסכון בעלויות תפעול</h3>
-                                <p className="text-gray-600 mb-4">
-                                    המנדפים שלנו לבתי קפה מתוכננים לחיסכון משמעותי בעלויות החשמל והתחזוקה:
-                                </p>
-                                <ul className="space-y-2">
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מנועים חסכוניים במיוחד ובעלי נצילות אנרגטית גבוהה</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מערכת בקרה חכמה המתאימה את עוצמת הפעולה לעומס</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>תאורת LED חסכונית ועוצמתית</span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                        <span>מסננים קלים לניקוי להפחתת עלויות תחזוקה</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </section>
             </div>
             {/* קריאה לפעולה */}
