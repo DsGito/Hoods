@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Check, Droplets, Shield, Hammer, ThermometerSnowflake } from "lucide-react";
+import CtaMoreSection from '../components/sections/CtaMoreSection';
 
 export default function StainlessWorks() {
     const stainlessProducts = [
@@ -135,7 +136,7 @@ export default function StainlessWorks() {
                             </nav>
                         </div>
                         <div className="mt-4 md:mt-0">
-                            <Link to="/Contact?Product=stainless-steel">
+                            <Link to="/Contact">
                                 <Button className="bg-blue-600 hover:bg-blue-700">
                                     לקבלת הצעת מחיר
                                 </Button>
@@ -147,7 +148,7 @@ export default function StainlessWorks() {
                         <div className="md:flex">
                             <div className="md:w-1/2">
                                 <img
-                                    src="https://images.unsplash.com/photo-1574351286859-5c4afec7d762?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                                    src="/images/img16.jpg"
                                     alt="עבודות נירוסטה מקצועיות"
                                     className="w-full h-full object-cover"
                                 />
@@ -195,14 +196,9 @@ export default function StainlessWorks() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact?Product=stainless-steel">
+                                    <Link to="/Contact">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
-                                        </Button>
-                                    </Link>
-                                    <Link to="/Projects?Category=stainless-steel">
-                                        <Button variant="outline">
-                                            צפו בגלריית פרויקטים
                                         </Button>
                                     </Link>
                                 </div>
@@ -260,11 +256,6 @@ export default function StainlessWorks() {
                                         </ul>
                                     </div>
 
-                                    <Link to={`/Contact?Product=${product.id}`}>
-                                        <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                                            לקבלת פרטים והצעת מחיר
-                                        </Button>
-                                    </Link>
                                 </div>
                             </div>
                         ))
@@ -365,77 +356,9 @@ export default function StainlessWorks() {
                     </div>
                 </section>
 
-                {/* Testimonials */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">לקוחות שסומכים עלינו</h2>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {[
-                            {
-                                quote: "הנירוסטה שסטיל קיטשן סיפקו לנו היא באיכות הגבוהה ביותר. הגימור מושלם והריתוכים נקיים לחלוטין. מרשים במיוחד!",
-                                author: "אבי כהן, שף ראשי, מלון 'הים האדום'",
-                                image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
-                            },
-                            {
-                                quote: "העבודה המותאמת אישית שקיבלנו הייתה מעל ומעבר לציפיות. שולחנות העבודה והכיורים נראים ומתפקדים בצורה מושלמת במטבח החדש.",
-                                author: "מיכל לוי, בעלת מסעדת 'טעמים'",
-                                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
-                            },
-                            {
-                                quote: "צוות סטיל קיטשן עזר לנו לתכנן את המדפים והעגלות הייחודיות למטבח שלנו. ההתאמה המושלמת חסכה לנו מקום וייעלה את העבודה.",
-                                author: "יוסי אברהם, מנהל תפעול, 'קייטרינג הבירה'",
-                                image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
-                            },
-                        ].map((testimonial, index) => (
-                            <div key={index} className="shadow-sm mb-8">
-                                <div className="p-6">
-                                    <div className="flex items-center mb-4">
-                                        <img
-                                            src={testimonial.image}
-                                            alt={testimonial.author}
-                                            className="w-12 h-12 rounded-full object-cover ml-4"
-                                        />
-                                        <p className="font-medium">{testimonial.author}</p>
-                                    </div>
-                                    <p className="text-gray-600">"{testimonial.quote}"</p>
-                                </div>
-                            </div>
-                        ))
-                        }
-                    </div>
-                </section>
-
-                {/* CTA Section */}
-                <section>
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 text-white text-center">
-                        <h2 className="text-3xl font-bold mb-4">
-                            נשמח לייעץ לכם בבחירת מוצרי הנירוסטה המתאימים
-                        </h2>
-                        <p className="text-lg mb-6 max-w-3xl mx-auto">
-                            צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות. המומחים שלנו ישמחו לעזור לכם לבחור או לתכנן את מוצרי הנירוסטה המושלמים עבורכם.
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <Link to="/Contact?Product=stainless-steel">
-                                <Button
-                                    size="lg"
-                                    className="bg-white text-blue-700 hover:bg-gray-100"
-                                >
-                                    צרו קשר עכשיו
-                                </Button>
-                            </Link>
-                            <a href="tel:08-XXXXXXX">
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="border-white text-white hover:bg-white/10"
-                                >
-                                    08-XXXXXXX
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
             </div>
+                  {/* קריאה לפעולה */}
+      <CtaMoreSection />
         </div>
     );
 }

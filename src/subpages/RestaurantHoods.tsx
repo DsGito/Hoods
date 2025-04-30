@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Check, ExternalLink, FileText, Gauge, Shield } from "lucide-react";
+import { Check, FileText, Gauge, Shield } from "lucide-react";
 import { motion } from 'framer-motion';
+import CtaMoreSection from '../components/sections/CtaMoreSection';
 
 export default function RestaurantHoods() {
     const products = [
@@ -74,7 +75,7 @@ export default function RestaurantHoods() {
                             </nav>
                         </div>
                         <div className="mt-4 md:mt-0">
-                            <Link to="/Contact?Product=restaurant">
+                            <Link to="/Contact">
                                 <Button className="bg-blue-600 hover:bg-blue-700">
                                     לקבלת הצעת מחיר
                                 </Button>
@@ -86,7 +87,7 @@ export default function RestaurantHoods() {
                         <div className="md:flex">
                             <div className="md:w-1/2">
                                 <img
-                                    src="https://images.unsplash.com/photo-1581067721837-e4809b0692e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                                    src="/images/img8.jpg"
                                     alt="מנדפים למסעדות"
                                     className="w-full h-full object-cover"
                                 />
@@ -133,14 +134,9 @@ export default function RestaurantHoods() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact?Product=restaurant">
+                                    <Link to="/Contact">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             אנא צרו קשר לייעוץ
-                                        </Button>
-                                    </Link>
-                                    <Link to="/Services">
-                                        <Button variant="outline">
-                                            מידע על שירותי התקנה
                                         </Button>
                                     </Link>
                                 </div>
@@ -222,15 +218,11 @@ export default function RestaurantHoods() {
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <Link to="/Contact?Product=${product.id}">
+                                    <Link to="/Contact">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
                                         </Button>
                                     </Link>
-                                    <Button variant="outline">
-                                        <ExternalLink className="w-4 h-4 ml-2" />
-                                        מפרט טכני
-                                    </Button>
                                 </div>
                             </div>
                         </div>
@@ -341,39 +333,10 @@ export default function RestaurantHoods() {
                         }
                     </div>
                 </section>
-
-                {/* CTA Section */}
-                <section>
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 text-white text-center">
-                        <h2 className="text-3xl font-bold mb-4">
-                            מוכנים לשדרג את המטבח המסעדתי שלכם?
-                        </h2>
-                        <p className="text-lg mb-6 max-w-3xl mx-auto">
-                            צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות מהמומחים שלנו.
-                            אנחנו כאן כדי לעזור לכם למצוא את הפתרון המושלם עבור העסק שלכם.
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <Link to="/Contact?Product=restaurant">
-                                <Button
-                                    size="lg"
-                                    className="bg-white text-blue-700 hover:bg-gray-100"
-                                >
-                                    צרו קשר עכשיו
-                                </Button>
-                            </Link>
-                            <a href="tel:08-XXXXXXX">
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="border-white text-white hover:bg-white/10"
-                                >
-                                    08-XXXXXXX
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
             </div>
+
+            {/* קריאה לפעולה */}
+            <CtaMoreSection />
         </div>
     );
 }

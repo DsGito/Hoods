@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Check, Lightbulb, Ruler, ShieldCheck, Volume2 } from "lucide-react";
 import { motion } from 'framer-motion';
+import CtaMoreSection from '../components/sections/CtaMoreSection';
 
 export default function HomeHoods() {
     const products = [
@@ -77,7 +78,7 @@ export default function HomeHoods() {
                             </nav>
                         </div>
                         <div className="mt-4 md:mt-0">
-                            <Link to="/Contact?Product=home">
+                            <Link to="/Contact">
                                 <Button className="bg-blue-600 hover:bg-blue-700">
                                     לקבלת הצעת מחיר
                                 </Button>
@@ -89,7 +90,7 @@ export default function HomeHoods() {
                         <div className="md:flex">
                             <div className="md:w-1/2">
                                 <img
-                                    src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                                    src="/images/img6.jpg"
                                     alt="קולטי אדים ביתיים"
                                     className="w-full h-full object-cover"
                                 />
@@ -136,14 +137,9 @@ export default function HomeHoods() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact?Product=home">
+                                    <Link to="/Contact">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
-                                        </Button>
-                                    </Link>
-                                    <Link to="#Product-catalog">
-                                        <Button variant="outline">
-                                            צפייה בדגמים
                                         </Button>
                                     </Link>
                                 </div>
@@ -239,14 +235,12 @@ export default function HomeHoods() {
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <Link to="/Contact?Product=${product.id}">
+                                    <Link to="/Contact">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
                                         </Button>
                                     </Link>
-                                    <Button variant="outline">
-                                        מידע טכני נוסף
-                                    </Button>
+
                                 </div>
                             </div>
                         </div>
@@ -299,7 +293,7 @@ export default function HomeHoods() {
                                     חיישני טמפרטורה ולחות, ואפילו אפשרות לשליטה דרך אפליקציה.
                                 </p>
 
-                                <Link to="/Contact?Product=home&service=custom">
+                                <Link to="/Contact">
                                     <Button className="bg-blue-600 hover:bg-blue-700">
                                         ייעוץ עיצובי חינם
                                     </Button>
@@ -355,11 +349,6 @@ export default function HomeHoods() {
                                             <span>בדיקת תקינות ותפקוד</span>
                                         </li>
                                     </ul>
-                                    <Link to="/Services?Service=installation">
-                                        <Button variant="outline" className="w-full">
-                                            מידע נוסף על שירותי התקנה
-                                        </Button>
-                                    </Link>
                                 </div>
                             </div>
                         </motion.div>
@@ -406,11 +395,7 @@ export default function HomeHoods() {
                                             <span>בדיקת תקינות שנתית על ידי טכנאי</span>
                                         </li>
                                     </ul>
-                                    <Link to="/Services?Service=maintenance">
-                                        <Button variant="outline" className="w-full">
-                                            מידע נוסף על שירותי תחזוקה
-                                        </Button>
-                                    </Link>
+
                                 </div>
                             </div>
                         </motion.div>
@@ -418,82 +403,9 @@ export default function HomeHoods() {
                     </div>
                 </section>
 
-                {/* Testimonials */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">לקוחות מרוצים</h2>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {[
-                            {
-                                quote: "רכשנו קולט אדים לאי המטבח החדש שלנו והתוצאה מדהימה! העיצוב משתלב בצורה מושלמת והפעולה שקטה להפליא.",
-                                author: "משפחת לוי, רמת גן",
-                                image: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                            },
-                            {
-                                quote: "ההתקנה בוצעה במהירות ובמקצועיות. הצוות היה אדיב והשאיר את המטבח נקי לגמרי. הקולט עצמו עובד מצוין.",
-                                author: "דוד ורונית, תל אביב",
-                                image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                            },
-                            {
-                                quote: "הצוות עזר לנו לבחור את הקולט המתאים ביותר למטבח שלנו. הם היו קשובים לצרכים שלנו והציעו פתרון מושלם.",
-                                author: "אורית כהן, ירושלים",
-                                image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                            },
-                        ].map((testimonial, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="shadow-sm p-6 bg-white rounded-lg"
-                            >
-                                <div className="flex items-center mb-4">
-                                    <img
-                                        src={testimonial.image}
-                                        alt={testimonial.author}
-                                        className="w-12 h-12 rounded-full object-cover ml-4"
-                                    />
-                                    <p className="font-medium">{testimonial.author}</p>
-                                </div>
-                                <p className="text-gray-600">"{testimonial.quote}"</p>
-                            </motion.div>
-                        ))
-                        }
-                    </div>
-                </section>
-
-                {/* CTA Section */}
-                <section>
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 text-white text-center">
-                        <h2 className="text-3xl font-bold mb-4">
-                            מוכנים לשדרג את המטבח שלכם?
-                        </h2>
-                        <p className="text-lg mb-6 max-w-3xl mx-auto">
-                            צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות. המומחים שלנו ישמחו לעזור לכם לבחור את קולט האדים המושלם לבית שלכם.
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <Link to="/Contact?Product=Home">
-                                <Button
-                                    size="lg"
-                                    className="bg-white text-blue-700 hover:bg-gray-100"
-                                >
-                                    צרו קשר עכשיו
-                                </Button>
-                            </Link>
-                            <a href="tel:08-XXXXXXX">
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="border-white text-white hover:bg-white/10"
-                                >
-                                    08-XXXXXXX
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
             </div>
+                  {/* קריאה לפעולה */}
+      <CtaMoreSection />
         </div>
     );
 }

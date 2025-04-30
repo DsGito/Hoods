@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Check, Filter, Wind, GaugeCircle, BarChart } from "lucide-react";
 import { motion } from 'framer-motion';
+import CtaMoreSection from '../components/sections/CtaMoreSection';
 
 export default function SmokeFilters() {
   const filterSystems = [
@@ -105,7 +106,7 @@ export default function SmokeFilters() {
               </nav>
             </div>
             <div className="mt-4 md:mt-0">
-              <Link to="/Contact?Product=filter">
+              <Link to="/Contact">
                 <Button className="bg-blue-600 hover:bg-blue-700">
                   לקבלת הצעת מחיר
                 </Button>
@@ -117,7 +118,7 @@ export default function SmokeFilters() {
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img
-                  src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                  src="/images/img23.jpg"
                   alt="מערכות סינון עשן"
                   className="w-full h-full object-cover"
                 />
@@ -125,10 +126,10 @@ export default function SmokeFilters() {
               <div className="md:w-1/2 p-8">
                 <h2 className="text-2xl font-bold mb-4">פתרונות סינון מתקדמים לאוויר נקי ובריא</h2>
                 <p className="text-gray-600 mb-6">
-                  מערכות הסינון המתקדמות שלנו מציעות פתרון כולל להפחתת עשן, ריחות, ואדי שמן במטבחים מסחריים וביתיים. 
+                  מערכות הסינון המתקדמות שלנו מציעות פתרון כולל להפחתת עשן, ריחות, ואדי שמן במטבחים מסחריים וביתיים.
                   הטכנולוגיות החדשניות מאפשרות לכם לעמוד בכל התקנים והרגולציות, לשמור על סביבת עבודה בריאה, ולהפחית מטרדים לסביבה.
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 p-1">
@@ -163,18 +164,14 @@ export default function SmokeFilters() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-4">
-                  <Link to="/Contact?Product=filter">
+                  <Link to="/Contact">
                     <Button className="bg-blue-600 hover:bg-blue-700">
                       לקבלת ייעוץ מקצועי
                     </Button>
                   </Link>
-                  <Link to="#filter-systems">
-                    <Button variant="outline">
-                      סוגי מערכות סינון
-                    </Button>
-                  </Link>
+
                 </div>
               </div>
             </div>
@@ -184,7 +181,7 @@ export default function SmokeFilters() {
         {/* Why Quality Filtration Matters */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-10">למה סינון איכותי חשוב?</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -203,35 +200,35 @@ export default function SmokeFilters() {
                 image: "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
               },
             ].map((reason, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="overflow-hidden shadow-md"
-                >
-                  <div className="relative pb-[60%]">
-                    <img
-                      src={reason.image}
-                      alt={reason.title}
-                      className="absolute w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
-                    <p className="text-gray-600">{reason.description}</p>
-                  </div>
-                </motion.div>
-              ))
-              }
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="overflow-hidden shadow-md"
+              >
+                <div className="relative pb-[60%]">
+                  <img
+                    src={reason.image}
+                    alt={reason.title}
+                    className="absolute w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
+                  <p className="text-gray-600">{reason.description}</p>
+                </div>
+              </motion.div>
+            ))
+            }
           </div>
         </section>
 
         {/* Filtering Process */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-10">תהליך הסינון המתקדם</h2>
-          
+
           {filteringStages.map((stage, index) => (
             <div key={index} className="mb-8 last:mb-0">
               <div className={`bg-${stage.color}-50 rounded-xl p-6 border border-${stage.color}-100`}>
@@ -247,8 +244,8 @@ export default function SmokeFilters() {
                       {stage.description}
                     </p>
                     <div className="w-full bg-gray-200 rounded-full h-2.5">
-                      <div 
-                        className={`bg-${stage.color}-600 h-2.5 rounded-full`} 
+                      <div
+                        className={`bg-${stage.color}-600 h-2.5 rounded-full`}
                         style={{ width: `${stage.percentage}%` }}
                       ></div>
                     </div>
@@ -262,7 +259,7 @@ export default function SmokeFilters() {
               </div>
             </div>
           ))}
-          
+
           <div className="mt-10 text-center">
             <p className="text-lg text-gray-600">
               * יעילות הסינון משתנה בהתאם לסוג המערכת וההתקנה. הנתונים המוצגים הם ממוצעים מייצגים.
@@ -273,9 +270,9 @@ export default function SmokeFilters() {
         {/* Filter Systems */}
         <section id="filter-systems" className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-10">סוגי מערכות סינון</h2>
-          
+
           {filterSystems.map((system, index) => (
-            <div 
+            <div
               key={system.id}
               className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} bg-white rounded-xl shadow-md overflow-hidden mb-8`}
             >
@@ -289,7 +286,7 @@ export default function SmokeFilters() {
               <div className="md:w-3/5 p-8">
                 <h3 className="text-2xl font-bold mb-3">{system.title}</h3>
                 <p className="text-gray-600 mb-6">{system.description}</p>
-                
+
                 <div className="mb-6">
                   <h4 className="font-semibold mb-3">מאפיינים עיקריים:</h4>
                   <ul className="space-y-2">
@@ -301,16 +298,13 @@ export default function SmokeFilters() {
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="flex gap-4">
-                  <Link to="/Contact?Product=${system.id}">
+                  <Link to="/Contact">
                     <Button className="bg-blue-600 hover:bg-blue-700">
                       לקבלת הצעת מחיר
                     </Button>
                   </Link>
-                  <Button variant="outline">
-                    מפרט טכני מלא
-                  </Button>
                 </div>
               </div>
             </div>
@@ -320,7 +314,7 @@ export default function SmokeFilters() {
         {/* Accessories & Add-ons */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">אביזרים ותוספות</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
@@ -344,40 +338,35 @@ export default function SmokeFilters() {
                 image: "https://images.unsplash.com/photo-1599155253646-9ee6a1fb869e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
               },
             ].map((accessory, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="overflow-hidden shadow-sm"
-                >
-                  <div className="relative pb-[70%]">
-                    <img
-                      src={accessory.image}
-                      alt={accessory.title}
-                      className="absolute w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="text-lg font-semibold mb-2">{accessory.title}</h3>
-                    <p className="text-gray-600 text-sm">{accessory.description}</p>
-                    <Link to={`/Contact?Accessory=${encodeURIComponent(accessory.title)}`}>
-                      <Button variant="link" className="mt-2 p-0 h-auto">
-                        למידע נוסף
-                      </Button>
-                    </Link>
-                  </div>
-                </motion.div>
-              ))
-              }
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="overflow-hidden shadow-sm"
+              >
+                <div className="relative pb-[70%]">
+                  <img
+                    src={accessory.image}
+                    alt={accessory.title}
+                    className="absolute w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold mb-2">{accessory.title}</h3>
+                  <p className="text-gray-600 text-sm">{accessory.description}</p>
+                </div>
+              </motion.div>
+            ))
+            }
           </div>
         </section>
 
         {/* Maintenance & Replacement */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">תחזוקה והחלפת מסננים</h2>
-          
+
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/3">
@@ -393,7 +382,7 @@ export default function SmokeFilters() {
                   תחזוקה נכונה של מערכת הסינון חיונית לשמירה על יעילות המערכת, עמידה בתקנים, ומניעת סיכוני בטיחות.
                   אנו מציעים מגוון פתרונות תחזוקה ומערך החלפת מסננים לפי לוח זמנים מומלץ:
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-3">מסנני שומן (נירוסטה/אלומיניום)</h4>
@@ -412,7 +401,7 @@ export default function SmokeFilters() {
                       </li>
                     </ul>
                   </div>
-                  
+
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-3">מסנני פחם פעיל</h4>
                     <ul className="space-y-2">
@@ -430,7 +419,7 @@ export default function SmokeFilters() {
                       </li>
                     </ul>
                   </div>
-                  
+
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-3">מסנני HEPA</h4>
                     <ul className="space-y-2">
@@ -448,7 +437,7 @@ export default function SmokeFilters() {
                       </li>
                     </ul>
                   </div>
-                  
+
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-3">לוחות אלקטרוסטטיים</h4>
                     <ul className="space-y-2">
@@ -467,55 +456,16 @@ export default function SmokeFilters() {
                     </ul>
                   </div>
                 </div>
-                
-                <div className="flex gap-4">
-                  <Link to="/Services?Service=maintenance">
-                    <Button className="bg-blue-600 hover:bg-blue-700">
-                      שירותי תחזוקה
-                    </Button>
-                  </Link>
-                  <Link to="/Contact?Service=filters">
-                    <Button variant="outline">
-                      הזמנת מסננים חלופיים
-                    </Button>
-                  </Link>
-                </div>
+
+
               </div>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section>
-          <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 text-white text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              מוכנים לשדרג את מערכת הסינון?
-            </h2>
-            <p className="text-lg mb-6 max-w-3xl mx-auto">
-              צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות. המומחים שלנו ישמחו לעזור לכם לבחור את מערכת הסינון המתאימה ביותר עבורכם.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/Contact?Product=filter">
-                <Button 
-                  size="lg" 
-                  className="bg-white text-blue-700 hover:bg-gray-100"
-                >
-                  צרו קשר עכשיו
-                </Button>
-              </Link>
-              <a href="tel:08-XXXXXXX">
-                <Button 
-                  size="lg"
-                  variant="outline" 
-                  className="border-white text-white hover:bg-white/10"
-                >
-                  08-XXXXXXX
-                </Button>
-              </a>
-            </div>
-          </div>
-        </section>
       </div>
+      {/* קריאה לפעולה */}
+      <CtaMoreSection />
     </div>
   );
 }

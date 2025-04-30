@@ -33,7 +33,7 @@ const SummarySection = () => {
                         <blockquote className="border-r-4 border-[#d6b16c] pr-4 py-2 mb-8">
                             <p className="text-xl font-light leading-relaxed text-gray-700 italic">
                                 "חזוננו הוא לספק מנדפים שלא רק עומדים בתקנים הנדרשים,
-                                אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר."
+                                אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר"
                             </p>
                         </blockquote>
 

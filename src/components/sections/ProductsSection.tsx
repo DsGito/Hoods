@@ -7,7 +7,7 @@ const ProductsSection = () => {
         {
             title: "מנדפים למסעדות",
             description: "מנדפים עוצמתיים ועמידים המתוכננים במיוחד עבור המטבח המסעדתי העמוס והאינטנסיבי למסעדות, בתי קפה ומפעלי מזון. עוצמה וביצועים ללא פשרות.",
-            image: '/images/img2.jpg',
+            image: '/images/img8.jpg',
             features: ["עמידות בעומסים גבוהים", "עמידה בתקנים מחמירים", "יעילות שאיבה גבוהה"],
 
             path: "RestaurantHoods",
@@ -15,7 +15,7 @@ const ProductsSection = () => {
         {
             title: "מנדפים לבתי קפה ומאפיות",
             description: "מנדפים מעוצבים ושקטים במיוחד, מותאמים לחללים הקטנים ולאופי השקט של בתי קפה ומאפיות.",
-            image: '/images/img7.jpg',
+            image: '/images/img29.jpg',
             features: ["עיצוב אסתטי", "פעולה שקטה", "התאמה לחללים קטנים"],
 
             path: "CafeHoods",
@@ -31,7 +31,7 @@ const ProductsSection = () => {
         {
             title: "קולטי אדים למטבח הביתי",
             description: "קולטי אדים יוקרתיים למטבח הביתי המשלבים עיצוב מודרני עם ביצועים מקצועיים.",
-            image: '/images/img1.jpg',
+            image: '/images/img6.jpg',
             features: ["עיצוב מודרני", "פעולה שקטה", "תאורת LED משולבת"],
 
             path: "HomeHoods",
@@ -39,7 +39,7 @@ const ProductsSection = () => {
         {
             title: "עבודות נירוסטה",
             description: "עבודות נירוסטה מותאמות אישית - מדפים, ארונות, כיורים, משטחי עבודה ועוד.",
-            image: '/images/img6.jpg',
+            image: '/images/img16.jpg',
             features: ["סינון יעיל של חלקיקים", "הפחתת ריחות", "חיסכון באנרגיה"],
 
             path: "StainlessWorks",
@@ -48,7 +48,7 @@ const ProductsSection = () => {
             title: "מערכות סינון עשן",
             description:
                 "מערכות הסינון המתקדמות שלנו מציעות פתרון כולל להפחתת עשן, ריחות, ואדי שמן במטבחים מסחריים וביתיים. הטכנולוגיות החדשניות מאפשרות לכם לעמוד בכל התקנים והרגולציות, לשמור על סביבת עבודה בריאה, ולהפחית מטרדים לסביבה..",
-            image: '/images/img5.jpg',
+            image: '/images/img23.jpg',
             features: ["סינון יעיל של חלקיקים", "הפחתת ריחות", "חיסכון באנרגיה"],
 
             path: "SmokeFilters",

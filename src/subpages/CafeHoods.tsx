@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Check, Coffee, PieChart, VolumeX, Ruler } from "lucide-react";
 import { motion } from 'framer-motion';
+import CtaMoreSection from '../components/sections/CtaMoreSection';
+
 export default function CafeHoods() {
     const products = [
         {
@@ -73,7 +75,7 @@ export default function CafeHoods() {
                             </nav>
                         </div>
                         <div className="mt-4 md:mt-0">
-                            <Link to="/Contact?Product=cafe">
+                            <Link to="/Contact">
                                 <Button className="bg-blue-600 hover:bg-blue-700">
                                     לקבלת הצעת מחיר
                                 </Button>
@@ -85,7 +87,7 @@ export default function CafeHoods() {
                         <div className="md:flex">
                             <div className="md:w-1/2">
                                 <img
-                                    src="https://images.unsplash.com/photo-1581335728913-ea274317b359?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                                    src="/images/img29.jpg"
                                     alt="מנדפים לבתי קפה"
                                     className="w-full h-full object-cover"
                                 />
@@ -133,7 +135,7 @@ export default function CafeHoods() {
                                 </div>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link to="/Contact?Product=cafe">
+                                    <Link to="/Contact">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             קבלת הצעת מחיר
                                         </Button>
@@ -227,14 +229,11 @@ export default function CafeHoods() {
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <Link to="/Contact?Product=${product.id}">
+                                    <Link to="/Contact">
                                         <Button className="bg-blue-600 hover:bg-blue-700">
                                             לקבלת הצעת מחיר
                                         </Button>
                                     </Link>
-                                    <Button variant="outline">
-                                        מפרט טכני מלא
-                                    </Button>
                                 </div>
                             </div>
                         </div>
@@ -349,104 +348,9 @@ export default function CafeHoods() {
                         </div>
                     </div>
                 </section>
-
-                {/* Case Studies */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">סיפורי הצלחה</h2>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                cafe: "קפה 'לואיז'",
-                                location: "תל אביב",
-                                description: "בית קפה וקונדיטוריה יוקרתי עם מאפייה במקום, התמודד עם אתגר של חלל קטן ודרישה למניעת ריחות אפייה בחלל הישיבה.",
-                                solution: "התקנו מנדף מעוצב עם מערכת סינון ריחות מתקדמת ופעולה שקטה במיוחד, שהשתלב באופן מושלם בעיצוב הכללי של בית הקפה.",
-                                result: "הלקוחות והצוות נהנים כעת מחלל ללא ריחות וללא רעשים, תוך שמירה על האסתטיקה הייחודית של המקום.",
-                                image: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                            },
-                            {
-                                cafe: "קפה 'נוף'",
-                                location: "ירושלים",
-                                description: "בית קפה עם תצפית נוף, בו המטבח ממוקם בחלל פתוח. האתגר היה למנוע ריחות ועשן תוך שמירה על חווית הלקוחות.",
-                                solution: "בחרנו במנדף אי מעוצב במיוחד, עם תאורה שהשתלבה בתאורה הכללית של המקום ומערכת סינון משולבת במבנה התקרה.",
-                                result: "המנדף הפך לחלק מהעיצוב של המקום, כשהלקוחות אפילו לא שמים לב לקיומו אך נהנים מהאוויר הנקי והמעבר החלק בין המטבח לחלל האירוח.",
-                                image: "https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                            },
-                        ].map((study, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="overflow-hidden shadow-md"
-                            >
-                                <div className="md:flex h-full">
-                                    <div className="md:w-2/5">
-                                        <img
-                                            src={study.image}
-                                            alt={study.cafe}
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </div>
-                                    <div className="md:w-3/5 p-6 flex flex-col">
-                                        <div>
-                                            <h3 className="text-xl font-bold mb-1">{study.cafe}</h3>
-                                            <p className="text-gray-500 mb-4">{study.location}</p>
-                                            <div className="space-y-4">
-                                                <div>
-                                                    <h4 className="font-semibold">האתגר:</h4>
-                                                    <p className="text-gray-600">{study.description}</p>
-                                                </div>
-                                                <div>
-                                                    <h4 className="font-semibold">הפתרון:</h4>
-                                                    <p className="text-gray-600">{study.solution}</p>
-                                                </div>
-                                                <div>
-                                                    <h4 className="font-semibold">התוצאה:</h4>
-                                                    <p className="text-gray-600">{study.result}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))
-                        }
-                    </div>
-                </section>
-
-                {/* CTA Section */}
-                <section>
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 text-white text-center">
-                        <h2 className="text-3xl font-bold mb-4">
-                            מוכנים לשדרג את בית הקפה שלכם?
-                        </h2>
-                        <p className="text-lg mb-6 max-w-3xl mx-auto">
-                            צרו קשר עכשיו לקבלת ייעוץ מקצועי וללא התחייבות. המומחים שלנו ישמחו לעזור לכם לבחור את המנדף המושלם עבור בית הקפה שלכם.
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <Link to="/Contact?Product=cafe">
-                                <Button
-                                    size="lg"
-                                    className="bg-white text-blue-700 hover:bg-gray-100"
-                                >
-                                    צרו קשר עכשיו
-                                </Button>
-                            </Link>
-                            <a href="tel:08-XXXXXXX">
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="border-white text-white hover:bg-white/10"
-                                >
-                                    08-XXXXXXX
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
             </div>
+            {/* קריאה לפעולה */}
+            <CtaMoreSection />
         </div>
     );
 }
