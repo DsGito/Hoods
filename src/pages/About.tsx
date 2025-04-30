@@ -50,14 +50,14 @@ const About = () => {
               כדי לייצר מנדפים וקולטי אדים שעושים את העבודה בצורה מושלמת.
             </p>
 
-            {/* כפתור קריאה לפעולה בצבע התמה */}
+            {/* כפתור קריאה לפעולה   */}
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                to="/Contact"
-                className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-gray-900 rounded-lg font-medium hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-xl"
+                to="tel:+972549659008"
+                className="px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-primary rounded-full font-medium hover:bg-white transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
-                <PhoneCall className="h-5 w-5" />
-                צרו קשר עכשיו
+                <PhoneCall className="h-5 w-5 ml-2" />
+                התקשרו עכשיו
               </Link>
             </motion.button>
           </motion.div>
