@@ -107,6 +107,16 @@ const HeroSection = () => {
                         </motion.div>
                     </div>
                 </div>
+
+                        <div className="absolute bottom-0 left-0 right-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full">
+            <path
+              fill="#f9fafb"
+              fillOpacity="1"
+              d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,53.3C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"
+            ></path>
+          </svg>
+        </div>
             </section>
         </div>
     );
