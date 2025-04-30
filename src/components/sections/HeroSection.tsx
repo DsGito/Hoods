@@ -34,10 +34,10 @@ const HeroSection = () => {
                         muted
                         loop
                         playsInline
-                        className="w-full h-full object-cover opacity-30 xs:object-cover sm:object-contain md:object-cover lg:object-cover"
+                        className="w-full h-full object-cover opacity-30"
                         style={{
-                            minHeight: '100%',
-                            objectPosition: 'center 30%', // מיקום טוב יותר במובייל
+                            minHeight: '60%', // הגדרה מחדש כך שהווידאו יתפוס רק 60% מגובה הקונטיינר
+                            objectPosition: 'center 30%', // שומר על מיקום טוב
                             maxWidth: '100%'
                         }}
                     >
