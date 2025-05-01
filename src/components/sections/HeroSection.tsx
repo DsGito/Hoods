@@ -25,7 +25,7 @@ const HeroSection = () => {
     return (
         <div className="rtl">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] md:min-h-[90vh] bg-gradient-to-r from-gray-950 to-gray-800 text-white overflow-hidden">
+            <section className="relative min-h-[70vh] md:min-h-[90vh] bg-gradient-to-r from-gray-950 to-gray-800 text-white overflow-hidden flex items-center justify-center">
 
                 {/* Background Pattern */}
                 <div className="absolute inset-0 w-full h-full opacity-10 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10">
@@ -46,7 +46,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Content Container */}
-                <div className="relative flex flex-col justify-center w-full h-full py-6 md:py-16 lg:py-24">
+                <div className="relative w-full py-6 md:py-16 lg:py-24">
 
                     <div className="w-full flex justify-end px-4 sm:pr-10 lg:pr-20 xl:pr-28">
                         {/* Text Content */}
