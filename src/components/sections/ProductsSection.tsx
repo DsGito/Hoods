@@ -74,7 +74,7 @@ const ProductsSection = () => {
     const featuredProducts = products.slice(0, 8);
 
     return (
-        <section id="products-section" className="py-4 sm:py-6 md:py-12 bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100">
+        <section id="products-section" className="py-6 bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -88,13 +88,13 @@ const ProductsSection = () => {
                             <div className="h-1 w-24 sm:w-32 bg-[#d6b16c] mx-auto rounded-full"></div>
                         </div>
                     </div>
-                    <p className="text-sm sm:text-base md:text-lg text-gray-300 text-center max-w-3xl mx-auto mt-3 sm:mt-4 mb-4 sm:mb-6">
+                    <p className="text-base sm:text-lg text-gray-300 text-center max-w-3xl mx-auto mt-4 mb-6">
                         אנו מציעים פתרונות מטבח מקצועיים, מעוצבים בהתאמה אישית לצרכי הלקוח ובסטנדרטים הגבוהים ביותר, מבחר רחב של מנדפים תעשייתיים, קולטי אדים ביתיים ומערכות סינון מתקדמות.
                         כל מוצר מותאם אישית לצרכים הייחודיים של כל לקוח, לחומרי הגלם הדרושים ולעיצוב הנדרש.
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
                     {featuredProducts.map((category, index) => (
                         <motion.div
                             key={category.title}
@@ -105,7 +105,7 @@ const ProductsSection = () => {
                             className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-gray-700 hover:border-[#d6b16c]"
                         >
                             <Link to={"/" + category.path}>
-                                <div className="relative h-36 sm:h-40 md:h-48 lg:h-52">
+                                <div className="relative h-40 sm:h-48 md:h-52">
                                     <img
                                         src={category.image}
                                         alt={category.title}
@@ -113,23 +113,31 @@ const ProductsSection = () => {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
                                 </div>
-                                <div className="p-3 sm:p-4 md:p-6">
-                                    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-1 sm:mb-2 md:mb-3 text-white">
+                                <div className="p-4 sm:p-6">
+                                    <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3 text-white">
                                         {category.title}
                                     </h3>
-                                    <p className="text-gray-300 mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base line-clamp-3">
+                                    <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
                                         {category.description}
                                     </p>
 
+                                    {/*
+                                        <div className="flex justify-end">
+                                            <span className="text-[#d6b16c] hover:text-blue-100 font-medium inline-flex items-center">
+                                                פרטים נוספים
+                                                <ArrowLeft className="w-4 h-4 mr-2" />
+                                            </span>
+                                        </div>
+                                    */}
                                     <div className="mb-2">
-                                        <h3 className="font-semibold text-gray-800 mb-1 sm:mb-2 md:mb-3 text-xs sm:text-sm md:text-base">מאפיינים עיקריים:</h3>
+                                        <h3 className="font-semibold text-gray-800 mb-2 sm:mb-3 text-sm sm:text-base">מאפיינים עיקריים:</h3>
                                         <div className="flex flex-wrap gap-1 sm:gap-2">
                                             {category.features.map((feature, index) => (
                                                 <span
                                                     key={index}
-                                                    className="inline-flex items-center px-1.5 sm:px-2 md:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm bg-primary text-[#d6b16c]"
+                                                    className="inline-flex items-center px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm bg-primary text-[#d6b16c]"
                                                 >
-                                                    <Tag className="w-2.5 h-2.5 sm:w-3 sm:h-3 ml-0.5 sm:ml-1" />
+                                                    <Tag className="w-3 h-3 ml-1" />
                                                     {feature}
                                                 </span>
                                             ))}
