@@ -25,7 +25,7 @@ const HeroSection = () => {
     return (
         <div className="rtl">
             {/* Hero Section */}
-            <section className="relative min-h-[70vh] md:min-h-[90vh] bg-gradient-to-r from-gray-950 to-gray-800 text-white overflow-hidden">
+            <section className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[90vh] bg-gradient-to-r from-gray-950 to-gray-800 text-white overflow-hidden">
 
                 {/* Background Pattern */}
                 <div className="absolute inset-0 w-full h-full opacity-10 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10">
@@ -46,9 +46,9 @@ const HeroSection = () => {
                 </div>
 
                 {/* Content Container */}
-                <div className="relative flex flex-col justify-center w-full h-full py-6 md:py-16 lg:py-24">
+                <div className="relative flex flex-col justify-center w-full h-full py-4 sm:py-6 md:py-16 lg:py-24">
 
-                    <div className="w-full flex justify-end px-4 sm:pr-10 lg:pr-20 xl:pr-28">
+                    <div className="w-full flex justify-end px-4 sm:px-6 md:pr-10 lg:pr-20 xl:pr-28">
                         {/* Text Content */}
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
@@ -57,22 +57,22 @@ const HeroSection = () => {
                             className="text-white w-full lg:max-w-4xl xl:max-w-5xl ml-auto"
                         >
                             {/* Badge */}
-                            <span className="inline-block mb-3 md:mb-4 bg-[#d6b16c] text-black px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm md:text-lg font-medium shadow-md">
+                            <span className="inline-block mb-2 sm:mb-3 md:mb-4 bg-[#d6b16c] text-black px-2 sm:px-3 md:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm md:text-lg font-medium shadow-md">
                                 טי אמ מנדפים הבית לפתרונות מקצועיים בשבילך
                             </span>
 
                             {/* Headings */}
-                            <div className="mb-6 md:mb-10">
-                                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white leading-tight mb-2 md:mb-4 break-words md:whitespace-normal lg:whitespace-nowrap">
+                            <div className="mb-4 sm:mb-6 md:mb-10">
+                                <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-2 md:mb-4 break-words md:whitespace-normal lg:whitespace-nowrap">
                                     מנדפים, קולטי אדים ועבודות נירוסטה <span className="text-blue-300"> בהתאמה אישית</span>
                                 </h1>
-                                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl text-[#d6b16c] leading-tight">
+                                <h2 className="text-base xs:text-lg sm:text-xl md:text-3xl text-[#d6b16c] leading-tight">
                                     איכות, עוצמה ושקט נפשי במטבח שלך
                                 </h2>
                             </div>
 
                             {/* Benefits */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-6 mt-4">
+                            <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 mt-2 sm:mt-4">
                                 {benefits.map((benefit, index) => (
                                     <motion.div
                                         key={benefit}
@@ -81,8 +81,8 @@ const HeroSection = () => {
                                         transition={{ duration: 0.4, delay: index * 0.1 }}
                                         className="flex items-center space-x-3 rtl:space-x-reverse"
                                     >
-                                        <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-[#d6b16c] flex-shrink-0" />
-                                        <span className="text-base md:text-lg">{benefit}</span>
+                                        <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-[#d6b16c] flex-shrink-0" />
+                                        <span className="text-sm sm:text-base md:text-lg">{benefit}</span>
                                     </motion.div>
                                 ))}
                             </div>
@@ -98,7 +98,7 @@ const HeroSection = () => {
 
                                 <button
                                     onClick={() => scrollToSection('products-section')}
-                                    className="inline-flex justify-center items-center bg-transparent text-white px-6 sm:px-8 py-3 sm:py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-base sm:text-lg w-full sm:w-auto"
+                                    className="inline-flex justify-center items-center bg-transparent text-white px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-sm sm:text-base md:text-lg w-full sm:w-auto"
                                 >
                                     צפו בפתרונות שלנו
                                     <ArrowDown className="mr-2 sm:mr-3 h-4 sm:h-5 w-4 sm:w-5 transform transition-transform duration-300 group-hover:translate-y-1" />

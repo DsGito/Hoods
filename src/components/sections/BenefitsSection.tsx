@@ -26,7 +26,7 @@ const steps = [
 
 const BenefitsSection = () => {
     return (
-        <section className="py-6 bg-white">
+        <section className="py-4 sm:py-6 md:py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-8 sm:mb-16">
                     <motion.div
@@ -41,7 +41,7 @@ const BenefitsSection = () => {
                     <div className="mx-auto h-1 w-12 sm:w-16 bg-[#d6b16c] rounded-full" />
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-10">
                 {steps.map((step, index) => (
                         <motion.div
                             key={step.title}
