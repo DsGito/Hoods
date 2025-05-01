@@ -41,86 +41,85 @@ export default function RestaurantHoods() {
                 "התקנה סמויה בתקרה",
                 "מנועים שקטים במיוחד",
                 "כיסוי שטח רחב",
-                "שליטה מרחוק על כל פונקציות המנדף",
             ],
         },
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50 py-12">
+        <div className="min-h-screen bg-gray-50 py-6 sm:py-8 md:py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="mb-16">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-                        <div>
-                            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                <div className="mb-8 sm:mb-12 md:mb-16">
+                    <div className="flex flex-col justify-between items-start mb-6">
+                        <div className="w-full">
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                                 מנדפים למסעדות - פתרונות מקצועיים לכל סוגי המטבחים
                             </h1>
-                            <nav className="flex" aria-label="Breadcrumb">
-                                <ol className="flex items-center space-x-4 space-x-reverse">
+                            <nav className="flex flex-wrap" aria-label="Breadcrumb">
+                                <ol className="flex flex-wrap items-center space-x-2 space-x-reverse">
                                     <li>
-                                        <Link to="/Home" className="text-gray-500 hover:text-gray-700">
+                                        <Link to="/Home" className="text-gray-500 hover:text-gray-700 text-sm sm:text-base">
                                             דף הבית
                                         </Link>
                                     </li>
                                     <li className="text-gray-500">/</li>
                                     <li>
-                                        <Link to="/Products" className="text-gray-500 hover:text-gray-700">
+                                        <Link to="/Products" className="text-gray-500 hover:text-gray-700 text-sm sm:text-base">
                                             מוצרים
                                         </Link>
                                     </li>
                                     <li className="text-gray-500">/</li>
-                                    <li className="text-gray-900 font-medium">מנדפים למסעדות</li>
+                                    <li className="text-gray-900 font-medium text-sm sm:text-base">מנדפים למסעדות</li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
 
                     <div className="bg-white rounded-xl overflow-hidden shadow-md">
-                        <div className="md:flex">
-                            <div className="md:w-1/2">
+                        <div className="flex flex-col md:flex-row">
+                            <div className="w-full md:w-1/2 h-64 sm:h-72 md:h-auto">
                                 <img
                                     src="/images/img8.jpg"
                                     alt="מנדפים למסעדות"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <div className="md:w-1/2 p-8">
-                                <h2 className="text-2xl font-bold mb-4">הפתרון הטוב ביותר למטבח המסעדה שלכם</h2>
-                                <p className="text-gray-600 mb-6">
+                            <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8">
+                                <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">הפתרון הטוב ביותר למטבח המסעדה שלכם</h2>
+                                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
                                     חברת טי אנד מדפים מתמחה בייצור מדפים באיכות הגבוהה ביותר להעשיית המטבח המסעדתי ונותנת מענה מקיף לכל צרכי האוורור והסינון במטבח המקצועי. המנדפים שלנו מיוצרים לפי תקן מחומרי הגלם האיכותיים ביותר תוך מתן דגש על כל התקנים המחמירים היום בשוק.
                                 </p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
                                     <div className="flex items-start">
                                         <div className="flex-shrink-0 p-1">
-                                            <Check className="h-5 w-5 text-green-500" />
+                                            <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
                                         </div>
-                                        <div className="mr-3">
-                                            <p className="text-gray-600">עמידה בתקני בטיחות מחמירים</p>
+                                        <div className="mr-2 sm:mr-3">
+                                            <p className="text-sm sm:text-base text-gray-600">עמידה בתקני בטיחות מחמירים</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
-                                        <div className="flex-shrink-0 p-1">
-                                            <Check className="h-5 w-5 text-green-500" />
+                                        <div className="flex-shrink-0">
+                                            <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
                                         </div>
-                                        <div className="mr-3">
-                                            <p className="text-gray-600">חיסכון בעלויות אנרגיה</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start">
-                                        <div className="flex-shrink-0 p-1">
-                                            <Check className="h-5 w-5 text-green-500" />
-                                        </div>
-                                        <div className="mr-3">
-                                            <p className="text-gray-600">רמת רעש נמוכה</p>
+                                        <div className="mr-2 sm:mr-3">
+                                            <p className="text-sm sm:text-base text-gray-600">חיסכון בעלויות אנרגיה</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
-                                        <div className="flex-shrink-0 p-1">
-                                            <Check className="h-5 w-5 text-green-500" />
+                                        <div className="flex-shrink-0">
+                                            <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
                                         </div>
-                                        <div className="mr-3">
-                                            <p className="text-gray-600">התאמה אישית למטבח שלכם</p>
+                                        <div className="mr-2 sm:mr-3">
+                                            <p className="text-sm sm:text-base text-gray-600">רמת רעש נמוכה</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start">
+                                        <div className="flex-shrink-0">
+                                            <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
+                                        </div>
+                                        <div className="mr-2 sm:mr-3">
+                                            <p className="text-sm sm:text-base text-gray-600">התאמה אישית למטבח שלכם</p>
                                         </div>
                                     </div>
                                 </div>
@@ -130,9 +129,9 @@ export default function RestaurantHoods() {
                 </div>
 
                 {/* Key Benefits */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-10">יתרונות המנדפים שלנו למסעדות</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <section className="mb-8 sm:mb-12 md:mb-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">יתרונות המנדפים שלנו למסעדות</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                         {[
                             {
                                 icon: Shield,
@@ -156,13 +155,13 @@ export default function RestaurantHoods() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="text-center hover:shadow-md transition-shadow p-6 bg-white rounded-lg shadow-sm"
+                                className="text-center hover:shadow-md transition-shadow p-4 sm:p-6 bg-white rounded-lg shadow-sm"
                             >
-                                <div className="inline-flex items-center justify-center p-3 bg-blue-100 rounded-full mb-4">
-                                    <benefit.icon className="h-6 w-6 text-blue-600" />
+                                <div className="inline-flex items-center justify-center p-2 sm:p-3 bg-blue-100 rounded-full mb-3 sm:mb-4">
+                                    <benefit.icon className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-                                <p className="text-gray-600">{benefit.description}</p>
+                                <h3 className="text-lg sm:text-xl font-semibold mb-1 sm:mb-2">{benefit.title}</h3>
+                                <p className="text-sm sm:text-base text-gray-600">{benefit.description}</p>
                             </motion.div>
                         ))
                         }
@@ -170,25 +169,25 @@ export default function RestaurantHoods() {
                 </section>
 
                 {/* Products List */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-10">סוגי מנדפים למסעדות</h2>
+                <section className="mb-8 sm:mb-12 md:mb-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">סוגי מנדפים למסעדות</h2>
 
                     {products.map((product, index) => (
                         <div
                             key={product.id}
-                            className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} bg-white rounded-xl shadow-md overflow-hidden mb-8`}
+                            className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} bg-white rounded-xl shadow-md overflow-hidden mb-6 sm:mb-8`}
                         >
-                            <div className="md:w-3/5 p-8">
-                                <h3 className="text-2xl font-bold mb-3">{product.title}</h3>
-                                <p className="text-gray-600 mb-6">{product.description}</p>
+                            <div className="md:w-3/5 p-4 sm:p-6 md:p-8">
+                                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">{product.title}</h3>
+                                <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">{product.description}</p>
 
-                                <div className="mb-6">
-                                    <h4 className="font-semibold mb-3">מאפיינים עיקריים:</h4>
-                                    <ul className="space-y-2">
+                                <div className="mb-4 sm:mb-6">
+                                    <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">מאפיינים עיקריים:</h4>
+                                    <ul className="space-y-1 sm:space-y-2">
                                         {product.features.map((feature, i) => (
                                             <li key={i} className="flex items-start">
-                                                <Check className="h-5 w-5 text-green-500 ml-2 mt-0.5" />
-                                                <span>{feature}</span>
+                                                <Check className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 ml-1 sm:ml-2 mt-0.5" />
+                                                <span className="text-sm sm:text-base">{feature}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -199,10 +198,10 @@ export default function RestaurantHoods() {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">שאלות נפוצות</h2>
-                    <div className="space-y-4">
-                        {[
+                <section className="mb-8 sm:mb-12 md:mb-16">
+                <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">שאלות נפוצות</h2>
+                <div className="space-y-3 sm:space-y-4">
+                {[
                             {
                                 question: "איזה גודל מנדף מתאים למסעדה שלי?",
                                 answer: "גודל המנדף תלוי במספר גורמים כמו גודל מטבח, סוג וכמות הציוד הקולינרי (כיריים, גריל, טיגון וכו'), מספר הסועדים, ועוד. אנו ממליצים לתאם פגישת ייעוץ שבה נבצע מדידות מדויקות ונמליץ על הפתרון המתאים ביותר."
@@ -232,9 +231,9 @@ export default function RestaurantHoods() {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="bg-white shadow-sm rounded-lg overflow-hidden"
                             >
-                                <div className="p-6">
-                                    <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                                    <p className="text-gray-600">{faq.answer}</p>
+                                <div className="p-4 sm:p-6">
+                                <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">{faq.question}</h3>
+                                <p className="text-sm sm:text-base text-gray-600">{faq.answer}</p>
                                 </div>
                             </motion.div>
                         ))

@@ -14,6 +14,9 @@ import GrillHoods from './subpages/GrillHoods';
 import HomeHoods from './subpages/HomeHoods';
 import StainlessWorks from './subpages/StainlessWorks';
 import SmokeFilters from './subpages/SmokeFilters';
+import OutdoorKitchens from './subpages/OutdoorKitchens';
+import GrillsCookingSystems from './subpages/GrillsCookingSystems';
+
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
               <Route path="/HomeHoods" element={<HomeHoods />} />
               <Route path="/StainlessWorks" element={<StainlessWorks />} />
               <Route path="/SmokeFilters" element={<SmokeFilters />} />
+              <Route path="/OutdoorKitchens" element={<OutdoorKitchens />} />
+              <Route path="/GrillsCookingSystems" element={<GrillsCookingSystems />} />
+
 
             </Routes>
           </main>
