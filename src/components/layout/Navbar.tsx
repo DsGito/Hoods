@@ -16,11 +16,11 @@ const Navbar = () => {
   return (
     <nav className="bg-[rgba(18,15,30,0.9)] backdrop-blur-md text-white fixed w-full z-50 top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-14 sm:h-16 items-center">
+        <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/Home" className="flex items-center space-x-2 space-x-reverse">
-              <img src="/icon/aa.png" alt="T.M mindafim" className="h-10 sm:h-12 w-auto" />
+              <img src="/icon/aa.png" alt="T.M mindafim" className="h-12 w-auto" />
             </Link>
           </div>
 
@@ -29,15 +29,15 @@ const Navbar = () => {
             {navItems.map((item) => (
               item.name === 'צרו קשר' ? (
                 <Link key={item.path} to={item.path} className="flex-shrink-0 flex items-center space-x-2 space-x-reverse">
-                  <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-sm font-medium">
+                  <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500 px-3 py-2 rounded-md text-sm font-medium">
                     {item.icon}
-                    <span className="ml-1 sm:ml-2"></span>{item.name}
+                    <span className="ml-2"></span>{item.name}
                   </Button>
                 </Link>
               ) : (
-                <Link key={item.path} to={item.path} className="text-white hover:text-[#d6b16c] px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-sm font-medium flex items-center">
+                <Link key={item.path} to={item.path} className="text-white hover:text-[#d6b16c] px-3 py-2 rounded-md text-sm font-medium flex items-center">
                   {item.icon}
-                  <span className="ml-1 sm:ml-2"></span>{item.name}
+                  <span className="ml-2"></span>{item.name}
                 </Link>
               )
             ))}
@@ -47,9 +47,9 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-1.5 sm:p-2 rounded-md text-white hover:text-[#d6b16c] focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-[#d6b16c] focus:outline-none"
             >
-              {isOpen ? <X className="h-5 sm:h-6 w-5 sm:w-6 text-[#d6b16c]" /> : <Menu className="h-5 sm:h-6 w-5 sm:w-6 text-[#d6b16c]" />}
+              {isOpen ? <X className="h-6 w-6 text-[#d6b16c]" /> : <Menu className="h-6 w-6 text-[#d6b16c]" />}
             </button>
           </div>
         </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden absolute w-full bg-white shadow-lg">
-          <div className="px-4 pt-2 pb-3 space-y-1 sm:space-y-2 sm:px-3">
+          <div className="px-4 pt-2 pb-3 space-y-2 sm:px-3">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -67,13 +67,13 @@ const Navbar = () => {
                 className="block text-right"
               >
                 {item.name === 'צרו קשר' ? (
-                  <Button className="w-full flex justify-center items-center hover:bg-[#c59e50] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-sm sm:text-base font-medium">
+                  <Button className="w-full flex justify-center items-center hover:bg-[#c59e50] text-white px-4 py-2 rounded-md text-base font-medium">
                     {item.icon}
-                    <span className="ml-1 sm:ml-2 px-1 sm:px-2">{item.name}</span>
+                    <span className="ml-2 px-2">{item.name}</span>
                   </Button>
                 ) : (
-                  <span className="text-gray-800 hover:text-[#d6b16c] px-3 sm:px-4 py-1.5 sm:py-2 inline-block text-sm sm:text-base font-medium">
-                    {item.icon} <span className="ml-1 sm:ml-2">{item.name}</span>
+                  <span className="text-gray-800 hover:text-[#d6b16c] px-4 py-2 inline-block text-base font-medium">
+                    {item.icon} <span className="ml-2">{item.name}</span>
                   </span>
                 )}
               </Link>
