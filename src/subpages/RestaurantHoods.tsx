@@ -56,13 +56,15 @@ export default function RestaurantHoods() {
                             <nav className="flex flex-wrap" aria-label="Breadcrumb">
                                 <ol className="flex flex-wrap items-center space-x-2 space-x-reverse">
                                     <li>
-                                        <Link to="/Home" className="text-gray-500 hover:text-gray-700 text-sm sm:text-base">
+                                        <Link to="/Home" onClick={() => window.scrollTo(0, 0)}
+                                            className="text-gray-500 hover:text-gray-700 text-sm sm:text-base">
                                             דף הבית
                                         </Link>
                                     </li>
                                     <li className="text-gray-500">/</li>
                                     <li>
-                                        <Link to="/Products" className="text-gray-500 hover:text-gray-700 text-sm sm:text-base">
+                                        <Link to="/Products" onClick={() => window.scrollTo(0, 0)}
+                                            className="text-gray-500 hover:text-gray-700 text-sm sm:text-base">
                                             מוצרים
                                         </Link>
                                     </li>

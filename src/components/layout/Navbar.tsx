@@ -19,7 +19,9 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/Home" className="flex items-center space-x-2 space-x-reverse">
+            <Link to="/Home"
+              onClick={() => window.scrollTo(0, 0)}
+              className="flex items-center space-x-2 space-x-reverse">
               <img src="/icon/aa.png" alt="T.M mindafim" className="h-12 w-auto" />
             </Link>
           </div>
@@ -28,14 +30,18 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4 space-x-reverse">
             {navItems.map((item) => (
               item.name === 'צרו קשר' ? (
-                <Link key={item.path} to={item.path} className="flex-shrink-0 flex items-center space-x-2 space-x-reverse">
+                <Link key={item.path} to={item.path} 
+                onClick={() => window.scrollTo(0, 0)}
+                className="flex-shrink-0 flex items-center space-x-2 space-x-reverse">
                   <Button className="flex items-center text-white bg-transparent hover:bg-[#d6b16c] hover:text-white border border-white hover:border-yellow-500 px-3 py-2 rounded-md text-sm font-medium">
                     {item.icon}
                     <span className="ml-2"></span>{item.name}
                   </Button>
                 </Link>
               ) : (
-                <Link key={item.path} to={item.path} className="text-white hover:text-[#d6b16c] px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                <Link key={item.path} to={item.path} 
+                onClick={() => window.scrollTo(0, 0)}
+                className="text-white hover:text-[#d6b16c] px-3 py-2 rounded-md text-sm font-medium flex items-center">
                   {item.icon}
                   <span className="ml-2"></span>{item.name}
                 </Link>

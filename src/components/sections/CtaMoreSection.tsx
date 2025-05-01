@@ -33,6 +33,8 @@ const CtaMoreSection = () => {
                                 <div className="flex flex-wrap gap-4">
                                     <Link
                                         to="/Contact"
+                                        onClick={() => window.scrollTo(0, 0)}
+
                                         className="group flex items-center gap-2 px-6 sm:px-8 py-2 sm:py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"
                                     >
                                         <PhoneCall className="h-4 w-4 sm:h-5 sm:w-5" />

@@ -119,7 +119,9 @@ export default function Products() {
 
                   <div className="flex gap-4">
 
-                    <Link to={`/${category.path}`}>
+                    <Link to={`/${category.path}`}
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
                       <Button className="bg-blue-600 hover:bg-blue-700">
                         פרטים נוספים
                       </Button>
@@ -132,9 +134,9 @@ export default function Products() {
           ))}
         </div>
       </div>
-      
+
       {/* קריאה לפעולה */}
-      <CtaMoreSection/>
+      <CtaMoreSection />
     </div>
   );
 }

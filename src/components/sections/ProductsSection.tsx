@@ -104,7 +104,9 @@ const ProductsSection = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-gray-700 hover:border-[#d6b16c]"
                         >
-                            <Link to={"/" + category.path}>
+                            <Link to={"/" + category.path}
+                                onClick={() => window.scrollTo(0, 0)}
+                            >
                                 <div className="relative h-40 sm:h-48 md:h-52">
                                     <img
                                         src={category.image}

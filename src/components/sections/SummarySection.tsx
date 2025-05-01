@@ -96,6 +96,7 @@ const SummarySection = () => {
                 <Link
                     to="/About"
                     className="inline-flex items-center bg-primary text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium hover:bg-[#d6b16c] transition-colors group"
+                    onClick={() => window.scrollTo(0, 0)}
                     >
                     קראו עוד עלינו
                     <ArrowRight className="mr-2 h-4 sm:h-5 w-4 sm:w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />

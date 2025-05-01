@@ -47,7 +47,9 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-gray-400 hover:text-white transition-colors">
+                  <Link to={link.href}
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="text-gray-400 hover:text-white transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -89,7 +91,9 @@ const Footer = () => {
             © {new Date().getFullYear()} כל הזכויות שמורות | טי אמ מנדפים - T.M mindafim
           </p>
           <div className="mt-4">
-            <Link to="/Accessibility" className="hover:text-white transition-colors">
+            <Link to="/Accessibility"
+              onClick={() => window.scrollTo(0, 0)}
+              className="hover:text-white transition-colors">
               הצהרת נגישות
             </Link>
           </div>

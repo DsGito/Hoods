@@ -58,13 +58,15 @@ export default function OutdoorKitchens() {
                             <nav className="flex" aria-label="Breadcrumb">
                                 <ol className="flex items-center space-x-4 space-x-reverse">
                                     <li>
-                                        <Link to="/Home" className="text-gray-500 hover:text-gray-700">
+                                        <Link to="/Home" onClick={() => window.scrollTo(0, 0)}
+                                            className="text-gray-500 hover:text-gray-700">
                                             דף הבית
                                         </Link>
                                     </li>
                                     <li className="text-gray-500">/</li>
                                     <li>
-                                        <Link to="/Products" className="text-gray-500 hover:text-gray-700">
+                                        <Link to="/Products" onClick={() => window.scrollTo(0, 0)}
+                                            className="text-gray-500 hover:text-gray-700">
                                             מוצרים
                                         </Link>
                                     </li>
