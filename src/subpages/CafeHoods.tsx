@@ -51,7 +51,7 @@ export default function CafeHoods() {
                 <div className="mb-16">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
-                            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                                 מנדפים לבתי קפה
                             </h1>
                             <nav className="flex" aria-label="Breadcrumb">
@@ -75,22 +75,22 @@ export default function CafeHoods() {
                     </div>
 
                     <div className="bg-white rounded-xl overflow-hidden shadow-md">
-                        <div className="md:flex">
-                            <div className="md:w-1/2">
+                        <div className="flex flex-col md:flex-row">
+                            <div className="w-full md:w-1/2 h-64 sm:h-80 md:h-full">
                                 <img
                                     src="/images/img29.jpg"
                                     alt="מנדפים לבתי קפה"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <div className="md:w-1/2 p-8">
-                                <h2 className="text-2xl font-bold mb-4">מנדפים מעוצבים ושקטים לבתי קפה</h2>
+                            <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8">
+                                <h2 className="text-2xl sm:text-3xl font-bold mb-4">מנדפים מעוצבים ושקטים לבתי קפה</h2>
                                 <p className="text-gray-600 mb-6">
                                     הפתרונות שלנו לבתי קפה ומאפיות מציעים שילוב מושלם של עיצוב אסתטי, פעולה שקטה ויעילות סינון מקסימלית.
                                     המנדפים מותאמים במיוחד לצרכים הייחודיים של בתי קפה, המשלבים מטבח קטן יחסית עם חלל אירוח רגיש לרעשים וריחות.
                                 </p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                     <div className="flex items-start">
                                         <div className="flex-shrink-0 p-1">
                                             <Check className="h-5 w-5 text-green-500" />
@@ -131,8 +131,8 @@ export default function CafeHoods() {
 
                 {/* Key Features */}
                 <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-10">מאפיינים מיוחדים למנדפים לבתי קפה</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">מאפיינים מיוחדים למנדפים לבתי קפה</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
                         {[
                             {
                                 icon: VolumeX,
@@ -176,21 +176,21 @@ export default function CafeHoods() {
 
                 {/*  Product Catalog */}
                 <section id="product-catalog" className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-10">הדגמים שלנו</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">הדגמים שלנו</h2>
 
                     {products.map((product, index) => (
                         <div
                             key={product.id}
-                            className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} bg-white rounded-xl shadow-md overflow-hidden mb-8`}
+                            className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} bg-white rounded-xl shadow-md overflow-hidden mb-4 sm:mb-8`}
                         >
-                            <div className="md:w-2/5">
+                            <div className="w-full md:w-2/5 h-64 sm:h-72 md:h-auto">
                                 <img
                                     src={product.image}
                                     alt={product.title}
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <div className="md:w-3/5 p-8">
+                            <div className="w-full md:w-3/5 p-4 sm:p-6 md:p-8">
                                 <h3 className="text-2xl font-bold mb-3">{product.title}</h3>
                                 <p className="text-gray-600 mb-6">{product.description}</p>
 

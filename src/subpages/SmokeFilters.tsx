@@ -56,7 +56,7 @@ export default function SmokeFilters() {
     },
     {
       stage: "שלב 2: סינון הפחתת ריחות",
-      description: "מפרק מולקולות של ריחות באמצעות טכנולוגיית UV או פחם פעיל. סינון זה חיוני במיוחד לבתי אוכל ומטבחים.",
+      description: "מפרק מולקולרי של ריחות באמצעות טכנולוגיית UV או פחם פעיל. סינון זה חיוני במיוחד לבתי אוכל ומטבחים.",
       icon: Wind,
       color: "green",
       percentage: 85,
@@ -83,7 +83,7 @@ export default function SmokeFilters() {
         <div className="mb-16">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
             <div>
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 מערכות סינון עשן
               </h1>
               <nav className="flex" aria-label="Breadcrumb">
@@ -107,22 +107,22 @@ export default function SmokeFilters() {
           </div>
 
           <div className="bg-white rounded-xl overflow-hidden shadow-md">
-            <div className="md:flex">
-              <div className="md:w-1/2">
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-1/2 h-64 sm:h-80 md:h-full">
                 <img
                   src="/images/img23.jpg"
                   alt="מערכות סינון עשן"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="md:w-1/2 p-8">
-                <h2 className="text-2xl font-bold mb-4">פתרונות סינון מתקדמים לאוויר נקי ובריא</h2>
+              <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4">פתרונות סינון מתקדמים לאוויר נקי ובריא</h2>
                 <p className="text-gray-600 mb-6">
                   מערכות הסינון המתקדמות שלנו מציעות פתרון כולל להפחתת עשן, ריחות, ואדי שמן במטבחים מסחריים וביתיים.
                   הטכנולוגיות החדשניות מאפשרות לכם לעמוד בכל התקנים והרגולציות, לשמור על סביבת עבודה בריאה, ולהפחית מטרדים לסביבה.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 p-1">
                       <Check className="h-5 w-5 text-green-500" />
@@ -163,9 +163,9 @@ export default function SmokeFilters() {
 
         {/* Why Quality Filtration Matters */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-10">למה סינון איכותי חשוב?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">למה סינון איכותי חשוב?</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {[
               {
                 title: "עמידה ברגולציה",
@@ -199,7 +199,7 @@ export default function SmokeFilters() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3">{reason.title}</h3>
                   <p className="text-gray-600">{reason.description}</p>
                 </div>
               </motion.div>
@@ -210,7 +210,7 @@ export default function SmokeFilters() {
 
         {/* Filtering Process */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-10">תהליך הסינון המתקדם</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">תהליך הסינון המתקדם</h2>
 
           {filteringStages.map((stage, index) => (
             <div key={index} className="mb-8 last:mb-0">
@@ -222,7 +222,7 @@ export default function SmokeFilters() {
                     </div>
                   </div>
                   <div className="md:w-3/4">
-                    <h3 className={`text-2xl font-bold text-${stage.color}-700 mb-3`}>{stage.stage}</h3>
+                    <h3 className={`text-2xl sm:text-3xl font-bold text-${stage.color}-700 mb-3`}>{stage.stage}</h3>
                     <p className="text-gray-700 mb-4 text-lg">
                       {stage.description}
                     </p>
@@ -252,7 +252,7 @@ export default function SmokeFilters() {
 
         {/* Filter Systems */}
         <section id="filter-systems" className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-10">סוגי מערכות סינון</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">סוגי מערכות סינון</h2>
 
           {filterSystems.map((system, index) => (
             <div
@@ -267,7 +267,7 @@ export default function SmokeFilters() {
                 />
               </div>
               <div className="md:w-3/5 p-8">
-                <h3 className="text-2xl font-bold mb-3">{system.title}</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3">{system.title}</h3>
                 <p className="text-gray-600 mb-6">{system.description}</p>
 
                 <div className="mb-6">
@@ -288,7 +288,7 @@ export default function SmokeFilters() {
 
         {/* Maintenance & Replacement */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">תחזוקה והחלפת מסננים</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">תחזוקה והחלפת מסננים</h2>
 
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <div className="md:flex">
@@ -300,13 +300,13 @@ export default function SmokeFilters() {
                 />
               </div>
               <div className="md:w-2/3 p-8">
-                <h3 className="text-2xl font-bold mb-4">תחזוקה נכונה למערכת סינון</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4">תחזוקה נכונה למערכת סינון</h3>
                 <p className="text-gray-600 mb-6">
                   תחזוקה נכונה של מערכת הסינון חיונית לשמירה על יעילות המערכת, עמידה בתקנים, ומניעת סיכוני בטיחות.
                   אנו מציעים מגוון פתרונות תחזוקה ומערך החלפת מסננים לפי לוח זמנים מומלץ:
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold mb-3">מסנני שומן (נירוסטה/אלומיניום)</h4>
                     <ul className="space-y-2">
@@ -379,8 +379,6 @@ export default function SmokeFilters() {
                     </ul>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>

@@ -52,8 +52,8 @@ export default function OutdoorKitchens() {
                 <div className="mb-16">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
-                            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                                מטבחי חוץ יוקרתיים
+                            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                                מטבחי חוץ
                             </h1>
                             <nav className="flex" aria-label="Breadcrumb">
                                 <ol className="flex items-center space-x-4 space-x-reverse">
@@ -69,29 +69,29 @@ export default function OutdoorKitchens() {
                                         </Link>
                                     </li>
                                     <li className="text-gray-500">/</li>
-                                    <li className="text-gray-900 font-medium">מטבחי חוץ יוקרתיים</li>
+                                    <li className="text-gray-900 font-medium">מטבחי חוץ</li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
 
                     <div className="bg-white rounded-xl overflow-hidden shadow-md">
-                        <div className="md:flex">
-                            <div className="md:w-1/2">
+                        <div className="flex flex-col md:flex-row">
+                            <div className="w-full md:w-1/2 h-64 sm:h-80 md:h-full">
                                 <img
                                     src="/images/img4.jpg"
-                                    alt="מטבחי חוץ יוקרתיים"
+                                    alt="מטבחי חוץ"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <div className="md:w-1/2 p-8">
-                                <h2 className="text-2xl font-bold mb-4">מטבחי חוץ המשלבים עמידות ויוקרה</h2>
+                            <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8">
+                                <h2 className="text-xl sm:text-2xl font-bold mb-4">מטבחי חוץ מעוצבים ואיכותיים</h2>
                                 <p className="text-gray-600 mb-6">
                                     מטבחי החוץ היוקרתיים שלנו מתוכננים בקפידה כדי לשלב עמידות מקסימלית בתנאי מזג אוויר עם אסתטיקה יוקרתית ופונקציונליות מלאה.
                                     כל מטבח מותאם אישית לצרכי הלקוח, לסגנון הבית ולתנאי החוץ הספציפיים, עם דגש על חומרים איכותיים ועיצוב מדויק.
                                 </p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                     <div className="flex items-start">
                                         <div className="flex-shrink-0 p-1">
                                             <Check className="h-5 w-5 text-green-500" />
@@ -132,8 +132,8 @@ export default function OutdoorKitchens() {
 
                 {/* Key Features */}
                 <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-10">מאפיינים מיוחדים למטבחי החוץ שלנו</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">מאפיינים מיוחדים של מטבחי החוץ שלנו</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
                         {[
                             {
                                 icon: Sun,

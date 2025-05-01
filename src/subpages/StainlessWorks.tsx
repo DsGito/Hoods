@@ -112,7 +112,7 @@ export default function StainlessWorks() {
                 <div className="mb-16">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
-                            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                                 עבודות נירוסטה מקצועיות
                             </h1>
                             <nav className="flex" aria-label="Breadcrumb">
@@ -136,22 +136,22 @@ export default function StainlessWorks() {
                     </div>
 
                     <div className="bg-white rounded-xl overflow-hidden shadow-md">
-                        <div className="md:flex">
-                            <div className="md:w-1/2">
+                        <div className="flex flex-col md:flex-row">
+                            <div className="w-full md:w-1/2 h-64 sm:h-80 md:h-full">
                                 <img
                                     src="/images/img16.jpg"
                                     alt="עבודות נירוסטה מקצועיות"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <div className="md:w-1/2 p-8">
-                                <h2 className="text-2xl font-bold mb-4">עבודות נירוסטה מקצועיות וייצור מותאם אישית</h2>
+                            <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8">
+                                <h2 className="text-xl sm:text-2xl font-bold mb-4">עבודות נירוסטה מקצועיות וייצור מותאם אישית</h2>
                                 <p className="text-gray-600 mb-6">
                                     טי אם מנדפים מתמחה בעבודות נירוסטה מקצועיות לתחום המטבחים התעשייתיים, בתי מלון, מסעדות ובתי עסק במגזר המסחרי.
                                     אנו מציעים מגוון רחב של מוצרי נירוסטה סטנדרטיים, לצד ייצור מותאם אישית לפי תכניות ודרישות ספציפיות של הלקוח.
                                 </p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                                     <div className="flex items-start">
                                         <div className="flex-shrink-0 p-1">
                                             <Check className="h-5 w-5 text-green-500" />
@@ -192,8 +192,8 @@ export default function StainlessWorks() {
 
                 {/* Why Stainless Steel? */}
                 <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-10">למה נירוסטה?</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">למה נירוסטה?</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
                         {stainlessQualities.map((quality, index) => (
                             <div key={index} className="text-center hover:shadow-md transition-shadow mb-8">
                                 <div className="p-6">
@@ -211,20 +211,20 @@ export default function StainlessWorks() {
 
                 {/* Types of Stainless Steel Products */}
                 <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-10">מוצרי נירוסטה מקצועיים</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">מוצרי נירוסטה מקצועיים</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         {stainlessProducts.map((product) => (
                             <div key={product.id} className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col mb-8">
                                 <div className="relative">
                                     <img
                                         src={product.image}
                                         alt={product.title}
-                                        className="w-full h-60 object-cover"
+                                        className="w-full h-60 sm:h-80 md:h-full object-cover"
                                     />
                                 </div>
-                                <div className="p-6 flex flex-col flex-grow">
-                                    <h3 className="text-xl font-bold mb-3">{product.title}</h3>
+                                <div className="p-6 sm:p-8 md:p-10 flex flex-col flex-grow">
+                                    <h3 className="text-xl sm:text-2xl font-bold mb-3">{product.title}</h3>
                                     <p className="text-gray-600 mb-4 flex-grow">{product.description}</p>
 
                                     <div className="mb-6">
@@ -248,10 +248,10 @@ export default function StainlessWorks() {
 
                 {/* Our Production Process */}
                 <section className="mb-16">
-                    <h2 className="text-3xl font-bold text-center mb-8">תהליך הייצור שלנו</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">תהליך הייצור שלנו</h2>
 
                     <div className="bg-white rounded-xl shadow-md overflow-hidden">
-                        <div className="p-8">
+                        <div className="p-8 sm:p-10 md:p-12">
                             <div className="flex flex-col space-y-8">
                                 <div className="flex flex-col md:flex-row items-center">
                                     <div className="md:w-1/4 flex justify-center mb-6 md:mb-0">
@@ -260,7 +260,7 @@ export default function StainlessWorks() {
                                         </div>
                                     </div>
                                     <div className="md:w-3/4">
-                                        <h3 className="text-xl font-bold mb-2">תכנון והנדסה</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold mb-2">תכנון והנדסה</h3>
                                         <p className="text-gray-600">
                                             צוות המהנדסים שלנו מתכנן את המוצר לפי דרישות הלקוח, תוך שימוש בתוכנות CAD מתקדמות.
                                             אנו מייצרים שרטוטים מפורטים המתאימים לסטנדרטים הגבוהים ביותר בתעשייה.
@@ -277,7 +277,7 @@ export default function StainlessWorks() {
                                         </div>
                                     </div>
                                     <div className="md:w-3/4">
-                                        <h3 className="text-xl font-bold mb-2">חיתוך וכיפוף</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold mb-2">חיתוך וכיפוף</h3>
                                         <p className="text-gray-600">
                                             חיתוך וכיפוף פלדת הנירוסטה בדיוק מרבי באמצעות מכונות CNC מתקדמות.
                                             אנו מבצעים בקרת איכות קפדנית בכל שלב כדי להבטיח דיוק מושלם.
@@ -294,7 +294,7 @@ export default function StainlessWorks() {
                                         </div>
                                     </div>
                                     <div className="md:w-3/4">
-                                        <h3 className="text-xl font-bold mb-2">ריתוך והרכבה</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold mb-2">ריתוך והרכבה</h3>
                                         <p className="text-gray-600">
                                             הרתכים המיומנים שלנו מבצעים ריתוכים מושלמים, ללא פגמים או חללים.
                                             תהליך ההרכבה מבוצע בקפידה תוך בקרת איכות רציפה.
@@ -311,7 +311,7 @@ export default function StainlessWorks() {
                                         </div>
                                     </div>
                                     <div className="md:w-3/4">
-                                        <h3 className="text-xl font-bold mb-2">גימור וליטוש</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold mb-2">גימור וליטוש</h3>
                                         <p className="text-gray-600">
                                             תהליכי גימור וליטוש מקצועיים להשגת המראה והמרקם המושלמים.
                                             אנו מציעים מגוון רחב של גימורים בהתאם לדרישות הלקוח.
@@ -328,7 +328,7 @@ export default function StainlessWorks() {
                                         </div>
                                     </div>
                                     <div className="md:w-3/4">
-                                        <h3 className="text-xl font-bold mb-2">בקרת איכות ומשלוח</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold mb-2">בקרת איכות ומשלוח</h3>
                                         <p className="text-gray-600">
                                             בדיקה סופית של כל מוצר לפני אריזה ומשלוח, כדי להבטיח שהוא עומד בסטנדרטים הגבוהים ביותר שלנו ושל לקוחותינו.
                                         </p>

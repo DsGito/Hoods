@@ -28,7 +28,6 @@ export default function RestaurantHoods() {
                 "נירוסטה 304 בעובי 1.5 מ\"מ",
                 "מסנני נירוסטה הניתנים לפירוק",
                 "תאורת LED בשני הצדדים",
-                "מערכת שליטה מתקדמת על עוצמת השאיבה",
             ],
         },
         {
@@ -48,10 +47,10 @@ export default function RestaurantHoods() {
     return (
         <div className="min-h-screen bg-gray-50 py-6 sm:py-8 md:py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="mb-8 sm:mb-12 md:mb-16">
-                    <div className="flex flex-col justify-between items-start mb-6">
-                        <div className="w-full">
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <div className="mb-16">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <div>
+                            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                                 מנדפים למסעדות - פתרונות מקצועיים לכל סוגי המטבחים
                             </h1>
                             <nav className="flex flex-wrap" aria-label="Breadcrumb">
@@ -76,7 +75,7 @@ export default function RestaurantHoods() {
 
                     <div className="bg-white rounded-xl overflow-hidden shadow-md">
                         <div className="flex flex-col md:flex-row">
-                            <div className="w-full md:w-1/2 h-64 sm:h-72 md:h-auto">
+                            <div className="w-full md:w-1/2 h-64 sm:h-80 md:h-full">
                                 <img
                                     src="/images/img8.jpg"
                                     alt="מנדפים למסעדות"
@@ -84,7 +83,7 @@ export default function RestaurantHoods() {
                                 />
                             </div>
                             <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8">
-                                <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">הפתרון הטוב ביותר למטבח המסעדה שלכם</h2>
+                                <h2 className="text-xl sm:text-2xl font-bold mb-4">הפתרון הטוב ביותר למטבח המסעדה שלכם</h2>
                                 <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
                                     חברת טי אנד מדפים מתמחה בייצור מדפים באיכות הגבוהה ביותר להעשיית המטבח המסעדתי ונותנת מענה מקיף לכל צרכי האוורור והסינון במטבח המקצועי. המנדפים שלנו מיוצרים לפי תקן מחומרי הגלם האיכותיים ביותר תוך מתן דגש על כל התקנים המחמירים היום בשוק.
                                 </p>
@@ -129,7 +128,7 @@ export default function RestaurantHoods() {
                 </div>
 
                 {/* Key Benefits */}
-                <section className="mb-8 sm:mb-12 md:mb-16">
+                <section className="mb-16">
                     <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">יתרונות המנדפים שלנו למסעדות</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                         {[
@@ -169,7 +168,7 @@ export default function RestaurantHoods() {
                 </section>
 
                 {/* Products List */}
-                <section className="mb-8 sm:mb-12 md:mb-16">
+                <section className="mb-16">
                     <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-10">סוגי מנדפים למסעדות</h2>
 
                     {products.map((product, index) => (
@@ -198,10 +197,10 @@ export default function RestaurantHoods() {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="mb-8 sm:mb-12 md:mb-16">
-                <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">שאלות נפוצות</h2>
-                <div className="space-y-3 sm:space-y-4">
-                {[
+                <section className="mb-16">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">שאלות נפוצות</h2>
+                    <div className="space-y-3 sm:space-y-4">
+                        {[
                             {
                                 question: "איזה גודל מנדף מתאים למסעדה שלי?",
                                 answer: "גודל המנדף תלוי במספר גורמים כמו גודל מטבח, סוג וכמות הציוד הקולינרי (כיריים, גריל, טיגון וכו'), מספר הסועדים, ועוד. אנו ממליצים לתאם פגישת ייעוץ שבה נבצע מדידות מדויקות ונמליץ על הפתרון המתאים ביותר."
@@ -232,8 +231,8 @@ export default function RestaurantHoods() {
                                 className="bg-white shadow-sm rounded-lg overflow-hidden"
                             >
                                 <div className="p-4 sm:p-6">
-                                <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">{faq.question}</h3>
-                                <p className="text-sm sm:text-base text-gray-600">{faq.answer}</p>
+                                    <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">{faq.question}</h3>
+                                    <p className="text-sm sm:text-base text-gray-600">{faq.answer}</p>
                                 </div>
                             </motion.div>
                         ))
