@@ -165,7 +165,7 @@ export default function GrillHoods() {
                 id: "smoker-hood",
                 title: "מנדף למעשנות",
                 description: "מנדף ייעודי המתוכנן לעבודה עם מעשנות בשר מקצועיות, עם מערכת סינון מיוחדת ללכידת חלקיקי עשן וריח.",
-                image: "https://images.unsplash.com/photo-1523392444453-1bbe603e907c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                image: "https://images.unsplash.com/photo-1621510456681-2330135e5871?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
                 features: [
                   "מערכת סינון עשן ייחודית ארבע-שלבית",
                   "בקרת זרימת אוויר לשמירה על טמפרטורה אחידה",

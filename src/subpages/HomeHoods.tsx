@@ -21,7 +21,7 @@ export default function HomeHoods() {
             id: "island-hood",
             title: "קולטי אדים לאי",
             description: "פתרון מושלם למטבחים עם אי מרכזי, שילוב של עוצמה ועיצוב יוקרתי שתלוי מהתקרה.",
-            image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            image: "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "עיצוב דו-צדדי תלוי",
                 "שאיבה חזקה (עד 1,200 מ\"ק לשעה)",
@@ -33,7 +33,7 @@ export default function HomeHoods() {
             id: "built-in-hood",
             title: "קולטי אדים נסתרים",
             description: "קולטי אדים המשתלבים בארונות המטבח העליונים, לאלו המעדיפים מראה נקי ומינימליסטי.",
-            image: "https://images.unsplash.com/photo-1631048500251-9857be19c9ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+            image: "https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
             features: [
                 "שילוב מושלם במטבח",
                 "מנגנון שליפה נוח",
@@ -225,7 +225,7 @@ export default function HomeHoods() {
                         <div className="flex flex-col md:flex-row">
                             <div className="md:w-2/5">
                                 <img
-                                    src="https://images.unsplash.com/photo-1607894396565-98e51c39f114?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                                    src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
                                     alt="עיצוב מותאם אישית"
                                     className="w-full h-full object-cover"
                                 />

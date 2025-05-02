@@ -22,7 +22,7 @@ export default function SmokeFilters() {
       id: "advanced-filters",
       title: "מערכת סינון מתקדמת",
       description: "מערכת סינון ארבע-שלבית ליישומים מסחריים שדורשים סינון יעיל ורמת ניקיון גבוהה במיוחד.",
-      image: "https://images.unsplash.com/photo-1567361294499-937a50ab62a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       features: [
         "מסנני שומן בעיצוב זרימה מתקדם",
         "מערכת UV לפירוק מולקולרי של ריחות",
@@ -177,7 +177,7 @@ export default function SmokeFilters() {
               {
                 title: "בריאות ובטיחות",
                 description: "סינון יעיל מפחית חשיפה של עובדים ולקוחות לזיהום אוויר, עשן ושומנים, ומקטין סיכוני שריפה.",
-                image: "https://images.unsplash.com/photo-1590856029826-c7a73142d46e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                image: "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
               },
               {
                 title: "חיסכון בעלויות",
