@@ -440,12 +440,12 @@ const AccessibilityWidget = () => {
                   <p className="text-sm font-medium flex items-center">
                     <Speech className="h-4 w-4 ml-2" /> תמיכה בקריאה
                   </p>
-                  <div className="grid grid-cols-1 gap-2">
+                  <div className="grid grid-cols-2 gap-2">
                     <Button
                       variant={settings.dyslexicFont ? "default" : "outline"}
                       size="sm"
                       onClick={toggleDyslexicFont}
-                      className="w-full justify-start"
+                      className="justify-start"
                       aria-label={ariaLabels.dyslexiaToggle}
                       aria-pressed={settings.dyslexicFont}
                     >
@@ -457,7 +457,7 @@ const AccessibilityWidget = () => {
                       variant={settings.readingGuide ? "default" : "outline"}
                       size="sm"
                       onClick={toggleReadingGuide}
-                      className="w-full justify-start"
+                      className="justify-start"
                       aria-label={ariaLabels.readingGuideToggle}
                       aria-pressed={settings.readingGuide}
                     >
@@ -468,7 +468,7 @@ const AccessibilityWidget = () => {
                       variant={settings.textToSpeech ? "default" : "outline"}
                       size="sm"
                       onClick={toggleTextToSpeech}
-                      className="w-full justify-start"
+                      className="justify-start"
                       aria-label={ariaLabels.textToSpeechToggle}
                       aria-pressed={settings.textToSpeech}
                     >
@@ -483,12 +483,12 @@ const AccessibilityWidget = () => {
                   <p className="text-sm font-medium flex items-center">
                     <MousePointer className="h-4 w-4 ml-2" /> ניווט ואינטראקציה
                   </p>
-                  <div className="grid grid-cols-1 gap-2">
+                  <div className="grid grid-cols-2 gap-2">
                     <Button
                       variant={settings.cursor === 'large' ? "default" : "outline"}
                       size="sm"
                       onClick={toggleCursor}
-                      className="w-full justify-start"
+                      className="justify-start"
                       aria-label={ariaLabels.cursorToggle}
                       aria-pressed={settings.cursor === 'large'}
                     >
@@ -499,7 +499,7 @@ const AccessibilityWidget = () => {
                       variant={settings.linkHighlight ? "default" : "outline"}
                       size="sm"
                       onClick={toggleLinkHighlight}
-                      className="w-full justify-start"
+                      className="justify-start"
                       aria-label={ariaLabels.linkToggle}
                       aria-pressed={settings.linkHighlight}
                     >
