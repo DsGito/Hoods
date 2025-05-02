@@ -56,15 +56,8 @@ const Contact = () => {
   }, []);
 
   // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
-  };
+  const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.2 } } };
+  const itemVariants = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 }  };
 
   return (
     <div className="rtl min-h-screen bg-gradient-to-b from-white to-gray-50 w-full overflow-x-hidden">
@@ -81,8 +74,8 @@ const Contact = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4 items-center relative z-20 inline-block">
               <Link
                 to="tel:+972549659008"
-                className="px-8 py-3 bg-white text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
-              >
+                className="px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
+                >
                 <PhoneCall className="h-5 w-5 ml-2" />
                 התקשרו עכשיו
               </Link>

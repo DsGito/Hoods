@@ -39,6 +39,37 @@ const About = () => {
           <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
         </div>
 
+
+
+
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-bold mb-6">
+
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              חברת <span style={{ color: themeColor }}>טי אמ מנדפים</span>
+            </h1>
+
+            <p className="text-base sm:text-lg max-w-2xl mx-auto mb-12 text-blue-100">
+              אנחנו משלבים ידע מקצועי, ניסיון שטח וטכנולוגיה מתקדמת
+              כדי לייצר מנדפים וקולטי אדים שעושים את העבודה בצורה מושלמת.
+            </p>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-4 items-center relative z-20 inline-block">
+              <Link
+                to="tel:+972549659008"
+                className="px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
+                >
+                <PhoneCall className="h-5 w-5 ml-2" />
+                התקשרו עכשיו
+              </Link>
+
+
+            </div>
+          </motion.div>
+        </div>
+
+
+        {/* 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
@@ -50,7 +81,7 @@ const About = () => {
               כדי לייצר מנדפים וקולטי אדים שעושים את העבודה בצורה מושלמת.
             </p>
 
-            {/* כפתור קריאה לפעולה   */}
+            
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -66,6 +97,7 @@ const About = () => {
             </motion.div >
           </motion.div>
         </div>
+          */}
 
         {/* Decorative wave for smooth transition to next section */}
         <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
