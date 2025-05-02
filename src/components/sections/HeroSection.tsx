@@ -13,12 +13,7 @@ const HeroSection = () => {
     // פונקציה לגלילה חלקה אל האלמנט המבוקש
     const scrollToSection = (elementId: string): void => {
         const element = document.getElementById(elementId);
-        if (element) {
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        if (element) { element.scrollIntoView({  behavior: 'smooth', block: 'start' }); }
     };
 
 
