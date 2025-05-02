@@ -170,23 +170,6 @@ const AccessibilityWidget = () => {
     }
   }
 
-  const cycleContrast = () => {
-    const contrastModes: AccessibilitySettings['contrast'][] = ['normal', 'high', 'dark', 'light', 'colorblind']
-    const currentIndex = contrastModes.indexOf(settings.contrast)
-    const nextIndex = (currentIndex + 1) % contrastModes.length
-    updateSettings('contrast', contrastModes[nextIndex])
-  }
-
-  const getContrastText = () => {
-    switch (settings.contrast) {
-      case 'normal': return 'ניגודיות רגילה'
-      case 'high': return 'ניגודיות גבוהה'
-      case 'dark': return 'מצב כהה'
-      case 'light': return 'מצב בהיר'
-      case 'colorblind': return 'מצב עיוורון צבעים'
-    }
-  }
-
   const toggleCursor = () => {
     updateSettings('cursor', settings.cursor === 'default' ? 'large' : 'default')
   }
@@ -415,25 +398,75 @@ const AccessibilityWidget = () => {
                 </div>
 
                 {/* ניגודיות */}
+                {/* ניגודיות */}
                 <div className="space-y-2 mb-4">
                   <p className="text-sm font-medium flex items-center">
                     <Eye className="h-4 w-4 ml-2" /> תצוגה וניגודיות
                   </p>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    onClick={cycleContrast}
-                    className="w-full justify-start"
-                    aria-label={ariaLabels.contrastToggle}
-                  >
-                    {settings.contrast === 'normal' && <Sun className="h-4 w-4 ml-2" />}
-                    {settings.contrast === 'high' && <Moon className="h-4 w-4 ml-2" />}
-                    {settings.contrast === 'dark' && <Moon className="h-4 w-4 ml-2" />}
-                    {settings.contrast === 'light' && <Sun className="h-4 w-4 ml-2" />}
-                    {settings.contrast === 'colorblind' && <Eye className="h-4 w-4 ml-2" />}
-                    {getContrastText()}
-                  </Button>
+                  <div className="grid grid-cols-3 gap-2 text-center text-xs">
+                    <div>
+                      <Button
+                        variant={settings.contrast === 'normal' ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => updateSettings('contrast', 'normal')}
+                        className="justify-center"
+                        aria-label="ניגודיות רגילה"
+                      >
+                        <Sun className="h-4 w-4" />
+                      </Button>
+                      <div>רגילה</div>
+                    </div>
+                    <div>
+                      <Button
+                        variant={settings.contrast === 'high' ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => updateSettings('contrast', 'high')}
+                        className="justify-center"
+                        aria-label="ניגודיות גבוהה"
+                      >
+                        <Moon className="h-4 w-4" />
+                      </Button>
+                      <div>גבוהה</div>
+                    </div>
+                    <div>
+                      <Button
+                        variant={settings.contrast === 'dark' ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => updateSettings('contrast', 'dark')}
+                        className="justify-center"
+                        aria-label="מצב כהה"
+                      >
+                        <Moon className="h-4 w-4" />
+                      </Button>
+                      <div>כהה</div>
+                    </div>
+                    <div>
+                      <Button
+                        variant={settings.contrast === 'light' ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => updateSettings('contrast', 'light')}
+                        className="justify-center"
+                        aria-label="מצב בהיר"
+                      >
+                        <Sun className="h-4 w-4" />
+                      </Button>
+                      <div>בהיר</div>
+                    </div>
+                    <div>
+                      <Button
+                        variant={settings.contrast === 'colorblind' ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => updateSettings('contrast', 'colorblind')}
+                        className="justify-center"
+                        aria-label="מצב עיוורון צבעים"
+                      >
+                        <Eye className="h-4 w-4" />
+                      </Button>
+                      <div>עיוורון צבעים</div>
+                    </div>
+                  </div>
                 </div>
+
 
                 {/* תמיכה בקריאה */}
                 <div className="space-y-2 mb-4">
