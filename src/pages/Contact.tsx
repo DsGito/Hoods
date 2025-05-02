@@ -78,7 +78,7 @@ const Contact = () => {
             <p className="text-base sm:text-lg max-w-2xl mx-auto mb-12 text-blue-100">
               נשמח לשמוע מכם, לייעץ ולהתאים את הפתרון המושלם עבורכם
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 items-center relative z-20 inline-block">
               <Link
                 to="tel:+972549659008"
                 className="px-8 py-3 bg-white text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
@@ -108,13 +108,19 @@ const Contact = () => {
         </div>
 
         {/* Decorative wave for smooth transition to next section */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full">
+        <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 220"
+            className="w-full"
+            style={{ display: 'block', marginBottom: '-5px' }}
+          >
             <path
               fill="#f9fafb"
-              fillOpacity="1"
-              d="M0,32L60,37.3C120,43,240,53,360,58.7C480,64,600,64,720,53.3C840,43,960,21,1080,21.3C1200,21,1320,43,1380,53.3L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"
-            ></path>
+              stroke="none"
+              strokeWidth="0"
+              d="M0,160L60,170.7C120,181,240,203,360,192C480,181,600,139,720,117.3C840,96,960,96,1080,112C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            />
           </svg>
         </div>
 
