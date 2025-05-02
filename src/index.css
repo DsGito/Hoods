@@ -172,3 +172,129 @@ html, body {
 .skip-to-main:focus {
   top: 0;
 }
+
+
+/* פונט מותאם  */
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* מצבי ניגודיות */
+.high-contrast {
+  filter: contrast(1.5);
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast * {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.high-contrast a, 
+.high-contrast button:not([disabled]) {
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+}
+
+.high-contrast img, 
+.high-contrast svg, 
+.high-contrast video {
+  filter: grayscale(1) contrast(1.5) !important;
+}
+
+/* מצב כהה */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+.dark-mode * {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+.dark-mode a, 
+.dark-mode button:not([disabled]) {
+  color: #64b5f6 !important;
+}
+
+/* מצב בהיר */
+.light-mode {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.light-mode * {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.light-mode a, 
+.light-mode button:not([disabled]) {
+  color: #0066cc !important;
+}
+
+/* מצב עיוורון צבעים */
+.colorblind-mode {
+  filter: saturate(0) !important;
+}
+
+/* הגדלת סמן עכבר */
+.large-cursor * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="6" cy="6" r="5" fill="black" stroke="white" stroke-width="1"/></svg>'), auto !important;
+}
+
+/* הדגשת קישורים */
+.highlight-links a {
+  background-color: rgba(255, 255, 0, 0.4) !important;
+  border: 2px solid !important;
+  border-radius: 4px !important;
+  padding: 2px 4px !important;
+  margin: 0 2px !important;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.highlight-links a:hover,
+.highlight-links a:focus {
+  background-color: rgba(255, 150, 0, 0.6) !important;
+  outline: 3px solid rgba(255, 150, 0, 0.8) !important;
+}
+
+/* פונט דיסלקציה */
+.dyslexic-font * {
+  font-family: 'OpenDyslexic', sans-serif !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.15em !important;
+}
+
+/* ריווח מוגדל */
+.increased-spacing * {
+  line-height: 2 !important;
+  margin-bottom: 1.5em !important;
+  letter-spacing: 0.12em !important;
+  word-spacing: 0.16em !important;
+}
+
+.increased-spacing p,
+.increased-spacing li,
+.increased-spacing h1,
+.increased-spacing h2,
+.increased-spacing h3,
+.increased-spacing h4,
+.increased-spacing h5,
+.increased-spacing h6 {
+  margin-bottom: 1.5em !important;
+}
