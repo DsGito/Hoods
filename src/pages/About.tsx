@@ -39,9 +39,6 @@ const About = () => {
           <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
         </div>
 
-
-
-
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-bold mb-6">
 
