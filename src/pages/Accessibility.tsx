@@ -7,10 +7,10 @@ const Accessibility = () => {
     {
       category: "התאמות טקסט וצבעים",
       features: [
-        "אפשרות להגדלת הטקסט עד 150%",
-        "אפשרות למצב ניגודיות גבוהה",
+        "אפשרות להגדלת הטקסט עד 200%",
+        "מספר מצבי ניגודיות: רגילה, גבוהה, מצב כהה, מצב בהיר ומצב עיוורון צבעים",
         "פונט מותאם לאנשים עם דיסלקציה",
-        "הגדלת ריווח בין שורות לשיפור הקריאות"
+        "מדריך קריאה להקלה על מעקב אחר הטקסט"
       ]
     },
     {
@@ -20,6 +20,15 @@ const Accessibility = () => {
         "אפשרות להגדלת סמן העכבר",
         "הדגשת קישורים לשיפור הנראות",
         "תפריט נגישות קבוע וזמין בכל עמוד"
+      ]
+    },
+    {
+      category: "תמיכה במחשב בקריאה ושמיעה",
+      features: [
+        "תכונת הקראת טקסט (Text-to-Speech) בעברית",
+        "אפשרות להשהות ולהמשיך את ההקראה",
+        "ממשק שליטה בהקראה נוח וברור",
+        "הקראת תוכן בעת מעבר העכבר מעל טקסטים, כותרות וקישורים"
       ]
     },
     {
@@ -65,7 +74,6 @@ const Accessibility = () => {
         </div>
       </section>
 
-
       {/* Main Content */}
       <section className="max-w-5xl mx-auto px-4 py-16 space-y-16">
         {/* מבוא */}
@@ -81,12 +89,45 @@ const Accessibility = () => {
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             חברת טי אמ מנדפים מאמינה ומקדמת את זכותם של אנשים עם מוגבלות להשתתפות שוויונית ופעילה בחברה.
-            אתר זה תוכנן ופותח כך שיהיה נגיש עבור אנשים עם מוגבלות, בהתאם לתקן הישראלי (ת"י 5568)
-            ולהנחיות הנגישות WCAG 2.1 ברמה AA.
+            אתר זה תוכנן ופותח כך שיהיה נגיש עבור אנשים עם מוגבלות.
           </p>
           <p className="text-gray-700 leading-relaxed">
             אנו ממשיכים לפעול באופן מתמיד לשיפור נגישות האתר והשירותים הדיגיטליים שלנו.
           </p>
+        </motion.div>
+
+        {/* כיצד להשתמש בתפריט הנגישות */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-white p-8 rounded-2xl shadow-md"
+        >
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 border-r-4 pr-4" style={{ borderColor: themeColor }}>
+            כיצד להשתמש בתפריט הנגישות
+          </h2>
+
+          <div className="space-y-4 text-gray-700">
+            <p>
+              תפריט הנגישות נמצא בפינה הימנית התחתונה של המסך ומסומן באיקון נגישות.
+              לחיצה על כפתור זה תפתח את תפריט הנגישות המלא עם כל האפשרויות הזמינות.
+            </p>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h3 className="font-semibold mb-2" style={{ color: themeColor }}>התאמות זמינות בתפריט:</h3>
+              <ul className="list-disc list-inside space-y-1">
+                <li>הגדלה והקטנה של גודל הטקסט</li>
+                <li>שינוי ניגודיות ומצבי תצוגה</li>
+                <li>הפעלת פונט מותאם לדיסלקציה</li>
+                <li>הפעלת מדריך קריאה</li>
+                <li>הפעלת הקראת טקסט</li>
+                <li>הגדלת סמן העכבר</li>
+                <li>הדגשת קישורים</li>
+                <li>איפוס כל ההגדרות</li>
+              </ul>
+            </div>
+          </div>
         </motion.div>
 
         {/* התאמות נגישות */}
@@ -114,6 +155,25 @@ const Accessibility = () => {
                 </ul>
               </div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* יצירת קשר בנושא נגישות */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-white p-8 rounded-2xl shadow-md"
+        >
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 border-r-4 pr-4" style={{ borderColor: themeColor }}>
+            יצירת קשר בנושא נגישות
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            אם נתקלתם בבעיית נגישות באתר או שיש לכם הצעות לשיפור, נשמח לשמוע מכם.
+          </p>
+          <div className="bg-gray-50 p-4 rounded-lg">
+            <p>דוא"ל: Tm.mindaf@gmail.com</p>
           </div>
         </motion.div>
 
