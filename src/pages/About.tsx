@@ -112,10 +112,7 @@ const About = () => {
             />
           </svg>
         </div>
-
-
       </section>
-
 
       {/* חזון החברה */}
       <section className="py-10 bg-white">
@@ -156,8 +153,25 @@ const About = () => {
         </motion.div>
       </section>
 
+
+      {/* סקשן ביניים - ציטוט */}
+      <section className="py-16 bg-white" >
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
+            <div className="inline-flex rounded-full bg-white/80 p-2 mb-6">
+              <ThumbsUp className="h-8 w-8" style={{ color: themeColor }} />
+            </div>
+            <blockquote className="text-2xl font-medium text-gray-800 mb-6">
+              "אנו מאמינים שטכנולוגיה משתלבת באומנות, וכל מוצר הוא עדות למחויבות שלנו לאיכות"
+            </blockquote>
+            <p className="text-lg text-gray-600">- צוות טי אמ מנדפים</p>
+          </motion.div>
+        </div>
+      </section>
+
+
       {/* מאפייני החברה - מבנה כרטיסים אחיד */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20" style={{ backgroundColor: `${themeColor}1A` }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -186,23 +200,6 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* סקשן ביניים - ציטוט */}
-      <section className="py-16" style={{ backgroundColor: `${themeColor}1A` }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
-            <div className="inline-flex rounded-full bg-white/80 p-2 mb-6">
-              <ThumbsUp className="h-8 w-8" style={{ color: themeColor }} />
-            </div>
-            <blockquote className="text-2xl font-medium text-gray-800 mb-6">
-              "אנו מאמינים שטכנולוגיה משתלבת באומנות, וכל מוצר הוא עדות למחויבות שלנו לאיכות"
-            </blockquote>
-            <p className="text-lg text-gray-600">- צוות טי אמ מנדפים</p>
-          </motion.div>
-        </div>
-      </section>
-
-
 
       {/* קריאה לפעולה */}
       <CtaMoreSection />

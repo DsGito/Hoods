@@ -9,14 +9,22 @@ const benefits = [
     'שירות מקיף',
 ];
 
+// פונקציה לגלילה חלקה אל האלמנט המבוקש
+const scrollToSection = (elementId: string): void => {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    else {
+        // כאלטרנטיבה, אפשר לגלול למיקום מסוים בדף אם האלמנט לא קיים
+        window.scrollTo({
+            top: window.innerHeight, // גלילה בערך לגובה המסך
+            behavior: 'smooth'
+        });
+    }
+};
+
 const HeroSection = () => {
-    // פונקציה לגלילה חלקה אל האלמנט המבוקש
-    const scrollToSection = (elementId: string): void => {
-        const element = document.getElementById(elementId);
-        if (element) { element.scrollIntoView({  behavior: 'smooth', block: 'start' }); }
-    };
-
-
     return (
         <div className="rtl">
             {/* Hero Section */}
@@ -32,7 +40,7 @@ const HeroSection = () => {
                         className="w-full h-full object-cover opacity-30"
                         style={{
                             minHeight: '500%',
-                            objectPosition: 'center 30%', // מיקום טוב יותר במובייל
+                            objectPosition: 'center 30%',
                             maxWidth: '100%'
                         }}
                     >
@@ -82,6 +90,23 @@ const HeroSection = () => {
                                 ))}
                             </div>
 
+                            {/* CTA Button 
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: 0.4 }}
+                                className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center justify-end"
+                            >
+                                <button
+                                    onClick={() => scrollToSection('products-section')}
+                                    className="inline-flex justify-center items-center bg-transparent text-white px-6 sm:px-8 py-3 sm:py-4 border border-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors group cursor-pointer text-base sm:text-lg w-full sm:w-auto mr-auto sm:mr-0"
+                                >
+                                    צפו בפתרונות שלנו
+                                    <ArrowDown className="mr-2 sm:mr-3 h-4 sm:h-5 w-4 sm:w-5 transform transition-transform duration-300 group-hover:translate-y-1" />
+                                </button>
+                            </motion.div>
+                            */}
+
 
                             {/* CTA Button */}
                             <motion.div
@@ -99,26 +124,28 @@ const HeroSection = () => {
                                     <ArrowDown className="mr-2 sm:mr-3 h-4 sm:h-5 w-4 sm:w-5 transform transition-transform duration-300 group-hover:translate-y-1" />
                                 </button>
                             </motion.div>
+
+                            
                         </motion.div>
                     </div>
                 </div>
 
-        {/* Decorative wave for smooth transition to next section */}
-        <div className="absolute bottom-0 left-0 right-0 overflow-hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 220"
-            className="w-full"
-            style={{ display: 'block', marginBottom: '-5px' }}
-          >
-            <path
-              fill="white"
-              stroke="none"
-              strokeWidth="0"
-              d="M0,160L60,170.7C120,181,240,203,360,192C480,181,600,139,720,117.3C840,96,960,96,1080,112C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-            />
-          </svg>
-        </div>
+                {/* Decorative wave for smooth transition to next section */}
+                <div className="absolute bottom-0 left-0 right-0 overflow-hidden  pointer-events-none">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1440 220"
+                        className="w-full"
+                        style={{ display: 'block', marginBottom: '-5px' }}
+                    >
+                        <path
+                            fill="white"
+                            stroke="none"
+                            strokeWidth="0"
+                            d="M0,160L60,170.7C120,181,240,203,360,192C480,181,600,139,720,117.3C840,96,960,96,1080,112C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+                        />
+                    </svg>
+                </div>
             </section>
         </div>
     );
