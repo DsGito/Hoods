@@ -55,7 +55,7 @@ const About = () => {
               <Link
                 to="tel:+972549659008"
                 className="px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
-                >
+              >
                 <PhoneCall className="h-5 w-5 ml-2" />
                 התקשרו עכשיו
               </Link>
@@ -105,7 +105,7 @@ const About = () => {
             style={{ display: 'block', marginBottom: '-5px' }}
           >
             <path
-              fill="#f9fafb"
+              fill="white"
               stroke="none"
               strokeWidth="0"
               d="M0,160L60,170.7C120,181,240,203,360,192C480,181,600,139,720,117.3C840,96,960,96,1080,112C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
@@ -118,7 +118,7 @@ const About = () => {
 
 
       {/* חזון החברה */}
-      <section className="py-10 bg-gray-50">
+      <section className="py-10 bg-white">
         <motion.div
           initial="hidden"
           whileInView="visible"
