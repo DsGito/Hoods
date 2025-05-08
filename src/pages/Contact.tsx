@@ -56,15 +56,41 @@ const Contact = () => {
   }, []);
 
   // Animation variants
-  const containerVariants = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.2 } } };
-  const itemVariants = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } };
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12
+      }
+    }
+  };
+
 
   return (
     <div className="rtl min-h-screen bg-gradient-to-b from-white to-gray-50 w-full overflow-x-hidden">
       {/* Hero Section  bg-gray-900   */}
       <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white py-24 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-bold mb-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="font-bold mb-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               רוצים אוויר נקי במטבח? <span style={{ color: themeColor }}>צרו קשר!</span>
             </h1>
@@ -77,7 +103,14 @@ const Contact = () => {
                 className="px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
                 <PhoneCall className="h-5 w-5 ml-2" />
-                התקשרו עכשיו
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  התקשרו עכשיו
+                </motion.span>
+
               </Link>
 
               {/*
@@ -133,7 +166,14 @@ const Contact = () => {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  whileHover={{ y: -5, transition: { duration: 0.2 } }}
+                  whileHover={{
+                    y: -8,
+                    transition: {
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 10
+                    }
+                  }}
                   className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 ${info.color} ${info.hoverColor}`}
                   onMouseEnter={() => setHoveredCard(index)}
                   onMouseLeave={() => setHoveredCard(null)}

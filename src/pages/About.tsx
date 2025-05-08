@@ -26,8 +26,29 @@ const About = () => {
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
 
   // הנפשות לסקשנים השונים
-  const fadeInUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8 } } };
-  const stagger = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.1 } } };
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 60,
+        damping: 15,
+        duration: 0.8
+      }
+    }
+  };
+  const stagger = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.15
+      }
+    }
+  };
 
   return (
     <div className="rtl">
@@ -40,8 +61,17 @@ const About = () => {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-bold mb-6">
-
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              damping: 12,
+              duration: 0.7
+            }}
+            className="font-bold mb-6"
+          >
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
               חברת <span style={{ color: themeColor }}>טי אמ מנדפים</span>
             </h1>
@@ -51,20 +81,24 @@ const About = () => {
               כדי לייצר מנדפים וקולטי אדים שעושים את העבודה בצורה מושלמת.
             </p>
 
+
             <div className="flex flex-col sm:flex-row justify-center gap-4 items-center relative z-20 inline-block">
               <Link
                 to="tel:+972549659008"
                 className="px-8 py-3 bg-gradient-to-r from-[#d6b16c] to-[#e7c682] text-primary rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg flex items-center"
               >
                 <PhoneCall className="h-5 w-5 ml-2" />
-                התקשרו עכשיו
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  התקשרו עכשיו
+                </motion.span>
               </Link>
-
-
             </div>
           </motion.div>
         </div>
-
 
         {/* 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -119,37 +153,42 @@ const About = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
+          <motion.div
+            initial={{ scale: 0.95, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 50 }}
+            className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl"
+          >
 
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
-            <div className="flex flex-col md:flex-row">
-              {/* תמונה מימין */}
-              <div className="md:w-1/3 bg-gradient-to-br from-blue-900 to-indigo-900 flex items-center justify-center p-8 sm:p-12">
-                <div className="text-center">
-                  <div className="bg-white inline-flex rounded-full bg-blue-100 p-4 mb-6 backdrop-blur-sm p-4 mb-6">
-                    <Award className="h-12 w-12" style={{ color: themeColor }} />
+              <div className="flex flex-col md:flex-row">
+                {/* תמונה מימין */}
+                <div className="md:w-1/3 bg-gradient-to-br from-blue-900 to-indigo-900 flex items-center justify-center p-8 sm:p-12">
+                  <div className="text-center">
+                    <div className="bg-white inline-flex rounded-full bg-blue-100 p-4 mb-6 backdrop-blur-sm p-4 mb-6">
+                      <Award className="h-12 w-12" style={{ color: themeColor }} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-2">מצוינות</h3>
+                    <p className="text-blue-100">המומחיות, הניסיון והמחויבות לאיכות הם אבני היסוד של החברה שלנו</p>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">מצוינות</h3>
-                  <p className="text-blue-100">המומחיות, הניסיון והמחויבות לאיכות הם אבני היסוד של החברה שלנו</p>
+                </div>
+
+                {/* תוכן משמאל */}
+                <div className="md:w-2/3 p-8 sm:p-12">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 border-r-4 pr-4" style={{ borderColor: themeColor }}>
+                    החזון שלנו
+                  </h2>
+                  <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
+                    "אנו שואפים להוביל את תעשיית המנדפים בישראל תוך הקפדה על איכות בלתי מתפשרת,
+                    חדשנות טכנולוגית, ושירות לקוחות מעולה. חזוננו הוא לספק מנדפים שלא רק עומדים בתקנים הנדרשים,
+                    אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר"
+                  </p>
                 </div>
               </div>
-
-              {/* תוכן משמאל */}
-              <div className="md:w-2/3 p-8 sm:p-12">
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 border-r-4 pr-4" style={{ borderColor: themeColor }}>
-                  החזון שלנו
-                </h2>
-                <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
-                  "אנו שואפים להוביל את תעשיית המנדפים בישראל תוך הקפדה על איכות בלתי מתפשרת,
-                  חדשנות טכנולוגית, ושירות לקוחות מעולה. חזוננו הוא לספק מנדפים שלא רק עומדים בתקנים הנדרשים,
-                  אלא גם תורמים לסביבת עבודה בטוחה יותר, נקייה יותר ויעילה יותר"
-                </p>
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -157,8 +196,24 @@ const About = () => {
       {/* סקשן ביניים - ציטוט */}
       <section className="py-16 bg-white" >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp}>
-            <div className="inline-flex rounded-full bg-white/80 p-2 mb-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.9 },
+              visible: {
+                opacity: 1,
+                scale: 1,
+                transition: {
+                  type: "spring",
+                  stiffness: 50,
+                  damping: 10,
+                  duration: 0.8
+                }
+              }
+            }}
+          >            <div className="inline-flex rounded-full bg-white/80 p-2 mb-6">
               <ThumbsUp className="h-8 w-8" style={{ color: themeColor }} />
             </div>
             <blockquote className="text-2xl font-medium text-gray-800 mb-6">
@@ -185,12 +240,31 @@ const About = () => {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
             {companyFeatures.map((feature, index) => (
-              <motion.div key={index} variants={fadeInUp} onMouseEnter={() => setHoveredFeature(index)} onMouseLeave={() => setHoveredFeature(null)} className={`bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${hoveredFeature === index ? 'transform -translate-y-2 shadow-xl' : ''}`}>
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                onMouseEnter={() => setHoveredFeature(index)}
+                onMouseLeave={() => setHoveredFeature(null)}
+                className={`bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${hoveredFeature === index ? 'transform -translate-y-2 shadow-xl' : ''}`}
+                whileHover={{
+                  y: -8,
+                  transition: {
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 10
+                  }
+                }}
+              >
                 <div className="h-2" style={{ backgroundColor: themeColor }}></div>
                 <div className="p-8">
-                  <div className="inline-flex rounded-full p-3 mb-6 bg-white">
+                  <motion.div
+                    initial={{ scale: 1 }}
+                    whileHover={{ scale: 1.15, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    className="inline-flex rounded-full p-3 mb-6 bg-white"
+                  >
                     <feature.icon className="h-8 w-8" style={{ color: themeColor }} />
-                  </div>
+                  </motion.div>
                   <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
                 </div>
