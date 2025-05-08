@@ -54,9 +54,9 @@ const HeroSection = () => {
                     <div className="w-full flex justify-end px-4 sm:pr-10 lg:pr-20 xl:pr-28">
                         {/* Text Content */}
                         <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, ease: "easeOut" }}
                             className="text-white w-full lg:max-w-4xl xl:max-w-5xl ml-auto"
                         >
                             {/* Badge */}
@@ -79,9 +79,9 @@ const HeroSection = () => {
                                 {benefits.map((benefit, index) => (
                                     <motion.div
                                         key={benefit}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.4, delay: index * 0.1 }}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.5, delay: 0.3 + index * 0.1, ease: "easeOut" }}
                                         className="flex items-center space-x-3 rtl:space-x-reverse"
                                     >
                                         <CheckCircle className="h-5 w-5 md:h-6 md:w-6 text-[#d6b16c] flex-shrink-0" />
@@ -112,7 +112,7 @@ const HeroSection = () => {
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, delay: 0.4 }}
+                                transition={{ duration: 0.5, delay: 0.7, ease: "easeOut" }}
                                 className="flex flex-col sm:flex-row gap-3 md:gap-4 items-center"
                             >
 
@@ -125,7 +125,7 @@ const HeroSection = () => {
                                 </button>
                             </motion.div>
 
-                            
+
                         </motion.div>
                     </div>
                 </div>

@@ -32,8 +32,8 @@ const BenefitsSection = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4"
                     >
                         <h2>למה לבחור בנו?</h2>
@@ -42,27 +42,31 @@ const BenefitsSection = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-                {steps.map((step, index) => (
+                    {steps.map((step, index) => (
                         <motion.div
                             key={step.title}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{
+                                duration: 0.5,
+                                delay: Math.min(index * 0.15, 0.45),
+                                ease: "easeOut"
+                            }}
                             className="relative group transition-all"
                         >
                             {/* מספר */}
                             <div className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shadow-md text-sm sm:text-base">
-                            {index + 1}
+                                {index + 1}
                             </div>
 
                             <div className="bg-white rounded-2xl shadow-md p-4 sm:p-6 text-center border border-gray-100 group-hover:shadow-xl group-hover:scale-105 transition duration-300">
-                            <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#d6b16c] text-white mb-3 sm:mb-4 shadow-sm">
-                            {step.icon}
+                                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#d6b16c] text-white mb-3 sm:mb-4 shadow-sm">
+                                    {step.icon}
                                 </div>
                                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">{step.title}</h3>
                                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{step.description}</p>
-                                </div>
+                            </div>
                         </motion.div>
                     ))}
                 </div>

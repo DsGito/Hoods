@@ -13,10 +13,10 @@ const SummarySection = () => {
 
                     <motion.div
                         className="lg:w-1/2"
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
                     >
 
                         <div className="relative mb-4 sm:mb-8">
@@ -25,7 +25,7 @@ const SummarySection = () => {
                         </div>
 
                         <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-                        טי אמ מנדפים מתמחה בתכנון, ייצור והתקנה של מערכות מנדפים וקולטי אדים למטבחים בהתאמה אישית,
+                            טי אמ מנדפים מתמחה בתכנון, ייצור והתקנה של מערכות מנדפים וקולטי אדים למטבחים בהתאמה אישית,
                             לצד מערכות נירוסטה ייחודיות תוך הקפדה על חדשנות טכנולוגית ואיכות בלתי מתפשרת.
                             עם ניסיון עשיר בתחום, אנו מלווים את לקוחותינו משלב הרעיון ועד למסירה – במקצועיות, יצירתיות ודיוק.
                         </p>
@@ -42,10 +42,10 @@ const SummarySection = () => {
                     {/* About Us Images */}
                     <motion.div
                         className="lg:w-1/2 flex justify-center"
-                        initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                     >
                         <div className="grid grid-cols-2 gap-2 sm:gap-4 w-full max-w-md lg:max-w-full">
                             <div className="space-y-2 sm:space-y-4">
@@ -90,14 +90,14 @@ const SummarySection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
                 className="mt-4 sm:mt-6 text-center"
-                >
+            >
                 <Link
                     to="/About"
                     className="inline-flex items-center bg-primary text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium hover:bg-[#d6b16c] transition-colors group"
                     onClick={() => window.scrollTo(0, 0)}
-                    >
+                >
                     קראו עוד עלינו
                     <ArrowRight className="mr-2 h-4 sm:h-5 w-4 sm:w-5 transform group-hover:-translate-x-1 transition-transform rtl:rotate-180" />
                 </Link>

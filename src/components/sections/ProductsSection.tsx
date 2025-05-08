@@ -79,8 +79,8 @@ const ProductsSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                     <div className="flex justify-center">
                         <div className="relative">
@@ -98,10 +98,14 @@ const ProductsSection = () => {
                     {featuredProducts.map((category, index) => (
                         <motion.div
                             key={category.title}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{
+                                duration: 0.5,
+                                delay: 0.1 + Math.min(index * 0.1, 0.4),
+                                ease: "easeOut"
+                            }}
                             className="bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow border border-gray-700 hover:border-[#d6b16c]"
                         >
                             <Link to={"/" + category.path}
