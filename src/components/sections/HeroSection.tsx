@@ -31,7 +31,7 @@ const HeroSection = () => {
             <section className="relative min-h-[70vh] md:min-h-[90vh] bg-gradient-to-r from-gray-950 to-gray-800 text-white overflow-hidden flex items-center">
 
                 {/* Background Pattern */}
-                <div className="absolute inset-0 w-full h-full opacity-10 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10">
+                <div className="absolute inset-0 w-full h-full opacity-90 bg-black bg-opacity-40 sm:bg-opacity-20 md:bg-opacity-10">
                     <video
                         autoPlay
                         muted
