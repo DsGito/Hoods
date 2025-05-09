@@ -14,7 +14,7 @@ const CtaMoreSection = () => {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                    <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl sm:rounded-2xl shadow-xl overflow-hidden">
+                    <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl sm:rounded-2xl shadow-xl overflow-hidden"> {/* from-[#d6b16c] to-[#e7c989]*/}
                         <div className="md:flex items-center">
                             <div className="md:w-2/3 p-6 sm:p-8 md:p-12">
                                 <motion.h2
@@ -44,9 +44,10 @@ const CtaMoreSection = () => {
                                 >                                    <Link
                                     to="/Contact"
                                     onClick={() => window.scrollTo(0, 0)}
-
-                                    className="group flex items-center gap-2 px-6 sm:px-8 py-2 sm:py-3 bg-white text-blue-600 rounded-full font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"
+                                    className="group flex items-center gap-2 px-6 sm:px-8 py-2 sm:py-3 bg-white text-blue-600 rounded-full 
+                                    font-medium hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"                                    
                                 >
+                                    {/* text-[#d6b16c] hover:bg-[#f8f3e8] */}
                                         <PhoneCall className="h-4 w-4 sm:h-5 sm:w-5" />
                                         צרו קשר
                                     </Link>
